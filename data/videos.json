@@ -1,1 +1,69 @@
-{}
+{
+  "trouver-mon-etablissement": {
+    "title": {
+      "fr": "Trouver mon établissement",
+      "en": "Find my school (in French)"
+    },
+    "duration": "0:40",
+    "youtube": "",
+    "pages": [
+      "/getting-started/find-school"
+    ]
+  },
+  "premiere-connexion": {
+    "title": {
+      "fr": "Première connexion",
+      "en": "First sign-in (in French)"
+    },
+    "duration": "0:46",
+    "youtube": "",
+    "pages": [
+      "/getting-started/sign-in"
+    ]
+  },
+  "ajouter-eleve": {
+    "title": {
+      "fr": "Ajouter un élève",
+      "en": "Add a student (in French)"
+    },
+    "duration": "0:46",
+    "youtube": "",
+    "pages": [
+      "/students/add"
+    ]
+  },
+  "importer-eleves": {
+    "title": {
+      "fr": "Importer les élèves",
+      "en": "Import students (in French)"
+    },
+    "duration": "0:48",
+    "youtube": "",
+    "pages": [
+      "/students/import",
+      "/structure/initial-setup"
+    ]
+  },
+  "importer-photos": {
+    "title": {
+      "fr": "Importer les photos d'élèves",
+      "en": "Import student photos (in French)"
+    },
+    "duration": "0:54",
+    "youtube": "",
+    "pages": [
+      "/students/photos"
+    ]
+  },
+  "inscrire-etablissement": {
+    "title": {
+      "fr": "Inscrire un établissement",
+      "en": "Register a school (in French)"
+    },
+    "duration": "0:50",
+    "youtube": "",
+    "pages": [
+      "/onboarding/new-school"
+    ]
+  }
+}

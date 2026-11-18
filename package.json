@@ -9,7 +9,7 @@
     "serve": "docusaurus serve",
     "validate": "node tools/validate.mjs",
     "images": "python3 tools/images.py",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "node tools/validate.mjs && tsc --noEmit",
     "clear": "docusaurus clear"
   },
   "dependencies": {

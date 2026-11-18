@@ -13,6 +13,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm run validate   # génère src/data/openapi/*.json
       - run: npm run typecheck
       - run: npm run build
       - name: Aucune donnée réelle ni formulation interdite dans le site construit
