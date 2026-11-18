@@ -5,11 +5,13 @@
  * Les images sont les captures publiées de l'école fictive de démonstration.
  */
 (function () {
-document.body.insertAdjacentHTML('afterbegin', "<div id=\"bg\"></div>\n<div id=\"brand\"><b>M</b>ModernSchools <span>Tutoriel</span></div>\n<div id=\"step\"></div>\n<div id=\"frame\"></div>\n<div id=\"cap\"><div id=\"num\">1</div><div id=\"txt\"></div></div>\n<div id=\"demo\">\u00c9cole fictive de d\u00e9monstration</div>\n<div id=\"title\"><small>Tutoriel ModernSchools</small><h1></h1><p></p></div>\n");
+document.body.insertAdjacentHTML('afterbegin', "<div id=\"stage\">\n<div id=\"bg\"></div>\n<div id=\"brand\"><b>M</b>ModernSchools <span>Tutoriel</span></div>\n<div id=\"step\"></div>\n<div id=\"frame\"></div>\n<div id=\"cap\"><div id=\"num\">1</div><div id=\"txt\"></div></div>\n<div id=\"demo\">\u00c9cole fictive de d\u00e9monstration</div>\n<div id=\"title\"><small>Tutoriel ModernSchools</small><h1></h1><p></p></div>\n</div>\n");
 const D = window.D;
 const BASE = document.currentScript.src.replace(/tools\/videos\/player\.js.*$/, 'static/img/screenshots/fr/');
 D.scenes.forEach((s) => { if (!/^https?:/.test(s.src)) s.src = BASE + s.src + '.webp'; });
 const FW = 1800, FH = 780;
+const fit = () => { document.getElementById('stage').style.transform = 'scale(' + Math.min(innerWidth / 1920, innerHeight / 1080) + ')'; };
+fit(); addEventListener('resize', fit);
 document.querySelector('#title h1').textContent = D.title;
 document.querySelector('#title p').textContent = D.subtitle;
 const frame = document.getElementById('frame');
