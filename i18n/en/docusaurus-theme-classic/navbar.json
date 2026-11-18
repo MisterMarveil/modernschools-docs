@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "ModernSchools",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guides": {
+    "message": "Guides",
+    "description": "Navbar item with label Guides"
+  },
+  "item.label.Tutoriels vidéo": {
+    "message": "Video tutorials",
+    "description": "Navbar item with label Tutoriels vidéo"
+  },
+  "item.label.Dépannage": {
+    "message": "Troubleshooting",
+    "description": "Navbar item with label Dépannage"
+  },
+  "item.label.Développeurs": {
+    "message": "Developers",
+    "description": "Navbar item with label Développeurs"
+  },
+  "item.label.Support": {
+    "message": "Support",
+    "description": "Navbar item with label Support"
+  }
+}

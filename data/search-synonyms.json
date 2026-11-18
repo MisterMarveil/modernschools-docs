@@ -1,0 +1,8 @@
+{
+  "élève": ["apprenant", "étudiant", "student"],
+  "bulletin": ["relevé de notes", "report card"],
+  "connexion": ["login", "se connecter", "mot de passe"],
+  "matricule": ["identifiant", "numéro élève"],
+  "enseignant": ["professeur", "prof", "teacher"],
+  "trimestre": ["période", "séquence", "term"]
+}

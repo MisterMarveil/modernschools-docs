@@ -1,0 +1,55 @@
+---
+id: create-teacher
+title: "Create teacher accounts"
+description: "Import teachers and their assignments from the template, or create an account by hand."
+sidebar_position: 1
+keywords: ["enseignant", "professeur", "compte", "affectation", "teacher", "prof", "user"]
+type: how-to
+product: ["web"]
+audience: ["school-admin"]
+availability: available
+estimated_time: "10 min"
+last_verified: 2026-11-18
+translation_key: users/create-teacher
+---
+## By import (recommended)
+
+<DocScreenshot src="web/setup/teachers-import" alt="Teachers and assignments section of the initial setup" />
+
+<Procedure>
+<Step title="Download the template">
+
+**Settings → Configuration initiale → Ouvrir**, section **3. Enseignants et affectations** (teachers and assignments): download **modele-enseignants.xlsx**. It contains your subjects and classes.
+
+</Step>
+<Step title="Fill it in">
+
+One row per teacher **and per subject**, with the classes where they teach it, separated by commas.
+
+</Step>
+<Step title="Check, then import">
+
+**Contrôler sans importer** (check), then **Importer**. The file is checked as a whole: at the slightest error, nothing is imported.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Each teacher gets an account and finds their classes and subjects in mark entry. The timetable created is provisional (one session per class and subject): adjust the times afterwards.
+
+</ExpectedResult>
+
+## By hand
+
+**Settings → Users → Users → Add**. Fill in **Lastname**, **Firstname**, the **username** (used to sign in) and the **password** twice, then choose the *Enseignants* (teachers) group in the **Additional data** tab.
+
+<DocScreenshot src="web/users/create" alt="User creation form">
+  <Hotspot number={1} x={25} y={29} label="Lastname" />
+  <Hotspot number={2} x={25} y={66} label="Username" />
+  <Hotspot number={3} x={25} y={73} label="Password" />
+</DocScreenshot>
+
+:::warning Password
+Hand the username and temporary password to the teacher in person. At first sign-in, they will have to choose their own password.
+:::

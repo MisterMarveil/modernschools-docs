@@ -1,0 +1,57 @@
+{
+ "trouver-mon-etablissement": {
+  "title": "Trouver mon établissement",
+  "subtitle": "Ouvrir l'adresse de son école en quelques secondes",
+  "total": 40,
+  "pages": [
+   "/getting-started/find-school"
+  ],
+  "voice": "Trouver mon établissement. Chaque école a sa propre adresse ModernSchools. Pour la retrouver, allez sur le site officiel, modernschools point online, et ouvrez Trouver mon établissement. Saisissez au moins trois lettres : le nom, le sigle ou la ville de votre école. Votre établissement apparaît avec son état. Cliquez sur Ouvrir. La fiche de l'école s'affiche : le bouton Ouvrir ModernSchools mène directement à la page de connexion de l'année en cours. Ajoutez-la à vos favoris."
+ },
+ "premiere-connexion": {
+  "title": "Première connexion",
+  "subtitle": "Se connecter et sécuriser son compte",
+  "total": 46,
+  "pages": [
+   "/getting-started/sign-in"
+  ],
+  "voice": "Première connexion. Ouvrez l'adresse de votre école et saisissez l'identifiant et le mot de passe provisoire remis par votre administrateur. À la première connexion, ModernSchools vous demande de vérifier vos informations personnelles : nom, prénoms, genre et langue de l'application. Choisissez ensuite votre propre mot de passe, solide, et enregistrez. Vous arrivez sur l'accueil. Gardez votre mot de passe pour vous : l'équipe BRIDGE ne vous le demandera jamais."
+ },
+ "ajouter-eleve": {
+  "title": "Ajouter un élève",
+  "subtitle": "Créer un dossier élève et l'affecter à une classe",
+  "total": 46,
+  "pages": [
+   "/students/add"
+  ],
+  "voice": "Ajouter un élève. Dans Paramètres, ouvrez Utilisateurs, puis Étudiants, et cliquez sur Ajouter. Saisissez le nom, les prénoms, le genre, la date et le lieu de naissance. Choisissez la classe : c'est obligatoire. L'onglet Informations complémentaires reçoit les contacts des parents et l'adresse. Cliquez sur Créer. Le matricule unique est attribué automatiquement. Si un élève de même nom et même prénom existe déjà, ModernSchools vous le signale : vérifiez avant de continuer."
+ },
+ "importer-eleves": {
+  "title": "Importer les élèves",
+  "subtitle": "Toutes les listes de classes en une fois",
+  "total": 48,
+  "pages": [
+   "/students/import",
+   "/structure/initial-setup"
+  ],
+  "voice": "Importer les élèves. Ouvrez Paramètres, puis Configuration initiale. Commencez par créer vos classes à partir d'un modèle d'établissement : cochez les classes, vérifiez l'année scolaire et validez. Ensuite, dans Listes d'élèves, téléchargez le fichier modèle. Remplissez une ligne par élève : classe, nom, prénom et sexe sont obligatoires. Cliquez d'abord sur Contrôler sans importer. Le fichier est vérifié en entier : à la moindre erreur, rien n'est importé. Quand tout est correct, cliquez sur Importer. Faites de même pour les enseignants."
+ },
+ "importer-photos": {
+  "title": "Importer les photos d'élèves",
+  "subtitle": "Un ZIP par lot, vérifié puis validé",
+  "total": 54,
+  "pages": [
+   "/students/photos"
+  ],
+  "voice": "Importer les photos d'élèves. Préparez un fichier ZIP avec un dossier par classe, et une photo par élève, nommée par son nom et ses prénoms, ou par son matricule. Déposez le ZIP dans Photos d'élèves. ModernSchools rapproche chaque photo de l'élève correspondant, uniquement par le nom du fichier. Vérifiez la table des classes et les photos proposées. Les cas douteux sont à revoir : choisissez l'élève, ou laissez la photo de côté. Enfin, cochez la confirmation et validez le lot. Rien n'est enregistré avant cette validation, et les photos restent privées."
+ },
+ "inscrire-etablissement": {
+  "title": "Inscrire un établissement",
+  "subtitle": "Le dossier en ligne, étape par étape",
+  "total": 50,
+  "pages": [
+   "/onboarding/new-school"
+  ],
+  "voice": "Inscrire un établissement. Sur le site officiel, ouvrez Inscrire mon établissement et choisissez Nouvel établissement. Saisissez votre adresse e-mail professionnelle : vous recevez un code à six chiffres pour la vérifier. Remplissez ensuite les six étapes du dossier, à votre rythme : chaque champ est enregistré automatiquement. La dernière étape liste les informations manquantes. Envoyez le dossier : l'équipe BRIDGE l'examine, puis met votre établissement en service."
+ }
+}

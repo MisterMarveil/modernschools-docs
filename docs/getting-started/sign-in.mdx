@@ -1,0 +1,63 @@
+---
+id: sign-in
+title: "Me connecter"
+description: "Se connecter à son école, et changer le mot de passe par défaut à la première connexion."
+sidebar_position: 3
+keywords: ["connexion", "mot de passe", "identifiant", "login", "sign in", "password"]
+type: how-to
+product: ["web"]
+audience: ["school-admin", "teacher", "secretary"]
+availability: available
+estimated_time: "3 min"
+video: premiere-connexion
+last_verified: 2026-11-18
+translation_key: getting-started/sign-in
+---
+<Prerequisite>
+
+- L'adresse de votre école (sinon : [trouver mon établissement](/getting-started/find-school)).
+- Votre identifiant et votre mot de passe, remis par l'administration de l'école. Pour un enseignant importé, l'identifiant est de la forme `NOM Prénom`.
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Saisir l'identifiant et le mot de passe">
+
+Sur la page de connexion de votre école, saisissez votre **identifiant** et votre **mot de passe**, puis validez.
+
+<DocScreenshot src="web/sign-in/login" alt="Page de connexion d'une école : identifiant, mot de passe, se souvenir de moi">
+  <Hotspot number={1} x={48} y={38} label="Identifiant" />
+  <Hotspot number={2} x={48} y={43} label="Mot de passe" />
+</DocScreenshot>
+
+</Step>
+<Step title="Première connexion : vérifier le compte">
+
+Avec un mot de passe par défaut, ModernSchools ouvre l'écran **Vérification du compte requise** : l'application reste inaccessible tant que le mot de passe n'est pas changé.
+
+Vérifiez vos **nom**, **prénom**, **genre** et **langue** ; le téléphone est facultatif. Saisissez deux fois votre **nouveau mot de passe**, puis cliquez sur **Enregistrer les informations**.
+
+<DocScreenshot src="web/sign-in/password-change" alt="Écran Accès restreint : vérification du compte et choix d'un nouveau mot de passe">
+  <Hotspot number={1} x={55} y={50} label="Vos informations" />
+  <Hotspot number={2} x={47} y={70} label="Langue de l'application" />
+</DocScreenshot>
+
+</Step>
+<Step title="Se reconnecter">
+
+Vous revenez à la page de connexion : connectez-vous avec le **nouveau** mot de passe.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Vous arrivez sur l'accueil de ModernSchools, adapté à votre rôle : [comprendre l'accueil](/getting-started/dashboard).
+
+</ExpectedResult>
+
+:::warning Confidentialité
+Ne communiquez jamais votre mot de passe, ni à un collègue ni au support : le support ModernSchools ne vous le demandera jamais.
+:::
+
+<RelatedArticles items={[{to: '/troubleshooting/sign-in', label: 'Impossible de se connecter'}, {to: '/users/roles', label: 'Comprendre les rôles'}]} />

@@ -1,0 +1,61 @@
+---
+id: add
+title: "Add a student"
+description: "Create a student record and assign it to a class."
+sidebar_position: 1
+keywords: ["élève", "inscription", "ajouter", "dossier élève", "apprenant", "student", "étudiant"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "3 min"
+video: ajouter-eleve
+last_verified: 2026-11-18
+translation_key: students/add
+---
+<Procedure>
+<Step title="Open student management">
+
+**Settings → Users → Students**, then **Add**.
+
+<DocScreenshot src="web/students/list" alt="Student list: surname, first name, gender, date and place of birth, class" />
+
+</Step>
+<Step title="Enter identity and class">
+
+<DocScreenshot src="web/students/create" alt="Student creation form, Personal data tab">
+  <Hotspot number={1} x={25} y={29} label="Lastname" />
+  <Hotspot number={2} x={25} y={36} label="Firstname" />
+  <Hotspot number={3} x={17} y={42} label="Gender" />
+  <Hotspot number={4} x={23} y={51} label="Birthday" />
+  <Hotspot number={5} x={45} y={27} label="Class" />
+</DocScreenshot>
+
+**Personal data** tab: **Lastname** (required), **Firstname**, **Gender**, **Birthday**, **Birthplace**, then the **Class** (required). Tick whether the student is a boarder or repeating the year if needed.
+
+</Step>
+<Step title="Complete (optional)">
+
+**Additional data** tab: parents (name, contact, occupation) and location (nationality, address, phones, e-mails, town, district).
+
+<DocScreenshot src="web/students/create-complement" alt="Additional data tab: family and location details" />
+
+</Step>
+<Step title="Save">
+
+Click **Create** (or **Create and add another** to continue with the next student).
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+The student appears in their class; their **matricule** (unique number) is assigned automatically on saving. The record can be opened from the list.
+
+</ExpectedResult>
+
+:::warning Similar student
+If a student with the same surname and first name already exists, saving is refused: first check it is not the same student. See [duplicate student](/troubleshooting/student-duplicate).
+:::
+
+<RelatedArticles items={[{to: '/students/import', label: 'Import several students'}, {to: '/students/identity', label: 'Understand the unique matricule'}]} />

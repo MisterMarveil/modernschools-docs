@@ -1,0 +1,17 @@
+{
+  "SIGN-IN": "/getting-started/sign-in",
+  "FIND-SCHOOL": "/getting-started/find-school",
+  "ONBOARDING": "/onboarding/new-school",
+  "INITIAL-SETUP": "/structure/initial-setup",
+  "STUDENT-CREATE": "/students/add",
+  "STUDENT-IMPORT": "/students/import",
+  "STUDENT-DUPLICATE": "/troubleshooting/student-duplicate",
+  "PHOTOS": "/students/photos",
+  "TEACHER-IMPORT": "/users/create-teacher",
+  "PERIODS": "/evaluations/configure-periods",
+  "GRADES": "/grades/enter-grades",
+  "REPORT-CARDS": "/documents/report-cards",
+  "ID-CARDS": "/documents/id-cards",
+  "CLASS-COUNCIL": "/class-council/run",
+  "DIRECTORY-API": "/developers/directory-api"
+}

@@ -1,0 +1,54 @@
+---
+id: import
+title: "Import several students"
+description: "Import class lists from the Excel template, fully checked before anything is written."
+sidebar_position: 4
+keywords: ["importer", "liste", "excel", "élèves", "fichier modèle", "import students", "csv", "xlsx"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "15 min"
+video: importer-eleves
+last_verified: 2026-11-18
+translation_key: students/import
+---
+<Prerequisite>
+
+Classes already exist (see [initial setup](/structure/initial-setup)). Open **Settings → Configuration initiale → Ouvrir**, section **2. Listes d'élèves** (student lists).
+
+</Prerequisite>
+
+<DocScreenshot src="web/setup/students-import" alt="Student lists section: template to download, check and import" />
+
+<Procedure>
+<Step title="Download the template">
+
+Click **modele-eleves.xlsx**. The workbook contains your class list (*Classes* sheet): the *Classe* column is filled from a drop-down.
+
+</Step>
+<Step title="Fill in one row per student">
+
+Required: **Classe**, **Nom** (surname), **Prénom** (first name), **Sexe (M/F)**. Optional: date and place of birth (DD/MM/YYYY), matricule (empty = assigned automatically), repeating, boarder, nationality, parents and phones.
+
+</Step>
+<Step title="Check, then import">
+
+Choose the file (.xlsx or .csv, 5 MB at most) and click **Contrôler sans importer** (check without importing). If the check passes, click **Importer**.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+A message gives the number of students imported and already present. Students appear in their classes with their matricule.
+
+</ExpectedResult>
+
+:::info All or nothing
+The file is checked **as a whole** before anything is written: at the slightest error (unknown class, empty required field, invalid date), **nothing is imported** and each faulty row is listed. A student already present (same surname, same first name) is not created again: you can resend a completed file.
+:::
+
+:::warning Personal data
+This file contains data about minors: do not send it by messaging apps and delete copies after the import.
+:::

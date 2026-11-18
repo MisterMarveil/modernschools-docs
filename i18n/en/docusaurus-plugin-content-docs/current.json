@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Current",
+    "description": "The label for version current"
+  },
+  "sidebar.documentation.category.Bien démarrer": {
+    "message": "Getting started",
+    "description": "The label for category Bien démarrer in sidebar documentation"
+  },
+  "sidebar.documentation.category.Inscription et onboarding": {
+    "message": "Registration and onboarding",
+    "description": "The label for category Inscription et onboarding in sidebar documentation"
+  },
+  "sidebar.documentation.category.Structure de l’établissement": {
+    "message": "School structure",
+    "description": "The label for category Structure de l’établissement in sidebar documentation"
+  },
+  "sidebar.documentation.category.Élèves": {
+    "message": "Students",
+    "description": "The label for category Élèves in sidebar documentation"
+  },
+  "sidebar.documentation.category.Utilisateurs et rôles": {
+    "message": "Users and roles",
+    "description": "The label for category Utilisateurs et rôles in sidebar documentation"
+  },
+  "sidebar.documentation.category.Évaluations et notes": {
+    "message": "Assessments and marks",
+    "description": "The label for category Évaluations et notes in sidebar documentation"
+  },
+  "sidebar.documentation.category.Documents": {
+    "message": "Documents",
+    "description": "The label for category Documents in sidebar documentation"
+  },
+  "sidebar.documentation.category.Conseils et discipline": {
+    "message": "Councils and discipline",
+    "description": "The label for category Conseils et discipline in sidebar documentation"
+  },
+  "sidebar.documentation.category.Statistiques et archives": {
+    "message": "Statistics and archives",
+    "description": "The label for category Statistiques et archives in sidebar documentation"
+  },
+  "sidebar.documentation.category.Dépannage": {
+    "message": "Troubleshooting",
+    "description": "The label for category Dépannage in sidebar documentation"
+  },
+  "sidebar.documentation.category.Développeurs": {
+    "message": "Developers",
+    "description": "The label for category Développeurs in sidebar documentation"
+  }
+}

@@ -1,0 +1,55 @@
+---
+id: create-teacher
+title: "Créer les comptes enseignants"
+description: "Importer les enseignants et leurs affectations depuis le fichier modèle, ou créer un compte à la main."
+sidebar_position: 1
+keywords: ["enseignant", "professeur", "compte", "affectation", "teacher", "prof", "user"]
+type: how-to
+product: ["web"]
+audience: ["school-admin"]
+availability: available
+estimated_time: "10 min"
+last_verified: 2026-11-18
+translation_key: users/create-teacher
+---
+## Par import (recommandé)
+
+<DocScreenshot src="web/setup/teachers-import" alt="Section Enseignants et affectations de la configuration initiale" />
+
+<Procedure>
+<Step title="Télécharger le modèle">
+
+**Paramètres → Configuration initiale → Ouvrir**, section **3. Enseignants et affectations** : téléchargez **modele-enseignants.xlsx**. Il contient vos matières et vos classes.
+
+</Step>
+<Step title="Remplir">
+
+Une ligne par enseignant **et par matière**, avec les classes où il l'enseigne, séparées par des virgules.
+
+</Step>
+<Step title="Contrôler, puis importer">
+
+**Contrôler sans importer**, puis **Importer**. Le fichier est contrôlé en entier : à la moindre erreur, rien n'est importé.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Chaque enseignant reçoit son compte et retrouve ses classes et ses matières dans la saisie des notes. L'emploi du temps créé est provisoire (une séance par classe et par matière) : ajustez les horaires ensuite.
+
+</ExpectedResult>
+
+## À la main
+
+**Paramètres → Utilisateurs → Utilisateurs → Ajouter**. Renseignez **Nom**, **Prénoms**, le **nom d'utilisateur** (celui qui sert à se connecter) et le **mot de passe** deux fois, puis choisissez le groupe *Enseignants* dans l'onglet **Informations Complémentaires**.
+
+<DocScreenshot src="web/users/create" alt="Formulaire de création d'un utilisateur">
+  <Hotspot number={1} x={25} y={29} label="Nom" />
+  <Hotspot number={2} x={25} y={66} label="Nom d'utilisateur" />
+  <Hotspot number={3} x={25} y={73} label="Mot de passe" />
+</DocScreenshot>
+
+:::warning Mot de passe
+Remettez l'identifiant et le mot de passe provisoire à l'enseignant en main propre. À sa première connexion, il devra choisir son propre mot de passe.
+:::

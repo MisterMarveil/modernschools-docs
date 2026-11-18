@@ -1,0 +1,53 @@
+---
+id: create-class
+title: "Créer une classe"
+description: "Ajouter une classe et la rattacher à son groupe de classes."
+sidebar_position: 4
+keywords: ["classe", "créer une classe", "class", "division"]
+type: how-to
+product: ["web"]
+audience: ["school-admin"]
+availability: available
+estimated_time: "2 min"
+last_verified: 2026-11-18
+translation_key: structure/create-class
+---
+<Procedure>
+<Step title="Ouvrir le formulaire">
+
+**Paramètres → Structures → Classes → Ajouter**.
+
+</Step>
+<Step title="Renseigner la classe">
+
+<DocScreenshot src="web/structure/class-create" alt="Formulaire de création d'une classe">
+  <Hotspot number={1} x={16} y={21} label="Groupe de classes" />
+  <Hotspot number={2} x={24} y={38} label="Nom" />
+  <Hotspot number={3} x={16} y={43} label="Langue par défaut" />
+  <Hotspot number={4} x={24} y={52} label="Code d'examen" />
+</DocScreenshot>
+
+1. **Groupe de Classes** : le niveau auquel la classe appartient.
+2. **Nom** (obligatoire) : par exemple *6eme B*.
+3. **Langue par défaut** (obligatoire) : français ou anglais.
+4. **Code d'Examen** : facultatif, utilisé par les photos d'examen.
+
+La case **Détection automatique des non classés** est cochée par défaut.
+
+</Step>
+<Step title="Enregistrer">
+
+Cliquez sur **Créer**, **Créer et retourner à la liste** ou **Créer et ajouter** (pour enchaîner une autre classe).
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+La classe apparaît dans **Classes** avec son groupe et sa langue.
+
+</ExpectedResult>
+
+:::tip
+Pour créer plusieurs classes et leurs matières d'un coup, utilisez plutôt la [configuration initiale](/structure/initial-setup).
+:::

@@ -1,0 +1,17 @@
+[
+  {"fr": "Archive", "en": "Archive", "def_fr": "Espace d'une année scolaire passée, conservé et consultable.", "def_en": "Space of a past school year, kept and available for consultation."},
+  {"fr": "Bulletin de notes", "en": "Report card", "def_fr": "Document de fin de période qui présente les notes, moyennes, rang et observations d'un élève.", "def_en": "End-of-period document showing a student's marks, averages, rank and remarks."},
+  {"fr": "Classe", "en": "Class", "def_fr": "Division dans laquelle les élèves sont inscrits, par exemple 6eme ou Tle D.", "def_en": "Division in which students are enrolled, for example 6eme or Tle D."},
+  {"fr": "Code de l'établissement", "en": "School code", "def_fr": "Code court et public d'un établissement publié, utilisé par « Trouver mon établissement » et les liens /join.", "def_en": "Short public code of a published school, used by “Find my school” and /join links."},
+  {"fr": "Coefficient", "en": "Coefficient", "def_fr": "Poids d'une matière dans la moyenne d'une classe.", "def_en": "Weight of a subject in a class's average."},
+  {"fr": "Conseil de classe", "en": "Class council", "def_fr": "Réunion de fin de période dont les décisions figurent sur les bulletins.", "def_en": "End-of-period meeting whose decisions appear on report cards."},
+  {"fr": "Configuration initiale", "en": "Initial setup", "def_fr": "Écran qui crée classes, matières, coefficients et périodes depuis un modèle, puis importe élèves, enseignants et photos.", "def_en": "Screen that creates classes, subjects, coefficients and periods from a template, then imports students, teachers and photos."},
+  {"fr": "Directory", "en": "Directory", "def_fr": "Annuaire public des établissements publiés, servi par le Desk ModernSchools.", "def_en": "Public directory of published schools, served by the ModernSchools Desk."},
+  {"fr": "Groupe de classes", "en": "Class group", "def_fr": "Regroupement de classes : établissement, cycle, niveau.", "def_en": "Grouping of classes: school, cycle, level."},
+  {"fr": "Lot de photos", "en": "Photo batch", "def_fr": "ZIP de photos déposé, vérifié puis validé en une fois.", "def_en": "ZIP of photos uploaded, checked, then validated in one go."},
+  {"fr": "Matricule unique", "en": "Unique matricule", "def_fr": "Numéro attribué par ModernSchools à chaque élève de l'établissement.", "def_en": "Number assigned by ModernSchools to each student of the school."},
+  {"fr": "Période d'évaluation", "en": "Assessment period", "def_fr": "Année, trimestre ou semestre pour lequel les notes sont saisies et les documents produits.", "def_en": "Year, term or semester for which marks are entered and documents produced."},
+  {"fr": "Procès-verbal des résultats", "en": "Results minutes", "def_fr": "Récapitulatif officiel des résultats d'une classe pour une période.", "def_en": "Official summary of a class's results for a period."},
+  {"fr": "Tableau d'honneur", "en": "Honour roll", "def_fr": "Liste des élèves méritants d'une classe pour une période.", "def_en": "List of a class's deserving students for a period."},
+  {"fr": "Type d'évaluation", "en": "Assessment type", "def_fr": "Nature d'une évaluation au sein d'une période, par exemple Evaluation Harmonisée 1.", "def_en": "Kind of assessment within a period, for example Evaluation Harmonisée 1."}
+]

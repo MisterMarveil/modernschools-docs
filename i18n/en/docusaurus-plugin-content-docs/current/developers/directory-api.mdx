@@ -1,0 +1,62 @@
+---
+id: directory-api
+title: "Directory API v1"
+description: "Search published schools, resolve a school code and get its logo."
+sidebar_position: 2
+keywords: ["directory", "annuaire", "api", "search", "resolve", "directory api", "school search api"]
+type: reference
+product: ["api"]
+audience: ["developer"]
+availability: available
+estimated_time: "10 min"
+last_verified: 2026-11-18
+translation_key: developers/directory-api
+---
+The Directory powers “Find my school”, “My school” and the `/join/{CODE}` links on the official website. It is served by the ModernSchools Desk.
+
+## A school's status
+
+| `status` | Meaning | `url` |
+|---|---|---|
+| `active` | the current year's space is open | current-year address |
+| `preparing` | the current year is being prepared | absent: never an archive's address |
+| `suspended` | access suspended | absent |
+| `archived` | only a past year exists | latest archive's address |
+
+## Example
+
+```bash
+curl -s 'https://desk.modernschools.online/api/directory/v1/search?q=lycee&limit=20'
+```
+
+`q`: at least 3 characters; `limit`: 20 at most.
+
+```json
+{
+  "results": [
+    {
+      "slug": "ldms",
+      "code": "LDMS",
+      "name": "Lycée Démonstration ModernSchools",
+      "shortName": "LDMS",
+      "city": "Yaoundé",
+      "country": "CM",
+      "status": "active",
+      "url": "https://ldms.modernschools.store",
+      "schoolYear": "2026-2027",
+      "logoUrl": "https://desk.modernschools.online/api/directory/v1/logos/LDMS.png?v=1"
+    }
+  ],
+  "total": 1
+}
+```
+
+The school above is fictitious.
+
+## Cache and limits
+
+JSON responses are cached 60 seconds, logos one day; 600 requests per hour per IP address (beyond that: `429`). Errors are JSON.
+
+## Reference
+
+<ApiReference spec="directory" />
