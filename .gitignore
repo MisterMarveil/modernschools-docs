@@ -1,0 +1,11 @@
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+src/data/openapi/*.json
+*.log
+.env
+.env.*
+# Jamais d'exports réels ni de données d'élèves dans ce dépôt.
+exports/
+*.zip
