@@ -1,0 +1,77 @@
+---
+id: photos
+title: "Import student photos"
+description: "Upload a ZIP of photos organised by class, check the gallery and validate the batch: nothing is saved before you validate."
+sidebar_position: 5
+keywords: ["photos", "zip", "lot", "galerie", "carte scolaire", "student photos", "images", "trombinoscope"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "20 min"
+video: importer-photos
+last_verified: 2026-11-18
+translation_key: students/photos
+---
+<Prerequisite>
+
+Students are already registered. Open **Settings → Configuration initiale → Ouvrir**, section **4. Photos d'élèves** (student photos), then **Importer des photos**.
+
+</Prerequisite>
+
+<DocScreenshot src="web/photos/index" alt="Student photos page: ZIP upload, preparation guidance and list of batches" />
+
+## Prepare the ZIP
+
+One folder per class, named like the class in ModernSchools; one photo per student, named after their **surname and first names**, or their **matricule**.
+
+```text
+photos-2026-2027.zip
+├── 6eme/
+│   ├── SURNAME_FIRSTNAMES.jpg
+│   └── MATRICULE.jpg
+└── Tle D/
+    └── SURNAME FIRSTNAMES.png
+```
+
+- JPEG, PNG or WebP; 15 MB at most per photo; 3,000 photos at most per batch. Export iPhone HEIC photos to JPEG first.
+- No facial recognition: a photo is matched to a student only through the file name.
+
+<Procedure>
+<Step title="Upload the ZIP">
+
+Under **Déposer un ZIP** (upload a ZIP), choose the file and send it. Analysis runs in the background: the batch page updates by itself. Only one batch can be in progress at a time.
+
+</Step>
+<Step title="Check the class table">
+
+Each ZIP folder is linked to a class of the year (**automatique** when the name matches). Correct the class in the list if needed.
+
+<DocScreenshot src="web/photos/proposed" alt="Batch to check: class table, analysis and proposed photos with the recognised student" />
+
+</Step>
+<Step title="Decide on photos to review">
+
+**À revoir** tab (to review): similar name, several possible students, no student in the class, image without a student name, duplicate, or student who already has a photo. For each, choose the student or leave *à décider (non appliquée)* (undecided, not applied), then **Enregistrer les décisions** (save decisions).
+
+<DocScreenshot src="web/photos/review" alt="To review tab: reason for each photo and choice of student" />
+
+</Step>
+<Step title="Validate the batch">
+
+Under **Validation du lot**, tick the box confirming you checked that each retained photo is that of the student shown, then **Valider le lot** (validate). **Abandonner le lot** cancels it without saving anything.
+
+<DocScreenshot src="web/photos/validate" alt="Batch validation: number of photos saved, confirmation box, Validate button" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Retained photos are cropped to portrait (3:4) and appear on students' documents, for example school ID cards. Photos left *undecided* are not saved: you can include them in a later batch.
+
+</ExpectedResult>
+
+:::info Privacy
+Photos stay private: only signed-in administrators can see them, and they are embedded in documents when those are produced. Originals are kept. An applied batch can be cancelled: the previous photos come back.
+:::

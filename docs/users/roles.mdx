@@ -1,0 +1,31 @@
+---
+id: roles
+title: "Rôles et accès"
+description: "Les groupes d'utilisateurs, ce que chacun peut faire, et comment rétablir l'accès d'un utilisateur."
+sidebar_position: 2
+keywords: ["rôle", "groupe", "droits", "permissions", "mot de passe oublié", "roles", "permissions", "access"]
+type: concept
+product: ["web"]
+audience: ["school-admin", "direction"]
+availability: available
+estimated_time: "4 min"
+last_verified: 2026-11-18
+translation_key: users/roles
+---
+Les droits sont attribués par **groupe d'utilisateurs** (**Paramètres → Utilisateurs → Groupes d'utilisateurs**).
+
+<DocScreenshot src="web/users/list" alt="Liste des utilisateurs avec leur groupe : Administrateurs Opérationnels, Enseignants" />
+
+| Groupe | Pour qui | Ce qu'il permet |
+|---|---|---|
+| Administrateurs Opérationnels | l'administrateur de la plateforme dans l'établissement | configurer l'établissement : structure, utilisateurs, évaluations, documents |
+| Administrateurs VIP | la direction | consulter l'ensemble des comptes rendus statistiques et des données de l'établissement |
+| Enseignants | les enseignants | saisir les notes de leurs classes et matières, gérer leur profil |
+
+## Un utilisateur ne peut plus se connecter
+
+1. **Paramètres → Utilisateurs → Utilisateurs**, puis **Éditer** sur sa ligne.
+2. Saisissez un nouveau mot de passe provisoire (deux fois), puis **Mettre à jour**.
+3. Remettez-le à l'utilisateur en main propre : il le changera à sa connexion.
+
+Ne communiquez jamais un mot de passe par e-mail ou par messagerie. Voir aussi [problèmes de connexion](/troubleshooting/sign-in).

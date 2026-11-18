@@ -1,0 +1,77 @@
+---
+id: photos
+title: "Importer les photos d'élèves"
+description: "Déposer un ZIP de photos rangé par classe, vérifier la galerie et valider le lot : rien n'est enregistré avant votre validation."
+sidebar_position: 5
+keywords: ["photos", "zip", "lot", "galerie", "carte scolaire", "student photos", "images", "trombinoscope"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "20 min"
+video: importer-photos
+last_verified: 2026-11-18
+translation_key: students/photos
+---
+<Prerequisite>
+
+Les élèves sont déjà enregistrés. Ouvrez **Paramètres → Configuration initiale → Ouvrir**, section **4. Photos d'élèves**, puis **Importer des photos**.
+
+</Prerequisite>
+
+<DocScreenshot src="web/photos/index" alt="Page Photos d'élèves : dépôt d'un ZIP, consignes de préparation et liste des lots" />
+
+## Préparer le ZIP
+
+Un dossier par classe, nommé comme la classe dans ModernSchools ; une photo par élève, nommée par son **nom et ses prénoms**, ou par son **matricule**.
+
+```text
+photos-2026-2027.zip
+├── 6eme/
+│   ├── NOM_PRENOMS.jpg
+│   └── MATRICULE.jpg
+└── Tle D/
+    └── NOM PRENOMS.png
+```
+
+- Formats JPEG, PNG ou WebP ; 15 Mo au plus par photo ; 3 000 photos au plus par lot. Exportez d'abord en JPEG les photos HEIC d'iPhone.
+- Aucune reconnaissance faciale : une photo est rapprochée d'un élève uniquement par le nom du fichier.
+
+<Procedure>
+<Step title="Déposer le ZIP">
+
+Dans **Déposer un ZIP**, choisissez le fichier et envoyez-le. L'analyse se fait en arrière-plan : la page du lot se met à jour d'elle-même. Un seul lot peut être en cours à la fois.
+
+</Step>
+<Step title="Vérifier la table des classes">
+
+Chaque dossier du ZIP est rattaché à une classe de l'année (**automatique** quand le nom correspond). Corrigez la classe dans la liste si nécessaire.
+
+<DocScreenshot src="web/photos/proposed" alt="Lot à vérifier : table des classes, analyse et photos proposées avec l'élève reconnu" />
+
+</Step>
+<Step title="Décider des photos à revoir">
+
+Onglet **À revoir** : nom approchant, plusieurs élèves possibles, aucun élève de la classe, image sans nom d'élève, doublon ou élève ayant déjà une photo. Pour chacune, choisissez l'élève ou laissez *à décider (non appliquée)*, puis **Enregistrer les décisions**.
+
+<DocScreenshot src="web/photos/review" alt="Onglet À revoir : motif de chaque photo et choix de l'élève" />
+
+</Step>
+<Step title="Valider le lot">
+
+Dans **Validation du lot**, cochez **J'ai vérifié la galerie : chaque photo retenue est bien celle de l'élève indiqué**, puis **Valider le lot**. **Abandonner le lot** l'annule sans rien enregistrer.
+
+<DocScreenshot src="web/photos/validate" alt="Validation du lot : nombre de photos enregistrées, case de confirmation, Valider le lot" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Les photos retenues sont recadrées en portrait (3:4) et apparaissent sur les documents des élèves, par exemple les cartes scolaires. Les photos laissées *à décider* ne sont pas enregistrées : vous pourrez les reprendre dans un prochain lot.
+
+</ExpectedResult>
+
+:::info Confidentialité
+Les photos restent privées : elles ne sont visibles que des administrateurs connectés et sont intégrées aux documents au moment de leur production. Les originaux sont conservés. Un lot appliqué peut être annulé : les photos précédentes reviennent.
+:::

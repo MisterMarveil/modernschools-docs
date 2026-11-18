@@ -1,0 +1,111 @@
+openapi: 3.1.0
+info:
+  title: ModernSchools Directory
+  version: 1.0.0
+  summary: Découverte publique des établissements ModernSchools.
+  description: |
+    Servi par le Desk (`https://desk.modernschools.online/api/directory/v1`).
+    Utilisé par le portail commercial (« Trouver mon établissement »,
+    « Mon établissement », `/join/{CODE}`) et par ModernSchools Mobile.
+
+    Lecture seule, sans compte ni cookie, ouvert à toute origine. Seules les
+    écoles publiées par un responsable BRIDGE apparaissent ; seules des
+    métadonnées de découverte sont exposées. L'adresse est celle de
+    l'instance de l'année en cours lorsqu'elle est en service ; tant qu'elle
+    ne l'est pas, aucune adresse n'est donnée (jamais celle d'une année
+    écoulée). Une adresse n'est jamais à reconstruire à partir du code.
+servers:
+  - url: https://desk.modernschools.online/api/directory/v1
+paths:
+  /search:
+    get:
+      summary: Rechercher une école par nom, sigle, ville ou code
+      parameters:
+        - name: q
+          in: query
+          required: true
+          description: Au moins 3 caractères (80 au plus). Insensible à la casse et aux accents.
+          schema: { type: string, minLength: 3, maxLength: 80 }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 20, default: 20 }
+      responses:
+        '200':
+          description: Écoles publiées correspondantes (liste vide si la recherche est trop courte).
+          headers:
+            Cache-Control: { schema: { type: string, example: 'public, max-age=60' } }
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [results, total]
+                properties:
+                  results: { type: array, maxItems: 20, items: { $ref: '#/components/schemas/School' } }
+                  total: { type: integer }
+        '400': { $ref: '#/components/responses/Error' }
+        '429': { $ref: '#/components/responses/Error' }
+  /resolve/{code}:
+    get:
+      summary: Résoudre un code d'école (/join/{CODE})
+      parameters:
+        - name: code
+          in: path
+          required: true
+          description: 3 à 12 caractères A-Z, 0-9, tiret ; insensible à la casse.
+          schema: { type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9-]{2,11}$' }
+      responses:
+        '200':
+          description: École publiée.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/School' }
+        '404': { $ref: '#/components/responses/Error' }
+        '429': { $ref: '#/components/responses/Error' }
+  /logos/{code}.png:
+    get:
+      summary: Logo de l'école (révision d'identité en vigueur)
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Image PNG, mise en cache un jour.
+          content:
+            image/png: {}
+        '404': { $ref: '#/components/responses/Error' }
+components:
+  schemas:
+    School:
+      type: object
+      required: [slug, code, name, country, status]
+      properties:
+        slug: { type: string, example: cbfn }
+        code: { type: string, example: CBFN }
+        name: { type: string, example: Collège Bilingue Fictif de Nkolbisson }
+        shortName: { type: string, example: CBFN }
+        city: { type: string, example: Yaoundé }
+        country: { type: string, description: Code pays ISO 3166-1 alpha-2, example: CM }
+        logoUrl: { type: string, format: uri }
+        status:
+          type: string
+          enum: [active, preparing, suspended, archived]
+          description: |
+            active : instance de l'année en cours en service (url fournie) ;
+            preparing : en cours de mise en service (pas d'url) ;
+            suspended : suspendue (pas d'url) ;
+            archived : seulement des années archivées (url de la plus récente, lecture seule).
+        url: { type: string, format: uri, description: Adresse HTTPS de l'instance, absente si l'école n'est pas joignable. }
+        schoolYear: { type: string, example: 2026-2027 }
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string, enum: [not_found, query_too_long, rate_limited, invalid_request, server] }
+  responses:
+    Error:
+      description: Erreur
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }

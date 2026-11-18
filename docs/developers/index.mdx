@@ -1,0 +1,29 @@
+---
+id: index
+title: "Développeurs"
+description: "Les interfaces publiques de ModernSchools et leurs règles d'usage."
+slug: /developers
+sidebar_position: 1
+keywords: ["api", "intégration", "développeur", "developers", "integration"]
+type: reference
+product: ["api"]
+audience: ["developer"]
+availability: available
+estimated_time: "3 min"
+last_verified: 2026-11-18
+translation_key: developers/index
+---
+ModernSchools expose une interface publique, en lecture seule, destinée aux sites qui aident les visiteurs à trouver leur établissement.
+
+| Interface | Adresse de base | Usage |
+|---|---|---|
+| [Directory v1](/developers/directory-api) | `https://desk.modernschools.online/api/directory/v1` | rechercher un établissement publié, résoudre un code, obtenir son logo |
+
+## Règles
+
+- Lecture seule, sans authentification ni cookie ; CORS ouvert.
+- Limite de 600 requêtes par heure et par adresse IP ; respectez les en-têtes de cache.
+- Aucune donnée d'élève, d'enseignant ni de personne n'est exposée.
+- Les données de l'établissement (notes, élèves, documents) ne sont pas accessibles par ces interfaces.
+
+Une intégration particulière ? Écrivez au [support](/support).

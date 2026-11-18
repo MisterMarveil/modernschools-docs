@@ -1,0 +1,61 @@
+---
+id: add
+title: "Ajouter un élève"
+description: "Créer un dossier élève et l'affecter à une classe."
+sidebar_position: 1
+keywords: ["élève", "inscription", "ajouter", "dossier élève", "apprenant", "student", "étudiant"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "3 min"
+video: ajouter-eleve
+last_verified: 2026-11-18
+translation_key: students/add
+---
+<Procedure>
+<Step title="Ouvrir la gestion des élèves">
+
+**Paramètres → Utilisateurs → Etudiants**, puis **Ajouter**.
+
+<DocScreenshot src="web/students/list" alt="Liste des élèves : nom, prénom, genre, date et lieu de naissance, classe" />
+
+</Step>
+<Step title="Saisir l'identité et la classe">
+
+<DocScreenshot src="web/students/create" alt="Formulaire de création d'un élève, onglet Données personnelles">
+  <Hotspot number={1} x={25} y={29} label="Nom" />
+  <Hotspot number={2} x={25} y={36} label="Prénoms" />
+  <Hotspot number={3} x={17} y={42} label="Genre" />
+  <Hotspot number={4} x={23} y={51} label="Date de naissance" />
+  <Hotspot number={5} x={45} y={27} label="Classe" />
+</DocScreenshot>
+
+Onglet **Données personnelles** : **Nom** (obligatoire), **Prénoms**, **Genre**, **Date de naissance**, **Lieu de naissance**, puis la **Classe** (obligatoire). Indiquez au besoin si l'élève est interne ou redoublant.
+
+</Step>
+<Step title="Compléter (facultatif)">
+
+Onglet **Informations complémentaires** : parents (nom, contact, profession) et localisation (nationalité, adresse, téléphones, e-mails, ville, quartier).
+
+<DocScreenshot src="web/students/create-complement" alt="Onglet Informations complémentaires : données familiales et de localisation" />
+
+</Step>
+<Step title="Enregistrer">
+
+Cliquez sur **Créer** (ou **Créer et ajouter** pour enchaîner avec l'élève suivant).
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+L'élève apparaît dans sa classe ; son **matricule** est attribué automatiquement à l'enregistrement. Son dossier peut être ouvert depuis la liste.
+
+</ExpectedResult>
+
+:::warning Élève similaire
+Si un élève de même nom et même prénom existe déjà, l'enregistrement est refusé : vérifiez d'abord qu'il ne s'agit pas du même élève. Voir [élève en double](/troubleshooting/student-duplicate).
+:::
+
+<RelatedArticles items={[{to: '/students/import', label: 'Importer plusieurs élèves'}, {to: '/students/identity', label: 'Comprendre le matricule unique'}]} />

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ModernSchools">
+  <rect width="64" height="64" rx="14" fill="#0D1B6C"/>
+  <path d="M16 45V19h6.4l9.6 13.4L41.6 19H48v26h-6.6V30.2l-9.4 12.6-9.4-12.6V45H16z" fill="#FFFFFF"/>
+  <path d="M16 47.5h32v3.2H16z" fill="#2EA1FF"/>
+</svg>

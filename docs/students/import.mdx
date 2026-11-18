@@ -1,0 +1,54 @@
+---
+id: import
+title: "Importer plusieurs élèves"
+description: "Importer les listes de classes depuis le fichier modèle Excel, contrôlé en entier avant toute écriture."
+sidebar_position: 4
+keywords: ["importer", "liste", "excel", "élèves", "fichier modèle", "import students", "csv", "xlsx"]
+type: how-to
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "15 min"
+video: importer-eleves
+last_verified: 2026-11-18
+translation_key: students/import
+---
+<Prerequisite>
+
+Les classes existent déjà (voir [configuration initiale](/structure/initial-setup)). Ouvrez **Paramètres → Configuration initiale → Ouvrir**, section **2. Listes d'élèves**.
+
+</Prerequisite>
+
+<DocScreenshot src="web/setup/students-import" alt="Section Listes d'élèves : modèle à télécharger, contrôle et import" />
+
+<Procedure>
+<Step title="Télécharger le modèle">
+
+Cliquez sur **modele-eleves.xlsx**. Le classeur contient la liste de vos classes (feuille *Classes*) : la colonne *Classe* se remplit par liste déroulante.
+
+</Step>
+<Step title="Remplir une ligne par élève">
+
+Obligatoires : **Classe**, **Nom**, **Prénom**, **Sexe (M/F)**. Facultatives : date et lieu de naissance (JJ/MM/AAAA), matricule (vide = attribué automatiquement), redoublant, interne, nationalité, parents et téléphones.
+
+</Step>
+<Step title="Contrôler, puis importer">
+
+Choisissez le fichier (.xlsx ou .csv, 5 Mo au plus) et cliquez sur **Contrôler sans importer**. Si le contrôle est correct, cliquez sur **Importer**.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Un message indique le nombre d'élèves importés et déjà présents. Les élèves apparaissent dans leurs classes avec leur matricule.
+
+</ExpectedResult>
+
+:::info Tout ou rien
+Le fichier est contrôlé **en entier** avant toute écriture : à la moindre erreur (classe inconnue, champ obligatoire vide, date invalide), **rien n'est importé** et chaque ligne fautive est indiquée. Un élève déjà présent (même nom, même prénom) n'est pas recréé : vous pouvez renvoyer un fichier complété.
+:::
+
+:::warning Données personnelles
+Ce fichier contient des données d'élèves mineurs : ne l'envoyez pas par messagerie et supprimez les copies après l'import.
+:::

@@ -1,0 +1,27 @@
+---
+id: import-errors
+title: "Erreurs d'import"
+description: "Pourquoi un fichier d'élèves ou d'enseignants est refusé, et comment le corriger."
+sidebar_position: 5
+keywords: ["import", "erreur", "fichier refusé", "excel", "import error", "file rejected"]
+type: troubleshooting
+product: ["web"]
+audience: ["secretary", "school-admin"]
+availability: available
+estimated_time: "3 min"
+last_verified: 2026-11-18
+translation_key: troubleshooting/import-errors
+---
+Les imports sont contrôlés **en entier** : à la moindre erreur, rien n'est enregistré et chaque ligne fautive est indiquée. Corrigez le fichier, puis cliquez de nouveau sur **Contrôler sans importer**.
+
+| Message | Correction |
+|---|---|
+| Classe inconnue | choisissez la classe dans la liste déroulante du modèle ; ne la tapez pas à la main |
+| Champ obligatoire vide | élèves : classe, nom, prénom, sexe ; enseignants : nom, matière, classes |
+| Date invalide | format JJ/MM/AAAA, par exemple 05/09/2014 |
+| Sexe invalide | M ou F |
+| Fichier trop volumineux ou illisible | .xlsx ou .csv, 5 Mo au plus ; repartez du modèle téléchargé |
+
+:::tip
+Repartez toujours du **modèle téléchargé depuis votre école** : il contient vos classes et vos matières exactes.
+:::

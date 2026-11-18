@@ -1,0 +1,63 @@
+---
+id: sign-in
+title: "Sign in"
+description: "Sign in to your school, and change the default password at first sign-in."
+sidebar_position: 3
+keywords: ["connexion", "mot de passe", "identifiant", "login", "sign in", "password"]
+type: how-to
+product: ["web"]
+audience: ["school-admin", "teacher", "secretary"]
+availability: available
+estimated_time: "3 min"
+video: premiere-connexion
+last_verified: 2026-11-18
+translation_key: getting-started/sign-in
+---
+<Prerequisite>
+
+- Your school's address (otherwise: [find my school](/getting-started/find-school)).
+- Your username and password, given by the school administration. For an imported teacher, the username looks like `SURNAME First name`.
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Enter your username and password">
+
+On your school's sign-in page, enter your **username** and **password**, then confirm.
+
+<DocScreenshot src="web/sign-in/login" alt="School sign-in page: username, password, remember me">
+  <Hotspot number={1} x={48} y={38} label="Username" />
+  <Hotspot number={2} x={48} y={43} label="Password" />
+</DocScreenshot>
+
+</Step>
+<Step title="First sign-in: check your account">
+
+With a default password, ModernSchools opens the account verification screen (**Vérification du compte requise**): the application stays locked until the password is changed.
+
+Check your **surname**, **first name**, **gender** and **language**; the phone number is optional. Enter your **new password** twice, then click **Enregistrer les informations** (save).
+
+<DocScreenshot src="web/sign-in/password-change" alt="Restricted access screen: account check and choice of a new password">
+  <Hotspot number={1} x={55} y={50} label="Your details" />
+  <Hotspot number={2} x={47} y={70} label="Application language" />
+</DocScreenshot>
+
+</Step>
+<Step title="Sign in again">
+
+You are taken back to the sign-in page: sign in with the **new** password.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+You reach the ModernSchools home screen for your role: [understand the home screen](/getting-started/dashboard).
+
+</ExpectedResult>
+
+:::warning Privacy
+Never share your password, with a colleague or with support: ModernSchools support will never ask for it.
+:::
+
+<RelatedArticles items={[{to: '/troubleshooting/sign-in', label: 'Cannot sign in'}, {to: '/users/roles', label: 'Understand roles'}]} />
