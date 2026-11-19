@@ -27,7 +27,7 @@
 
 body { background: var(--ms-bg); }
 .navbar { background: var(--ms-surface); box-shadow: 0 1px 0 var(--ms-line); }
-.navbar__logo img { height: 2.1rem; }
+.navbar__logo img { height: 2rem; width: auto; }
 .navbar__brand::after { content: 'Documentation'; font-weight: 600; color: var(--ms-muted); margin-left: .4rem; font-size: .95rem; }
 html[lang='en'] .navbar__brand::after { content: 'Docs'; }
 h1, h2, h3 { color: var(--ms-primary); }

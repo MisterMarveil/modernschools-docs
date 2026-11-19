@@ -53,5 +53,23 @@
    "/onboarding/new-school"
   ],
   "voice": "Inscrire un établissement. Sur le site officiel, ouvrez Inscrire mon établissement et choisissez Nouvel établissement. Saisissez votre adresse e-mail professionnelle : vous recevez un code à six chiffres pour la vérifier. Remplissez ensuite les six étapes du dossier, à votre rythme : chaque champ est enregistré automatiquement. La dernière étape liste les informations manquantes. Envoyez le dossier : l'équipe BRIDGE l'examine, puis met votre établissement en service."
+ },
+ "saisir-notes": {
+  "title": "Saisir ses notes",
+  "subtitle": "Enseignants : de la connexion à l'enregistrement",
+  "total": 59,
+  "pages": [
+   "/grades/enter-grades"
+  ],
+  "voice": "Saisir ses notes. Connectez-vous à l'adresse de votre école. En haut de l'accueil, choisissez la période d'évaluation, par exemple Trimestre 1, et la langue de l'application avec les drapeaux. Cliquez sur Insertion notes, puis sur votre classe et sur votre matière. Vérifiez le coefficient affiché : s'il vous semble faux, signalez-le à l'administration. Saisissez la compétence attendue, choisissez le type d'évaluation, puis cliquez sur plus. Entrez chaque note sur vingt : l'appréciation se calcule toute seule. Cliquez sur Soumettre. Si aucun coefficient n'est encore défini, ModernSchools vous invite à en suggérer un, que l'administration validera."
+ },
+ "modifier-notes": {
+  "title": "Modifier une fiche de notes",
+  "subtitle": "Enseignants : corriger une note déjà saisie",
+  "total": 54,
+  "pages": [
+   "/grades/edit-grades"
+  ],
+  "voice": "Modifier une fiche de notes. Ouvrez votre classe et votre matière : les fiches déjà saisies apparaissent en tête de colonne. Cliquez sur la fiche à corriger. Si votre établissement a activé la sécurité, un code est demandé. Indiquez le motif, puis demandez un code à l'administration. L'administration génère le code, valable vingt-quatre heures, et vous le transmet. Saisissez-le et validez. Corrigez les notes concernées, puis cliquez sur Soumettre. La suppression d'une fiche entière suit la même démarche."
  }
 }

@@ -65,5 +65,27 @@
     "pages": [
       "/onboarding/new-school"
     ]
+  },
+  "saisir-notes": {
+    "title": {
+      "fr": "Saisir ses notes",
+      "en": "Enter marks (in French)"
+    },
+    "duration": "0:59",
+    "youtube": "",
+    "pages": [
+      "/grades/enter-grades"
+    ]
+  },
+  "modifier-notes": {
+    "title": {
+      "fr": "Modifier une fiche de notes",
+      "en": "Edit a mark sheet (in French)"
+    },
+    "duration": "0:54",
+    "youtube": "",
+    "pages": [
+      "/grades/edit-grades"
+    ]
   }
 }

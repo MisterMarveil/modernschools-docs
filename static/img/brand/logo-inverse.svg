@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="ModernSchools">
-  <g>
-    <rect x="6" y="10" width="40" height="40" rx="10" fill="#2EA1FF" opacity=".35"/>
-    <rect x="2" y="6" width="40" height="40" rx="10" fill="#FFFFFF"/>
-    <path d="M11 38V15h4.6l6.4 9.2L28.4 15H33v23h-4.7V24.6L22 33.6l-6.3-9V38H11z" fill="#0D1B6C"/>
-  </g>
-  <text x="62" y="40" font-family="Poppins, system-ui, sans-serif" font-size="24" font-weight="600" letter-spacing="2.5" fill="#FFFFFF">MODERN SCHOOLS</text>
-</svg>
