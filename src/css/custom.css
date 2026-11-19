@@ -114,3 +114,7 @@ h1, h2, h3 { color: var(--ms-primary); }
 .ms-api__table { font-size: .88rem; display: table; width: 100%; }
 .ms-api__resp { margin-left: .4rem; }
 .ms-videos { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+
+/* Pied de page : bleu de la marque, logo officiel inversé à pleine opacité */
+.footer--dark { --ifm-footer-background-color: var(--ms-primary); }
+.footer__logo { opacity: 1; max-width: 232px; }
