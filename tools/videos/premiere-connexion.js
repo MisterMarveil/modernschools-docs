@@ -48,14 +48,14 @@ window.D = {
   {
    "src": "web/dashboard/admin-home",
    "w": 1600,
-   "h": 640,
+   "h": 1000,
    "dur": 13,
    "text": "Vous arrivez sur l'accueil de votre école",
    "focus": [
-    10,
+    11,
     36,
     78,
-    30
+    26
    ]
   }
  ]
