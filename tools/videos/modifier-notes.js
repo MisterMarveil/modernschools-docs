@@ -54,11 +54,11 @@ window.D = {
    "text": "L'administration génère le code (24 h) et vous le transmet",
    "focus": [
     12,
-    6,
+    8,
     76,
-    22
+    26
    ],
-   "maxZoom": 1.3
+   "maxZoom": 1.25
   },
   {
    "src": "web/grades/security-enter",
