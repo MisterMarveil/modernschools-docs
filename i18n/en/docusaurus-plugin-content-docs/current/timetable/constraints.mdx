@@ -1,0 +1,65 @@
+---
+id: constraints
+title: "Coefficients, weekly hours and expected competences"
+description: "The head of studies sets, per subject and class, the coefficient, the weekly hours and each period's expected competence, and approves the coefficients suggested by teachers."
+sidebar_position: 2
+keywords: ["contraintes", "coefficient", "quota horaire", "compétence attendue", "censeur", "suggestion de coefficient", "constraints", "weekly hours"]
+type: how-to
+product: ["web"]
+audience: ["studies-manager"]
+availability: available
+estimated_time: "10 min"
+video: contraintes
+last_verified: 2026-11-20
+translation_key: timetable/constraints
+---
+<Prerequisite>
+
+An account in the **Responsable des études** (head of studies) group. From the home screen, click **CONSTRAINTS SETTINGS**.
+
+</Prerequisite>
+
+## Coefficient and weekly hours
+
+<Procedure>
+<Step title="Choose the subject and class">
+
+Choose the **subject**, then the **class**: the current **weekly hours** and **coefficient** appear.
+
+<DocScreenshot src="web/constraints/constraints-selected" alt="Constraints: Mathematics, 5eme, weekly hours 4, coefficient 4" />
+
+</Step>
+<Step title="Change">
+
+Change the hours or the coefficient: the value is **saved at once** and a message confirms it. The new coefficient counts in averages and report cards; it is shown at the top of the teacher's mark sheet.
+
+<DocScreenshot src="web/constraints/constraints-quota-saved" alt="Weekly hours set to 5: data saved successfully" />
+
+</Step>
+</Procedure>
+
+## Expected competence
+
+For the chosen subject and class, select the **period** (for example *1st Term*), enter the **expected competence** at the end of the period, then **Sauvegarder** (save). Tick the propagation box to apply it to other classes.
+
+<DocScreenshot src="web/constraints/constraints-competence" alt="Expected competence for the 1st term, propagation box and save button" />
+
+The teacher finds this competence pre-filled on the mark sheet and can refine it.
+
+## Summary
+
+**aperçu** (preview) shows the table of weekly hours (H) and coefficients (C) by subject and class; **Générer le PDF** produces the printable document.
+
+<DocScreenshot src="web/constraints/constraints-preview" alt="Constraints preview: weekly hours and coefficients by subject and class" />
+
+## Approve suggested coefficients
+
+When a teacher [suggests a coefficient](/grades/enter-grades#the-coefficient-is-missing-or-looks-wrong), a window announces it on the head of studies' home screen.
+
+<DocScreenshot src="web/timetable/censeur-home-pending" alt="Pending suggestions window: proceed to validation or later" />
+
+The validation button opens the list: check each value, correct it if needed under **Coefficient validé** (a whole number from 1 to 50), then **Valider les coefficients** (approve).
+
+<DocScreenshot src="web/constraints/coef-pending" alt="Pending coefficient suggestions: teacher, class, subject, suggested and approved coefficient" />
+
+<RelatedArticles items={[{to: '/timetable/build', label: 'Build the timetable'}, {to: '/structure/subjects', label: 'Manage subjects and coefficients'}]} />

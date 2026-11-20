@@ -25,6 +25,7 @@ const sidebars: SidebarsConfig = {
       type: 'category', label: 'Évaluations et notes',
       items: ['evaluations/periods', 'evaluations/configure-periods', 'grades/enter-grades', 'grades/edit-grades'],
     },
+    { type: 'category', label: 'Emplois du temps et contraintes', items: ['timetable/build', 'timetable/constraints'] },
     {
       type: 'category', label: 'Documents',
       link: { type: 'doc', id: 'documents/index' },

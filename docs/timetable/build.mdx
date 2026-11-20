@@ -1,0 +1,67 @@
+---
+id: build
+title: "Construire l'emploi du temps"
+description: "Le responsable des études place les séances de chaque enseignant dans la grille de la semaine, par glisser-déposer."
+sidebar_position: 1
+keywords: ["emploi du temps", "créneau", "censeur", "responsable des études", "logigramme", "timetable", "schedule"]
+type: how-to
+product: ["web"]
+audience: ["studies-manager"]
+availability: available
+estimated_time: "15 min"
+video: emploi-du-temps
+last_verified: 2026-11-20
+translation_key: timetable/build
+---
+<Prerequisite>
+
+Un compte du groupe **Responsable des études** (censeur, préfet des études) : voir [rôles et accès](/users/roles). Les classes, les matières et les enseignants existent déjà (voir la [configuration initiale](/structure/initial-setup)).
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Ouvrir les emplois du temps">
+
+Après la connexion, l'accueil du responsable des études propose **EMPLOIS DU TEMPS**, **CONTRAINTES**, **GESTION ELEVES**, **MES INFORMATIONS** et **SE DÉCONNECTER**. Cliquez sur **EMPLOIS DU TEMPS**.
+
+<DocScreenshot src="web/timetable/censeur-home" alt="Accueil du responsable des études : Emplois du temps, Contraintes, Gestion élèves, Mes informations, Se déconnecter" />
+
+</Step>
+<Step title="Choisir la classe, puis l'enseignant">
+
+À gauche, la liste des **matières** ; au centre, les choix **Classe** et **Enseignants** ; à droite, la **grille de la semaine** (créneaux horaires et pauses). Choisissez la classe : la grille montre toutes ses séances. Choisissez ensuite l'enseignant : seules ses séances dans cette classe restent affichées.
+
+<DocScreenshot src="web/timetable/timetable-loaded" alt="Grille de la semaine pour la classe 5eme et l'enseignant NDZANA Pierre" />
+
+</Step>
+<Step title="Placer les séances">
+
+- **Ajouter** : faites glisser une matière de la liste de gauche vers le créneau voulu.
+- **Déplacer** : faites glisser une séance d'un créneau à un autre.
+- **Supprimer** : faites-la glisser dans la **Zone de suppression**, sous la grille.
+
+Les créneaux de pause ne reçoivent pas de séance.
+
+<DocScreenshot src="web/timetable/timetable-dragged" alt="Séances de mathématiques déplacées au mardi et ajoutées au jeudi" />
+
+</Step>
+<Step title="Sauvegarder">
+
+Cliquez sur **Sauvegarder**. La grille de l'enseignant pour cette classe remplace la précédente.
+
+<DocScreenshot src="web/timetable/timetable-saved" alt="Confirmation : données sauvegardées avec succès" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Un message confirme l'enregistrement. L'enseignant retrouve cette classe et cette matière dans la [saisie des notes](/grades/enter-grades) : seul un enseignant présent dans l'emploi du temps d'une classe peut y saisir des notes.
+
+</ExpectedResult>
+
+:::info Emploi du temps provisoire
+L'[import des enseignants](/users/create-teacher) crée une séance par classe et par matière, le lundi : c'est ce qui ouvre la saisie des notes. Réorganisez ensuite ces séances ici.
+:::
+
+<RelatedArticles items={[{to: '/timetable/constraints', label: 'Coefficients, quotas horaires et compétences attendues'}, {to: '/users/roles', label: 'Rôles et accès'}]} />

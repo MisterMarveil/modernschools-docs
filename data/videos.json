@@ -87,5 +87,39 @@
     "pages": [
       "/grades/edit-grades"
     ]
+  },
+  "enseignant-connexion": {
+    "title": {
+      "fr": "Enseignant : première connexion",
+      "en": "Teacher: first sign-in (in French)"
+    },
+    "duration": "0:48",
+    "youtube": "",
+    "pages": [
+      "/getting-started/sign-in",
+      "/getting-started/my-profile"
+    ]
+  },
+  "emploi-du-temps": {
+    "title": {
+      "fr": "Construire l'emploi du temps",
+      "en": "Build the timetable (in French)"
+    },
+    "duration": "0:46",
+    "youtube": "",
+    "pages": [
+      "/timetable/build"
+    ]
+  },
+  "contraintes": {
+    "title": {
+      "fr": "Coefficients, quotas et compétences",
+      "en": "Coefficients, weekly hours and competences (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "",
+    "pages": [
+      "/timetable/constraints"
+    ]
   }
 }

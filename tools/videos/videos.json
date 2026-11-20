@@ -71,5 +71,33 @@
    "/grades/edit-grades"
   ],
   "voice": "Modifier une fiche de notes. Ouvrez votre classe et votre matière : les fiches déjà saisies apparaissent en tête de colonne. Cliquez sur la fiche à corriger. Si votre établissement a activé la sécurité, un code est demandé. Indiquez le motif, puis demandez un code à l'administration. L'administration génère le code, valable vingt-quatre heures, et vous le transmet. Saisissez-le et validez. Corrigez les notes concernées, puis cliquez sur Soumettre. La suppression d'une fiche entière suit la même démarche."
+ },
+ "enseignant-connexion": {
+  "title": "Enseignant : première connexion",
+  "subtitle": "Se connecter, sécuriser son compte, choisir la langue",
+  "total": 48,
+  "pages": [
+   "/getting-started/sign-in",
+   "/getting-started/my-profile"
+  ],
+  "voice": "Première connexion de l'enseignant. Ouvrez l'adresse de votre école et saisissez l'identifiant et le mot de passe provisoire remis par l'administration. À la première connexion, ModernSchools vous demande de vérifier vos informations, puis de choisir votre propre mot de passe. Sur l'accueil, choisissez la période d'évaluation et la langue de l'application. Mes informations vous permet de changer votre langue préférée, votre photo et votre mot de passe. Insertion notes ouvre la saisie. Sur un ordinateur partagé, pensez à vous déconnecter."
+ },
+ "emploi-du-temps": {
+  "title": "Construire l'emploi du temps",
+  "subtitle": "Responsable des études (censeur)",
+  "total": 46,
+  "pages": [
+   "/timetable/build"
+  ],
+  "voice": "Construire l'emploi du temps. Connectez-vous avec le compte du responsable des études et ouvrez Emplois du temps. À gauche, les matières ; à droite, la grille de la semaine. Choisissez la classe, puis l'enseignant : ses créneaux dans cette classe s'affichent. Glissez une matière sur le créneau voulu ; déplacez une séance en la faisant glisser, ou supprimez-la dans la zone de suppression. Cliquez sur Sauvegarder. Chaque enseignant retrouve ensuite ses classes et ses matières dans la saisie des notes."
+ },
+ "contraintes": {
+  "title": "Coefficients, quotas et compétences",
+  "subtitle": "Responsable des études : gérer les contraintes",
+  "total": 58,
+  "pages": [
+   "/timetable/constraints"
+  ],
+  "voice": "Gérer les contraintes. Depuis l'accueil du responsable des études, ouvrez Contraintes. Choisissez une matière et une classe : le quota horaire hebdomadaire et le coefficient s'affichent. Modifiez-les : la valeur est enregistrée aussitôt. Indiquez aussi la compétence attendue pour chaque période, et propagez-la si besoin aux autres classes. Aperçu et Générer le PDF produisent le récapitulatif. Quand un enseignant suggère un coefficient, ModernSchools vous l'annonce dès l'accueil : vérifiez la valeur, ajustez-la si nécessaire, puis validez."
  }
 }

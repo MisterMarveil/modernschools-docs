@@ -1,0 +1,67 @@
+---
+id: build
+title: "Build the timetable"
+description: "The head of studies places each teacher's sessions in the weekly grid, by drag and drop."
+sidebar_position: 1
+keywords: ["emploi du temps", "créneau", "censeur", "responsable des études", "logigramme", "timetable", "schedule"]
+type: how-to
+product: ["web"]
+audience: ["studies-manager"]
+availability: available
+estimated_time: "15 min"
+video: emploi-du-temps
+last_verified: 2026-11-20
+translation_key: timetable/build
+---
+<Prerequisite>
+
+An account in the **Responsable des études** (head of studies) group: see [roles and access](/users/roles). Classes, subjects and teachers already exist (see the [initial setup](/structure/initial-setup)).
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Open timetables">
+
+After signing in, the head of studies' home offers **TIMETABLE BUILDING**, **CONSTRAINTS SETTINGS**, **STUDENT MANAGEMENT**, **MY PROFILE** and **LOGOUT**. Click **TIMETABLE BUILDING**.
+
+<DocScreenshot src="web/timetable/censeur-home" alt="Head of studies home: timetable building, constraints settings, student management, my profile, logout" />
+
+</Step>
+<Step title="Choose the class, then the teacher">
+
+On the left, the **subjects**; in the centre, the **Class** and **Teachers** choices; on the right, the **weekly grid** (time slots and breaks). Choose the class: the grid shows all its sessions. Then choose the teacher: only their sessions in that class remain.
+
+<DocScreenshot src="web/timetable/timetable-loaded" alt="Weekly grid for class 5eme and teacher NDZANA Pierre" />
+
+</Step>
+<Step title="Place the sessions">
+
+- **Add**: drag a subject from the left-hand list onto the slot.
+- **Move**: drag a session from one slot to another.
+- **Remove**: drag it into the **Zone de suppression** (delete zone) below the grid.
+
+Break slots cannot hold a session.
+
+<DocScreenshot src="web/timetable/timetable-dragged" alt="Mathematics sessions moved to Tuesday and added on Thursday" />
+
+</Step>
+<Step title="Save">
+
+Click **Sauvegarder** (save). The teacher's grid for this class replaces the previous one.
+
+<DocScreenshot src="web/timetable/timetable-saved" alt="Confirmation: data saved successfully" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+A message confirms the save. The teacher finds this class and subject in [mark entry](/grades/enter-grades): only a teacher who appears in a class's timetable can enter marks for it.
+
+</ExpectedResult>
+
+:::info Provisional timetable
+The [teacher import](/users/create-teacher) creates one session per class and subject, on Monday: that is what opens mark entry. Rearrange those sessions here afterwards.
+:::
+
+<RelatedArticles items={[{to: '/timetable/constraints', label: 'Coefficients, weekly hours and expected competences'}, {to: '/users/roles', label: 'Roles and access'}]} />
