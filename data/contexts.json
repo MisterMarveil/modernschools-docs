@@ -13,5 +13,8 @@
   "REPORT-CARDS": "/documents/report-cards",
   "ID-CARDS": "/documents/id-cards",
   "CLASS-COUNCIL": "/class-council/run",
-  "DIRECTORY-API": "/developers/directory-api"
+  "DIRECTORY-API": "/developers/directory-api",
+  "GRADES-EDIT": "/grades/edit-grades",
+  "TIMETABLE": "/timetable/build",
+  "CONSTRAINTS": "/timetable/constraints"
 }

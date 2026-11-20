@@ -1,59 +1,78 @@
 ---
 id: enter-grades
 title: "Enter marks"
-description: "The teacher chooses a class and subject, then enters the marks for an assessment."
+description: "The teacher chooses the period, class and subject, states the expected competence and enters the marks for an assessment."
 sidebar_position: 1
-keywords: ["notes", "saisie", "évaluation", "compétence", "marks", "grades", "insertion"]
+keywords: ["notes", "saisie", "évaluation", "compétence attendue", "coefficient", "période", "marks", "grades", "insertion"]
 type: how-to
 product: ["web"]
 audience: ["teacher"]
 availability: available
 estimated_time: "10 min"
 video: saisir-notes
-last_verified: 2026-11-18
+last_verified: 2026-11-19
 translation_key: grades/enter-grades
 ---
 <Prerequisite>
 
-A teacher account assigned to the class and subject, and a period whose deadline has not passed.
+A teacher account assigned to the class and subject (see [create teacher accounts](/users/create-teacher)), and a period whose mark-entry deadline has not passed.
 
 </Prerequisite>
 
 <Procedure>
-<Step title="Open mark entry">
+<Step title="Choose the period and language">
 
-After signing in, click **INSERTION NOTES** (mark entry).
+After [signing in](/getting-started/sign-in), the teacher home shows the **assessment period** (for example *1st Term*) and the **French / English** flags, which change the application language, at the top right. Choose the period before opening mark entry.
 
-<DocScreenshot src="web/grades/teacher-home" alt="Teacher home: mark entry, my information, sign out" />
+<DocScreenshot src="web/grades/teacher-home" alt="Teacher home: assessment period and language at the top right; Marks insertion, My profile, Logout">
+  <Hotspot number={1} x={75} y={4.5} label="Period and language" />
+  <Hotspot number={2} x={24} y={41} label="Marks insertion" />
+</DocScreenshot>
 
 </Step>
 <Step title="Choose the class, then the subject">
 
-The tiles show your classes; choose the class, then the subject.
+Click **MARKS INSERTION**: your classes appear. Choose the class, then the subject.
 
 <DocScreenshot src="web/grades/teacher-classes" alt="Teacher's class tiles" />
 
 </Step>
-<Step title="Prepare the assessment">
+<Step title="Check the coefficient and enter the expected competence">
 
-The header shows the class, period, subject and its coefficient. Fill in **Compétence attendue** (expected competence), choose the **assessment type** (for example *Evaluation Harmonisée 1*), then click **+** to open the mark sheet.
+The header shows the class, period, subject and its **coefficient**. Enter the **expected competence** for the assessment (*Compétence attendue*): it is saved for the class, subject and period, and suggested for the next sheet.
 
-<DocScreenshot src="web/grades/grade-sheet" alt="Entry mode: marks in 5eme, Term 1, Mathematics coefficient 4; expected competence and assessment type" />
+<DocScreenshot src="web/grades/sheet-competence" alt="Sheet header: entry mode, 5eme, 1st Term, Mathematics, COEF 4; expected competence filled in" />
 
 </Step>
-<Step title="Enter and save">
+<Step title="Choose the assessment type and open the sheet">
 
-Enter each student's mark, then save.
+Choose the **assessment type** (for example *Harmonized Evaluation 1*), then click **+**.
+
+<DocScreenshot src="web/grades/grade-sheet" alt="Assessment type and + button to open a new sheet" />
+
+</Step>
+<Step title="Enter the marks and submit">
+
+Enter each student's mark **out of 20** (to the quarter point). The **appraisal** is computed from the school's grid. The icon next to the mark flags a student as **absent**. Click **Soumettre** (submit).
+
+<DocScreenshot src="web/grades/grade-filled" alt="Mark sheet: one mark out of 20 per student, appraisal and remark computed" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Marks count towards the period averages and report cards.
+A message confirms the marks were saved. The sheet now appears as a column header when you reopen the class and subject.
+
+<DocScreenshot src="web/grades/grade-saved" alt="Confirmation that the marks were saved" />
 
 </ExpectedResult>
 
-:::info Coefficient
-If the coefficient shown seems wrong, tell the administration before entering marks.
-:::
+## The coefficient is missing or looks wrong
+
+- **Wrong coefficient**: tell the administration before entering marks; it corrects it.
+- **No coefficient** for the subject in this class: ModernSchools lets you **suggest a coefficient**. Enter the value, then **Soumettre la suggestion** (submit). It applies at once so you can enter marks, and remains subject to the [head of studies'](/timetable/constraints#approve-suggested-coefficients) approval.
+
+<DocScreenshot src="web/grades/coefficient-suggestion" alt="Coefficient not configured: coefficient suggestion form" />
+
+<RelatedArticles items={[{to: '/grades/edit-grades', label: 'Edit a mark sheet'}, {to: '/evaluations/periods', label: 'Understand assessment periods'}]} />

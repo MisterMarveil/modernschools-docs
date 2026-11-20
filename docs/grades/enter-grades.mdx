@@ -1,59 +1,78 @@
 ---
 id: enter-grades
 title: "Saisir les notes"
-description: "L'enseignant choisit sa classe et sa matière, puis saisit les notes d'une évaluation."
+description: "L'enseignant choisit la période, sa classe et sa matière, indique la compétence attendue et saisit les notes d'une évaluation."
 sidebar_position: 1
-keywords: ["notes", "saisie", "évaluation", "compétence", "marks", "grades", "insertion"]
+keywords: ["notes", "saisie", "évaluation", "compétence attendue", "coefficient", "période", "marks", "grades", "insertion"]
 type: how-to
 product: ["web"]
 audience: ["teacher"]
 availability: available
 estimated_time: "10 min"
 video: saisir-notes
-last_verified: 2026-11-18
+last_verified: 2026-11-19
 translation_key: grades/enter-grades
 ---
 <Prerequisite>
 
-Un compte enseignant affecté à la classe et à la matière, et une période dont la date limite n'est pas dépassée.
+Un compte enseignant affecté à la classe et à la matière (voir [créer les comptes enseignants](/users/create-teacher)), et une période dont la date limite de saisie n'est pas dépassée.
 
 </Prerequisite>
 
 <Procedure>
-<Step title="Ouvrir la saisie">
+<Step title="Choisir la période et la langue">
 
-Après la connexion, cliquez sur **INSERTION NOTES**.
+Après la [connexion](/getting-started/sign-in), l'accueil enseignant affiche en haut à droite la **période d'évaluation** (par exemple *Trimestre 1*) et les drapeaux **français / anglais**, qui changent la langue de l'application. Choisissez la période avant d'ouvrir la saisie.
 
-<DocScreenshot src="web/grades/teacher-home" alt="Accueil enseignant : Insertion notes, Mes informations, Se déconnecter" />
+<DocScreenshot src="web/grades/teacher-home" alt="Accueil enseignant : période d'évaluation et langue en haut à droite ; Insertion notes, Mes informations, Se déconnecter">
+  <Hotspot number={1} x={75} y={4.5} label="Période et langue" />
+  <Hotspot number={2} x={24} y={41} label="Insertion notes" />
+</DocScreenshot>
 
 </Step>
 <Step title="Choisir la classe, puis la matière">
 
-Les tuiles montrent vos classes ; choisissez la classe puis la matière.
+Cliquez sur **INSERTION NOTES** : vos classes s'affichent. Choisissez la classe, puis la matière.
 
 <DocScreenshot src="web/grades/teacher-classes" alt="Tuiles des classes de l'enseignant" />
 
 </Step>
-<Step title="Préparer l'évaluation">
+<Step title="Vérifier le coefficient et saisir la compétence attendue">
 
-L'en-tête rappelle la classe, la période, la matière et son coefficient. Indiquez la **Compétence attendue**, choisissez le **type d'évaluation** (par exemple *Evaluation Harmonisée 1*), puis cliquez sur **+** pour ouvrir la fiche de notes.
+L'en-tête rappelle la classe, la période, la matière et son **coefficient**. Saisissez la **compétence attendue** de l'évaluation : elle est enregistrée pour la classe, la matière et la période, et proposée à la fiche suivante.
 
-<DocScreenshot src="web/grades/grade-sheet" alt="Mode Insertion : notes en 5eme, Trimestre 1, Mathématiques coefficient 4 ; compétence attendue et type d'évaluation" />
+<DocScreenshot src="web/grades/sheet-competence" alt="En-tête de la fiche : Mode Insertion, 5eme, Trimestre 1, Mathématiques, COEF 4 ; champ Compétence attendue rempli" />
 
 </Step>
-<Step title="Saisir et enregistrer">
+<Step title="Choisir le type d'évaluation et ouvrir la fiche">
 
-Saisissez la note de chaque élève, puis enregistrez.
+Choisissez le **type d'évaluation** (par exemple *Evaluation Harmonisée 1*), puis cliquez sur **+**.
+
+<DocScreenshot src="web/grades/grade-sheet" alt="Type d'évaluation et bouton + pour ouvrir une nouvelle fiche" />
+
+</Step>
+<Step title="Saisir les notes et soumettre">
+
+Saisissez la note de chaque élève, **sur 20** (au quart de point près). L'**appréciation** se calcule d'après la grille de l'établissement. L'icône à côté de la note marque un élève **absent**. Cliquez sur **Soumettre**.
+
+<DocScreenshot src="web/grades/grade-filled" alt="Fiche de notes : une note sur 20 par élève, appréciation et observation calculées" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Les notes sont prises en compte dans les moyennes de la période et dans les bulletins.
+Un message confirme l'enregistrement (« Bravo !!! Les notes de Trimestre 1 - Evaluation Harmonisée 1 N°1 en 5eme ont été enregistré avec succès »). La fiche apparaît désormais en tête de colonne quand vous rouvrez la classe et la matière.
+
+<DocScreenshot src="web/grades/grade-saved" alt="Confirmation de l'enregistrement des notes" />
 
 </ExpectedResult>
 
-:::info Coefficient
-Si le coefficient affiché ne vous semble pas correct, signalez-le à l'administration avant de saisir.
-:::
+## Le coefficient n'est pas défini ou semble faux
+
+- **Coefficient faux** : signalez-le à l'administration avant de saisir ; c'est elle qui le corrige.
+- **Aucun coefficient** pour la matière dans cette classe : ModernSchools vous propose de **suggérer un coefficient**. Saisissez la valeur, puis **Soumettre la suggestion**. Elle s'applique aussitôt pour vous permettre de saisir, et reste soumise à la validation du [responsable des études](/timetable/constraints#valider-les-coefficients-suggérés).
+
+<DocScreenshot src="web/grades/coefficient-suggestion" alt="Coefficient non configuré : formulaire Suggestion de coefficient" />
+
+<RelatedArticles items={[{to: '/grades/edit-grades', label: 'Modifier une fiche de notes'}, {to: '/evaluations/periods', label: "Comprendre les périodes d'évaluation"}]} />

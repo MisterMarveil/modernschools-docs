@@ -46,5 +46,9 @@
   "sidebar.documentation.category.Développeurs": {
     "message": "Developers",
     "description": "The label for category Développeurs in sidebar documentation"
+  },
+  "sidebar.documentation.category.Emplois du temps et contraintes": {
+    "message": "Timetables and constraints",
+    "description": "The label for category Emplois du temps et contraintes in sidebar documentation"
   }
 }

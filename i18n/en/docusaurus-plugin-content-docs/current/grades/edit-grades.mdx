@@ -1,0 +1,68 @@
+---
+id: edit-grades
+title: "Edit a mark sheet"
+description: "Correct marks already saved; depending on the school's settings, a security code issued by the administration is required."
+sidebar_position: 2
+keywords: ["modifier", "corriger", "note", "fiche", "code de sécurité", "supprimer", "edit marks", "correction"]
+type: how-to
+product: ["web"]
+audience: ["teacher"]
+availability: available
+estimated_time: "5 min"
+video: modifier-notes
+last_verified: 2026-11-19
+translation_key: grades/edit-grades
+---
+<Procedure>
+<Step title="Open the sheet to correct">
+
+Open the class and subject as when [entering marks](/grades/enter-grades). Saved sheets appear **as column headers** (for example *Harmonized Examination 1 N°1*). Click the name of the sheet to correct.
+
+<DocScreenshot src="web/grades/sheet-existing" alt="Saved sheet: its name in the column header opens it for editing" />
+
+</Step>
+<Step title="Request a security code">
+
+If the school has enabled sheet security, a window asks for a **security code**. Without a code, enter the **reason** for the correction, then click the button requesting a code from the administration.
+
+<DocScreenshot src="web/grades/security-request" alt="Security code window: reason for the request and request button" />
+
+</Step>
+<Step title="Receive the code">
+
+The administration sees your request, **generates the code** (valid 24 hours) and gives it to you.
+
+<DocScreenshot src="web/grades/security-admin" alt="Administration screen: the teacher's request and the generated code" />
+
+</Step>
+<Step title="Enter the code">
+
+Reopen the sheet, enter the code under **Fournir le code de sécurité** (provide the security code), then **valider** (validate).
+
+<DocScreenshot src="web/grades/security-enter" alt="Entering the security code received" />
+
+</Step>
+<Step title="Correct and submit">
+
+The sheet opens in **edit mode**. Correct the marks concerned, then click **Soumettre** (submit). The **changer l'id de la fiche** button also lets you change the sheet's assessment type or position.
+
+<DocScreenshot src="web/grades/sheet-edit" alt="Edit mode: editable marks, button to change the sheet id" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+A message confirms the update; averages and report cards use the new marks. The code used can no longer be used.
+
+</ExpectedResult>
+
+## Delete a whole sheet
+
+The **delete** link under the sheet name follows the same process: a security code is required for the *delete* action. Deleting removes all the sheet's marks.
+
+:::info For the administration
+Code requests are handled on the security code requests screen. In manual sending mode, copy the code and give it to the teacher; do not share it further.
+:::
+
+<RelatedArticles items={[{to: '/grades/enter-grades', label: 'Enter marks'}, {to: '/documents/report-cards', label: 'Generate report cards'}]} />

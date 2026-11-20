@@ -1,0 +1,68 @@
+---
+id: edit-grades
+title: "Modifier une fiche de notes"
+description: "Corriger des notes déjà enregistrées ; selon les réglages de l'établissement, un code de sécurité délivré par l'administration est demandé."
+sidebar_position: 2
+keywords: ["modifier", "corriger", "note", "fiche", "code de sécurité", "supprimer", "edit marks", "correction"]
+type: how-to
+product: ["web"]
+audience: ["teacher"]
+availability: available
+estimated_time: "5 min"
+video: modifier-notes
+last_verified: 2026-11-19
+translation_key: grades/edit-grades
+---
+<Procedure>
+<Step title="Ouvrir la fiche à corriger">
+
+Ouvrez la classe et la matière comme pour [saisir les notes](/grades/enter-grades). Les fiches déjà enregistrées apparaissent **en tête de colonne** (par exemple *Evaluation Harmonisée 1 N°1*). Cliquez sur le nom de la fiche à corriger.
+
+<DocScreenshot src="web/grades/sheet-existing" alt="Fiche enregistrée : son nom en tête de colonne permet de la modifier" />
+
+</Step>
+<Step title="Demander un code de sécurité">
+
+Si l'établissement a activé la sécurité des fiches, une fenêtre demande un **code de sécurité**. Sans code, indiquez le **motif** de la correction, puis cliquez sur **Souhaitez-vous recevoir un code de l'admin ?**.
+
+<DocScreenshot src="web/grades/security-request" alt="Fenêtre Code de sécurité : motif de la demande et bouton de demande de code" />
+
+</Step>
+<Step title="Recevoir le code">
+
+L'administration voit votre demande, **génère le code** (valable 24 heures) et vous le transmet.
+
+<DocScreenshot src="web/grades/security-admin" alt="Écran de l'administration : demande de l'enseignant et code généré" />
+
+</Step>
+<Step title="Saisir le code">
+
+Rouvrez la fiche, saisissez le code dans **Fournir le code de sécurité**, puis **valider**.
+
+<DocScreenshot src="web/grades/security-enter" alt="Saisie du code de sécurité reçu" />
+
+</Step>
+<Step title="Corriger et soumettre">
+
+La fiche s'ouvre en **Mode Edition**. Corrigez les notes concernées, puis cliquez sur **Soumettre**. Le bouton **changer l'id de la fiche** permet aussi de changer son type d'évaluation ou son rang.
+
+<DocScreenshot src="web/grades/sheet-edit" alt="Mode Edition : notes modifiables, bouton changer l'id de la fiche" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Un message confirme l'enregistrement ; les moyennes et les bulletins tiennent compte des nouvelles notes. Le code utilisé ne sert plus.
+
+</ExpectedResult>
+
+## Supprimer une fiche entière
+
+Le lien **Supprimer** sous le nom de la fiche suit la même démarche : un code de sécurité est demandé pour l'action *supprimer*. La suppression retire toutes les notes de la fiche.
+
+:::info Pour l'administration
+Les demandes de code se traitent dans l'écran des demandes de code de sécurité. En mode d'envoi manuel, copiez le code et transmettez-le à l'enseignant ; ne le diffusez pas plus largement.
+:::
+
+<RelatedArticles items={[{to: '/grades/enter-grades', label: 'Saisir les notes'}, {to: '/documents/report-cards', label: 'Générer les bulletins'}]} />

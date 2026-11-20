@@ -130,7 +130,7 @@ export function MiniTutorial({ id }: { id: string }) {
   const locale = useLocale();
   const [open, setOpen] = useState(false);
   const v = VIDEOS[id];
-  const poster = useBaseUrl(v?.poster ?? '/img/brand/favicon.svg');
+  const poster = useBaseUrl(v?.poster ?? '/img/brand/og-docs.png');
   const file = useBaseUrl(v?.file ?? '');
   if (!v || (!v.youtube && !v.file)) return null;
   const title = v.title[locale] ?? v.title.fr;

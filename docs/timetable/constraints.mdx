@@ -1,0 +1,65 @@
+---
+id: constraints
+title: "Coefficients, quotas horaires et compétences attendues"
+description: "Le responsable des études fixe, par matière et par classe, le coefficient, le quota horaire hebdomadaire et la compétence attendue de chaque période, et valide les coefficients suggérés par les enseignants."
+sidebar_position: 2
+keywords: ["contraintes", "coefficient", "quota horaire", "compétence attendue", "censeur", "suggestion de coefficient", "constraints", "weekly hours"]
+type: how-to
+product: ["web"]
+audience: ["studies-manager"]
+availability: available
+estimated_time: "10 min"
+video: contraintes
+last_verified: 2026-11-20
+translation_key: timetable/constraints
+---
+<Prerequisite>
+
+Un compte du groupe **Responsable des études**. Depuis l'accueil, cliquez sur **CONTRAINTES**.
+
+</Prerequisite>
+
+## Coefficient et quota horaire
+
+<Procedure>
+<Step title="Choisir la matière et la classe">
+
+Choisissez la **matière**, puis la **classe** : le **quota horaire** hebdomadaire et le **coefficient** en vigueur s'affichent.
+
+<DocScreenshot src="web/constraints/constraints-selected" alt="Gestion des contraintes : Mathématiques, 5eme, quota horaire 4, coefficient 4" />
+
+</Step>
+<Step title="Modifier">
+
+Changez le quota ou le coefficient : la valeur est **enregistrée aussitôt** et un message le confirme. Le nouveau coefficient compte dans les moyennes et les bulletins ; il s'affiche en tête de la fiche de notes de l'enseignant.
+
+<DocScreenshot src="web/constraints/constraints-quota-saved" alt="Quota horaire passé à 5 : données sauvegardées avec succès" />
+
+</Step>
+</Procedure>
+
+## Compétence attendue
+
+Pour la matière et la classe choisies, sélectionnez la **période** (par exemple *Trimestre 1*), saisissez la **compétence attendue** à la fin de la période, puis **Sauvegarder**. Cochez **Propager la compétence à d'autres classes ?** pour l'appliquer aux autres classes.
+
+<DocScreenshot src="web/constraints/constraints-competence" alt="Compétence attendue pour le Trimestre 1, case de propagation et bouton Sauvegarder" />
+
+L'enseignant retrouve cette compétence pré-remplie sur sa fiche de notes ; il peut la préciser.
+
+## Récapitulatif
+
+**aperçu** affiche le tableau des quotas horaires (H) et coefficients (C) par matière et par classe ; **Générer le PDF** produit le document à imprimer.
+
+<DocScreenshot src="web/constraints/constraints-preview" alt="Prévisualisation des contraintes : quotas horaires et coefficients par matière et par classe" />
+
+## Valider les coefficients suggérés
+
+Quand un enseignant [suggère un coefficient](/grades/enter-grades#le-coefficient-nest-pas-défini-ou-semble-faux), une fenêtre l'annonce dès l'accueil du responsable des études.
+
+<DocScreenshot src="web/timetable/censeur-home-pending" alt="Fenêtre Suggestions en attente : procéder à la validation ou plus tard" />
+
+**Procéder à la validation** ouvre la liste : vérifiez chaque valeur, corrigez-la au besoin dans **Coefficient validé** (entier de 1 à 50), puis **Valider les coefficients**.
+
+<DocScreenshot src="web/constraints/coef-pending" alt="Suggestions de coefficients en attente : enseignant, classe, matière, coefficient suggéré et validé" />
+
+<RelatedArticles items={[{to: '/timetable/build', label: "Construire l'emploi du temps"}, {to: '/structure/subjects', label: 'Gérer les matières et coefficients'}]} />

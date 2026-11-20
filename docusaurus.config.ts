@@ -13,7 +13,7 @@ import contexts from './data/contexts.json';
 const config: Config = {
   title: 'ModernSchools Documentation',
   tagline: "L'école, mieux pilotée.",
-  favicon: 'img/brand/favicon.svg',
+  favicon: 'img/brand/favicon.ico',
   url: 'https://docs.modernschools.online',
   baseUrl: '/',
   trailingSlash: false,
@@ -33,6 +33,7 @@ const config: Config = {
   onBrokenMarkdownLinks: 'throw',
 
   headTags: [
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', href: '/img/brand/apple-touch-icon.png' } },
     { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
     { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' } },
     { tagName: 'link', attributes: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' } },
@@ -71,7 +72,7 @@ const config: Config = {
     metadata: [{ name: 'theme-color', content: '#0D1B6C' }],
     colorMode: { defaultMode: 'light', respectPrefersColorScheme: false, disableSwitch: true },
     navbar: {
-      logo: { alt: 'ModernSchools', src: 'img/brand/logo.svg', href: '/' },
+      logo: { alt: 'ModernSchools', src: 'img/brand/logo.png', href: '/', width: 186, height: 32 },
       items: [
         { type: 'docSidebar', sidebarId: 'documentation', position: 'left', label: 'Guides' },
         { to: '/videos', label: 'Tutoriels vidéo', position: 'left' },
@@ -84,6 +85,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      logo: { alt: 'ModernSchools', src: 'img/brand/logo-inverse.png', href: 'https://www.modernschools.online', width: 232, height: 40 },
       links: [
         {
           title: 'Documentation',

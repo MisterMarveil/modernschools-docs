@@ -65,5 +65,61 @@
     "pages": [
       "/onboarding/new-school"
     ]
+  },
+  "saisir-notes": {
+    "title": {
+      "fr": "Saisir ses notes",
+      "en": "Enter marks (in French)"
+    },
+    "duration": "0:59",
+    "youtube": "",
+    "pages": [
+      "/grades/enter-grades"
+    ]
+  },
+  "modifier-notes": {
+    "title": {
+      "fr": "Modifier une fiche de notes",
+      "en": "Edit a mark sheet (in French)"
+    },
+    "duration": "0:54",
+    "youtube": "",
+    "pages": [
+      "/grades/edit-grades"
+    ]
+  },
+  "enseignant-connexion": {
+    "title": {
+      "fr": "Enseignant : première connexion",
+      "en": "Teacher: first sign-in (in French)"
+    },
+    "duration": "0:48",
+    "youtube": "",
+    "pages": [
+      "/getting-started/sign-in",
+      "/getting-started/my-profile"
+    ]
+  },
+  "emploi-du-temps": {
+    "title": {
+      "fr": "Construire l'emploi du temps",
+      "en": "Build the timetable (in French)"
+    },
+    "duration": "0:46",
+    "youtube": "",
+    "pages": [
+      "/timetable/build"
+    ]
+  },
+  "contraintes": {
+    "title": {
+      "fr": "Coefficients, quotas et compétences",
+      "en": "Coefficients, weekly hours and competences (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "",
+    "pages": [
+      "/timetable/constraints"
+    ]
   }
 }
