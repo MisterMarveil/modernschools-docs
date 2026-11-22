@@ -99,5 +99,50 @@
    "/timetable/constraints"
   ],
   "voice": "Gérer les contraintes. Depuis l'accueil du responsable des études, ouvrez Contraintes. Choisissez une matière et une classe : le quota horaire hebdomadaire et le coefficient s'affichent. Modifiez-les : la valeur est enregistrée aussitôt. Indiquez aussi la compétence attendue pour chaque période, et propagez-la si besoin aux autres classes. Aperçu et Générer le PDF produisent le récapitulatif. Quand un enseignant suggère un coefficient, ModernSchools vous l'annonce dès l'accueil : vérifiez la valeur, ajustez-la si nécessaire, puis validez."
+ },
+ "creer-utilisateur": {
+  "title": "Créer un compte utilisateur",
+  "subtitle": "Administration : un enseignant, un comptable, un censeur…",
+  "total": 57,
+  "pages": [
+   "/users/create-teacher"
+  ],
+  "voice": "Créer un compte utilisateur. Dans Paramètres, Utilisateurs, ouvrez la liste des utilisateurs et cliquez sur Ajouter. Renseignez le nom, les prénoms, le genre et le nom d'utilisateur, celui qui servira à se connecter. Laissez le mot de passe vide : le compte reçoit le mot de passe par défaut de son rôle, à changer dès la première connexion. Ouvrez ensuite l'onglet Informations complémentaires et choisissez le groupe. Sans groupe, la création est refusée et le champ est signalé en rouge. Cochez par exemple Enseignants, puis cliquez sur Créer. Le compte apparaît dans la liste. Remettez l'identifiant à la personne en main propre."
+ },
+ "modifier-eleves-masse": {
+  "title": "Modifier les élèves en masse",
+  "subtitle": "Corriger noms, dates, classes et photos sur une seule page",
+  "total": 55,
+  "pages": [
+   "/students/batch-edit"
+  ],
+  "voice": "Modifier les élèves en masse. Sur la page des rapports, dans Gestion des profils, cliquez sur la part Élèves du graphique. La liste des élèves s'ouvre, et chaque champ s'y modifie directement : matricule, nom, prénoms, date et lieu de naissance, classe. Choisissez une classe pour n'afficher qu'elle, ou cherchez un élève par son nom. Corrigez un champ, puis quittez-le : il s'enregistre aussitôt, et une notification le confirme en haut à droite. Pour une photo, cliquez sur le bouton de la ligne et choisissez l'image : elle s'affiche dès qu'elle est enregistrée. Pour un lot de photos, préférez l'import par fichier ZIP."
+ },
+ "statistiques": {
+  "title": "Le tableau de bord statistique",
+  "subtitle": "Effectifs, performances, enseignants et matières",
+  "total": 58,
+  "pages": [
+   "/analytics/overview"
+  ],
+  "voice": "Le tableau de bord statistique. Depuis la page des rapports, ouvrez Statistiques. Les Stats générales donnent l'effectif total et la répartition par genre et par classe. En haut, les filtres restreignent l'analyse : groupe de classes, enseignant, classe, matière, genre et période. Cliquez sur Filtrer pour appliquer. Le menu de gauche ouvre les autres vues. Effectifs détaille la répartition par classe et par groupe. Performances classe les meilleurs élèves et donne les taux de réussite. Enseignants et Matières comparent les moyennes. Enfin, Exports télécharge les données affichées."
+ },
+ "creer-classe": {
+  "title": "Créer une classe",
+  "subtitle": "Administration : ajouter une classe à un niveau",
+  "total": 46,
+  "pages": [
+   "/structure/create-class"
+  ],
+  "voice": "Créer une classe. Dans Paramètres, Structures, ouvrez Classes et cliquez sur Ajouter. Choisissez le groupe de classes, c'est-à-dire le niveau, puis saisissez le nom, par exemple sixième B. Choisissez la langue par défaut, français ou anglais. Le code d'examen est facultatif : il sert aux photos d'examen. Cliquez sur Créer et retourner à la liste. La classe apparaît avec son groupe. Pour créer plusieurs classes et leurs matières d'un coup, utilisez plutôt la configuration initiale."
+ },
+ "periodes-evaluation": {
+  "title": "Régler les dates d'une période",
+  "subtitle": "Trimestres, semestres et date limite de saisie des notes",
+  "total": 48,
+  "pages": [
+   "/evaluations/configure-periods"
+  ],
+  "voice": "Régler les dates d'une période. Dans Paramètres, Structures, ouvrez Périodes d'évaluation : l'année et ses trimestres, ou ses semestres, s'y affichent avec leurs dates. Cliquez sur Éditer sur la période, par exemple Trimestre un. Vérifiez la période parente, la date de début et la date de fin. La date limite de report des notes ferme la saisie pour les enseignants : prévenez-les avant de l'avancer. Cliquez sur Mettre à jour : la nouvelle date s'applique aussitôt."
  }
 }

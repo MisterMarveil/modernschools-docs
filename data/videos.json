@@ -121,5 +121,60 @@
     "pages": [
       "/timetable/constraints"
     ]
+  },
+  "creer-utilisateur": {
+    "title": {
+      "fr": "Créer un compte utilisateur",
+      "en": "Create a user account (in French)"
+    },
+    "duration": "0:57",
+    "youtube": "",
+    "pages": [
+      "/users/create-teacher"
+    ]
+  },
+  "modifier-eleves-masse": {
+    "title": {
+      "fr": "Modifier les élèves en masse",
+      "en": "Edit students in bulk (in French)"
+    },
+    "duration": "0:55",
+    "youtube": "",
+    "pages": [
+      "/students/batch-edit"
+    ]
+  },
+  "statistiques": {
+    "title": {
+      "fr": "Le tableau de bord statistique",
+      "en": "The statistics dashboard (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "",
+    "pages": [
+      "/analytics/overview"
+    ]
+  },
+  "creer-classe": {
+    "title": {
+      "fr": "Créer une classe",
+      "en": "Create a class (in French)"
+    },
+    "duration": "0:46",
+    "youtube": "",
+    "pages": [
+      "/structure/create-class"
+    ]
+  },
+  "periodes-evaluation": {
+    "title": {
+      "fr": "Régler les dates d'une période",
+      "en": "Set a period's dates (in French)"
+    },
+    "duration": "0:48",
+    "youtube": "",
+    "pages": [
+      "/evaluations/configure-periods"
+    ]
   }
 }
