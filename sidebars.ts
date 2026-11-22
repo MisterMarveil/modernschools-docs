@@ -18,7 +18,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category', label: 'Élèves',
-      items: ['students/add', 'students/edit', 'students/change-class', 'students/import', 'students/photos', 'students/identity'],
+      items: ['students/add', 'students/edit', 'students/batch-edit', 'students/change-class', 'students/import', 'students/photos', 'students/identity'],
     },
     { type: 'category', label: 'Utilisateurs et rôles', items: ['users/create-teacher', 'users/roles'] },
     {
