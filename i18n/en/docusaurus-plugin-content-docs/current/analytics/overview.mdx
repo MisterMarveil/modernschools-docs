@@ -3,21 +3,52 @@ id: overview
 title: "Statistics"
 description: "The statistics dashboard: enrolment, performance, teachers, subjects and trends."
 sidebar_position: 1
-keywords: ["statistiques", "effectifs", "performances", "tableau de bord", "analytics", "statistics", "dashboard"]
+keywords: ["statistiques", "effectifs", "performances", "tableau de bord", "analytics", "statistics", "dashboard", "insertion des notes", "taux d'insertion", "export"]
 type: concept
 product: ["web"]
 audience: ["direction", "school-admin"]
 availability: available
-estimated_time: "3 min"
-last_verified: 2026-11-18
+estimated_time: "5 min"
+last_verified: 2026-11-22
 translation_key: analytics/overview
 ---
 **REPORTS → Statistiques** opens the statistics dashboard.
 
-<DocScreenshot src="web/analytics/overview" alt="Statistics dashboard: total enrolment, gender split and enrolment per class" />
+<DocScreenshot src="web/analytics/overview" alt="Statistics dashboard: headcount, pass rate, overall average and mark-entry rate" />
 
-- The **filters** at the top narrow the analysis: class group, teacher, class, subject, gender, period; **Regrouper par** changes the grouping. Click **Filtrer** to apply.
-- The left menu opens the **Stats Générales**, **Effectifs** (enrolment), **Performances**, **Enseignants** (teachers), **Matières** (subjects) and **Évolution** views.
-- **Exports** downloads the data shown.
+## Filtering
 
-Figures cover the current year's students; tick **Inclure uniquement les élèves actifs** to leave out students who have left.
+The **filters** at the top narrow the analysis: period, class group, class, teacher, subject, gender. Click **Apply filters**, or **Reset** to go back to the default settings.
+
+- By default the view covers the **current period**; pick **All periods** for the whole year. The period used and its dates are shown under the title.
+- Filters are **kept** when you move from one view to another through the left menu.
+- **Active students only** leaves out students who have left; **Include unknown gender** counts students whose gender is not recorded.
+
+The logo, top left, takes you back to the reports page.
+
+## The views
+
+- **Overview**: headcount, pass rate (average ≥ 10), overall average, mark-entry rate, then charts and rankings.
+- **Headcount**: breakdown by gender, class and group.
+- **Performance**: average by class, **distribution of averages** by band, **results by class and gender** (ranked, passed, pass rate for boys and girls, plus a whole-school row).
+- **Teachers**: **mark entry** (below), then student results by teacher.
+- **Subjects** and **Trends**: averages by subject, and how they change from one period to the next.
+
+## Mark entry by teacher
+
+<DocScreenshot src="web/analytics/insertion-notes" alt="Mark-entry rate by teacher and evaluation type" />
+
+For each period that has started, an **expected sheet** is one class and one subject from the teacher's timetable, for one evaluation type (Harm. 1, Harm. 2…). It counts as **entered** as soon as one mark is recorded, and as **late** once the period's entry deadline (or else its end) has passed with no mark.
+
+The view gives the overall mark-entry rate, a table by teacher with one column per evaluation type (least advanced first), totals by type and by period, and the list of **late sheets to follow up**.
+
+:::tip
+Expected sheets come from the timetable: a teacher who is not on the timetable does not appear here.
+:::
+
+## Exporting
+
+**Export** offers:
+
+- **Tables on this view (Excel, CSV)**: every table shown, with the filters applied, in a file that opens directly in Excel;
+- **Print or save as PDF**: the view laid out for printing (A4 landscape), without menus or filters; choose "Save as PDF" in the print window.

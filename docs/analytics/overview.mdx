@@ -3,21 +3,52 @@ id: overview
 title: "Les statistiques"
 description: "Le tableau de bord statistique : effectifs, performances, enseignants, matières et évolution."
 sidebar_position: 1
-keywords: ["statistiques", "effectifs", "performances", "tableau de bord", "analytics", "statistics", "dashboard"]
+keywords: ["statistiques", "effectifs", "performances", "tableau de bord", "analytics", "statistics", "dashboard", "insertion des notes", "taux d'insertion", "export"]
 type: concept
 product: ["web"]
 audience: ["direction", "school-admin"]
 availability: available
-estimated_time: "3 min"
-last_verified: 2026-11-18
+estimated_time: "5 min"
+last_verified: 2026-11-22
 translation_key: analytics/overview
 ---
 **RAPPORTS → Statistiques** ouvre le tableau de bord statistique.
 
-<DocScreenshot src="web/analytics/overview" alt="Tableau de bord statistique : effectif total, répartition par genre et effectifs par classe" />
+<DocScreenshot src="web/analytics/overview" alt="Tableau de bord statistique : effectif, taux de réussite, moyenne générale et taux d'insertion des notes" />
 
-- Les **filtres** en haut restreignent l'analyse : groupe de classes, enseignant, classe, matière, genre, période ; **Regrouper par** change le regroupement. Cliquez sur **Filtrer** pour appliquer.
-- Le menu de gauche ouvre les vues **Stats Générales**, **Effectifs**, **Performances**, **Enseignants**, **Matières** et **Évolution**.
-- **Exports** télécharge les données affichées.
+## Filtrer
 
-Les chiffres portent sur les élèves de l'année en cours ; cochez **Inclure uniquement les élèves actifs** pour écarter les élèves sortis.
+Les **filtres** en haut restreignent l'analyse : période, groupe de classes, classe, enseignant, matière, genre. Cliquez sur **Filtrer** pour appliquer, sur **Réinitialiser** pour revenir aux réglages de départ.
+
+- Par défaut, la vue porte sur la **période en cours** ; choisissez **Toutes les périodes** pour l'année entière. La période retenue et ses dates s'affichent sous le titre.
+- Les filtres sont **gardés** quand vous passez d'une vue à l'autre par le menu de gauche.
+- **Élèves actifs seulement** écarte les élèves sortis ; **Inclure les genres non renseignés** compte les élèves dont le genre n'est pas saisi.
+
+Le logo, en haut à gauche, ramène à la page des rapports.
+
+## Les vues
+
+- **Vue générale** : effectif, taux de réussite (moyenne ≥ 10) et moyenne générale, taux d'insertion des notes, puis graphiques et classements.
+- **Effectifs** : répartition par genre, par classe et par groupe.
+- **Performances** : moyenne par classe, **répartition des moyennes** par tranche, **résultats par classe et par sexe** (classés, admis, taux de réussite garçons et filles, ligne Établissement).
+- **Enseignants** : **insertion des notes** (ci-dessous), puis résultats des élèves par enseignant.
+- **Matières** et **Évolution** : moyennes par matière, et leur évolution d'une période à l'autre.
+
+## Insertion des notes par enseignant
+
+<DocScreenshot src="web/analytics/insertion-notes" alt="Taux d'insertion des notes par enseignant et par type d'évaluation" />
+
+Pour chaque période déjà commencée, une **fiche attendue** correspond à une classe et une matière de l'emploi du temps de l'enseignant, pour un type d'évaluation (Harm. 1, Harm. 2…). Elle est **saisie** dès qu'une note y est enregistrée, et **en retard** quand la date limite d'insertion de la période (à défaut, sa fin) est passée sans aucune note.
+
+La vue donne le taux d'insertion global, le tableau par enseignant avec une colonne par type d'évaluation (les moins avancés en premier), les totaux par type et par période, et la liste des **fiches en retard à relancer**.
+
+:::tip
+Les fiches attendues viennent de l'emploi du temps : un enseignant absent de l'emploi du temps n'apparaît pas ici.
+:::
+
+## Exporter
+
+**Exporter** propose :
+
+- **Tableaux de la vue (Excel, CSV)** : tous les tableaux affichés, avec les filtres appliqués, dans un fichier qui s'ouvre directement dans Excel ;
+- **Imprimer ou enregistrer en PDF** : la vue mise en page pour l'impression (A4 paysage), sans menus ni filtres ; choisissez « Enregistrer au format PDF » dans la fenêtre d'impression.
