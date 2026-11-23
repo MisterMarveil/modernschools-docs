@@ -11,12 +11,12 @@ window.D = {
    "dur": 9,
    "text": "Nom, prénoms, identifiant : pas de mot de passe à saisir",
    "focus": [
-    20,
+    14,
     6,
-    60,
-    62
+    50,
+    66
    ],
-   "maxZoom": 1.4
+   "maxZoom": 1.3
   },
   {
    "src": "web/roles/admin-groupes",
@@ -25,10 +25,10 @@ window.D = {
    "dur": 13,
    "text": "Groupe d'utilisateurs et niveau de compétence",
    "focus": [
-    40,
-    20,
-    60,
-    46
+    42,
+    18,
+    56,
+    40
    ],
    "maxZoom": 1.5
   },
@@ -39,10 +39,10 @@ window.D = {
    "dur": 8,
    "text": "Hors de ses groupes de classes : refus expliqué",
    "focus": [
-    26,
-    30,
-    48,
-    36
+    28,
+    32,
+    44,
+    34
    ],
    "maxZoom": 1.5
   },
@@ -53,10 +53,10 @@ window.D = {
    "dur": 9,
    "text": "Actions → Réinitialiser le mot de passe",
    "focus": [
-    60,
+    70,
     6,
-    40,
-    26
+    30,
+    22
    ],
    "maxZoom": 1.8
   },
@@ -67,10 +67,10 @@ window.D = {
    "dur": 7,
    "text": "Mot de passe par défaut du groupe",
    "focus": [
-    18,
-    8,
-    80,
-    16
+    6,
+    10,
+    94,
+    12
    ],
    "maxZoom": 1.5
   },
@@ -81,12 +81,12 @@ window.D = {
    "dur": 9,
    "text": "À la connexion, la personne choisit le sien",
    "focus": [
-    16,
+    30,
     6,
-    50,
-    60
+    52,
+    70
    ],
-   "maxZoom": 1.3
+   "maxZoom": 1.25
   }
  ]
 };

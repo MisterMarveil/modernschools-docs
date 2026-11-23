@@ -11,12 +11,12 @@ window.D = {
    "dur": 9,
    "text": "L'accueil du responsable des études",
    "focus": [
-    4,
-    24,
-    64,
-    32
+    10,
+    30,
+    80,
+    28
    ],
-   "maxZoom": 1.4
+   "maxZoom": 1.3
   },
   {
    "src": "web/roles/censeur-edt",
@@ -25,12 +25,12 @@ window.D = {
    "dur": 13,
    "text": "Emploi du temps : classe, enseignant, puis les matières sur les créneaux",
    "focus": [
-    40,
+    6,
     4,
-    58,
-    72
+    84,
+    74
    ],
-   "maxZoom": 1.3
+   "maxZoom": 1.12
   },
   {
    "src": "web/roles/censeur-contraintes",
@@ -39,12 +39,12 @@ window.D = {
    "dur": 11,
    "text": "Contraintes : coefficient, quota horaire, compétence attendue",
    "focus": [
-    18,
-    6,
-    72,
-    12
+    1,
+    20,
+    62,
+    14
    ],
-   "maxZoom": 1.7
+   "maxZoom": 1.6
   },
   {
    "src": "web/roles/censeur-hors-perimetre",
@@ -53,10 +53,10 @@ window.D = {
    "dur": 12,
    "text": "Limité au 1er cycle : les autres classes sont refusées",
    "focus": [
-    26,
-    30,
-    48,
-    36
+    28,
+    32,
+    44,
+    34
    ],
    "maxZoom": 1.5
   },
@@ -67,10 +67,10 @@ window.D = {
    "dur": 9,
    "text": "Les pages des autres profils restent fermées",
    "focus": [
-    26,
-    30,
-    48,
-    36
+    28,
+    34,
+    44,
+    30
    ],
    "maxZoom": 1.5
   }

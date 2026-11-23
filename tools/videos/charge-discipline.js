@@ -11,12 +11,12 @@ window.D = {
    "dur": 7,
    "text": "L'accueil du chargé de discipline",
    "focus": [
+    10,
     30,
-    40,
-    68,
-    26
+    80,
+    30
    ],
-   "maxZoom": 1.4
+   "maxZoom": 1.3
   },
   {
    "src": "web/roles/discipline-saisie",
@@ -26,9 +26,9 @@ window.D = {
    "text": "Période, classe, puis retards, absences et consignes",
    "focus": [
     2,
-    2,
-    48,
-    46
+    24,
+    52,
+    26
    ],
    "maxZoom": 1.5
   },
@@ -39,10 +39,10 @@ window.D = {
    "dur": 9,
    "text": "La grille suggère une sanction",
    "focus": [
-    42,
-    12,
-    30,
-    34
+    44,
+    28,
+    24,
+    20
    ],
    "maxZoom": 1.8
   },
@@ -53,12 +53,12 @@ window.D = {
    "dur": 9,
    "text": "Intégrer, et les sanctions spéciales complètent l'observation",
    "focus": [
-    56,
-    12,
-    42,
-    34
+    50,
+    28,
+    46,
+    20
    ],
-   "maxZoom": 1.7
+   "maxZoom": 1.6
   },
   {
    "src": "web/roles/discipline-enregistre",
@@ -70,9 +70,9 @@ window.D = {
     2,
     2,
     96,
-    26
+    14
    ],
-   "maxZoom": 1.3
+   "maxZoom": 1.4
   },
   {
    "src": "web/roles/messagerie",
@@ -81,12 +81,12 @@ window.D = {
    "dur": 10,
    "text": "Messagerie aux familles (WhatsApp, e-mail)",
    "focus": [
-    6,
+    12,
     0,
-    88,
-    90
+    76,
+    74
    ],
-   "maxZoom": 1.15
+   "maxZoom": 1.12
   }
  ]
 };
