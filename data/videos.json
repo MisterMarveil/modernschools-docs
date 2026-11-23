@@ -26,7 +26,7 @@
       "fr": "Ajouter un élève",
       "en": "Add a student (in French)"
     },
-    "duration": "0:46",
+    "duration": "0:58",
     "youtube": "",
     "pages": [
       "/students/add"
@@ -175,6 +175,17 @@
     "youtube": "",
     "pages": [
       "/evaluations/configure-periods"
+    ]
+  },
+  "changer-classe": {
+    "title": {
+      "fr": "Changer un élève de classe",
+      "en": "Move a student to another class (in French)"
+    },
+    "duration": "0:59",
+    "youtube": "",
+    "pages": [
+      "/students/change-class"
     ]
   }
 }

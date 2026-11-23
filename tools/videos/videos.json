@@ -20,11 +20,11 @@
  "ajouter-eleve": {
   "title": "Ajouter un élève",
   "subtitle": "Créer un dossier élève et l'affecter à une classe",
-  "total": 46,
+  "total": 57,
   "pages": [
    "/students/add"
   ],
-  "voice": "Ajouter un élève. Dans Paramètres, ouvrez Utilisateurs, puis Étudiants, et cliquez sur Ajouter. Saisissez le nom, les prénoms, le genre, la date et le lieu de naissance. Choisissez la classe : c'est obligatoire. L'onglet Informations complémentaires reçoit les contacts des parents et l'adresse. Cliquez sur Créer. Le matricule unique est attribué automatiquement. Si un élève de même nom et même prénom existe déjà, ModernSchools vous le signale : vérifiez avant de continuer."
+  "voice": "Ajouter un élève. Dans Paramètres, ouvrez Utilisateurs, puis Étudiants, et cliquez sur Ajouter. Saisissez le nom, les prénoms, le genre, la date et le lieu de naissance, puis la classe, obligatoire. L'onglet Informations complémentaires reçoit les contacts des parents. Cliquez sur Créer : le matricule unique est attribué. Si l'élève arrive en cours d'année, il est marqué absent sur chaque fiche de notes déjà saisie dans sa classe ; un message le confirme, et l'enseignant pourra remplacer absent par une note. Un élève de même nom et même prénom existe déjà ? ModernSchools vous le signale."
  },
  "importer-eleves": {
   "title": "Importer les élèves",
@@ -144,5 +144,14 @@
    "/evaluations/configure-periods"
   ],
   "voice": "Régler les dates d'une période. Dans Paramètres, Structures, ouvrez Périodes d'évaluation : l'année et ses trimestres, ou ses semestres, s'y affichent avec leurs dates. Cliquez sur Éditer sur la période, par exemple Trimestre un. Vérifiez la période parente, la date de début et la date de fin. La date limite de report des notes ferme la saisie pour les enseignants : prévenez-les avant de l'avancer. Cliquez sur Mettre à jour : la nouvelle date s'applique aussitôt."
+ },
+ "changer-classe": {
+  "title": "Changer un élève de classe",
+  "subtitle": "Ce que deviennent ses notes, et comment confirmer",
+  "total": 58,
+  "pages": [
+   "/students/change-class"
+  ],
+  "voice": "Changer un élève de classe. Un élève qui change de classe perd les notes de sa classe d'origine : faites ces changements en début d'année. Ouvrez sa fiche et choisissez la nouvelle classe. S'il a déjà des notes, la fiche indique combien seront supprimées. Cochez la case de confirmation, puis Mettre à jour ; sans elle, l'enregistrement est refusé. Ses anciennes notes sont alors supprimées, il est marqué absent sur les fiches déjà saisies dans sa nouvelle classe, et les deux classes sont réindexées. Dans l'édition en masse, une fenêtre demande la même confirmation ; Annuler remet la classe d'origine."
  }
 }
