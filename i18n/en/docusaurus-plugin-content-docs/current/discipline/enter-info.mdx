@@ -1,0 +1,63 @@
+---
+id: enter-info
+title: "Enter discipline information"
+description: "Late arrivals, absences, detention and sanctions of a class for a period, with the sanction suggested by the grid."
+sidebar_position: 2
+keywords: ["discipline", "absences", "late", "detention", "sanction", "supervisor", "conduct"]
+type: how-to
+product: ["web"]
+audience: ["school-life", "school-admin"]
+availability: available
+estimated_time: "4 min"
+video: charge-discipline
+last_verified: 2026-11-23
+translation_key: discipline/enter-info
+---
+<Prerequisite>
+
+- An account in the **Chargés de discipline** (discipline officers) group; if it is limited to class groups, only their classes are offered (see [roles and access](/users/roles#limit-an-account-to-class-groups)).
+- The [disciplinary grid](/discipline/rules) set up by the administration.
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Open the entry page">
+
+On the home page, **Infos discipline**. Choose the **period**, then the **class**: the student list shows what has already been entered.
+
+<DocScreenshot src="web/roles/discipline-saisie" alt="Discipline entry: late arrivals, absences in hours, detention, suggested sanction">
+  <Hotspot number={1} x={26} y={40} label="Absences (hours)" />
+  <Hotspot number={2} x={54} y={38} label="Suggested sanction" />
+</DocScreenshot>
+
+</Step>
+<Step title="Enter the figures">
+
+For each student: **late arrivals** and **absences in hours** (total and justified), **hours of detention**, warning or reprimand, days of exclusion. Empty boxes count as 0; justified figures above the total are flagged in red.
+
+The **sanction suggested** by the grid appears straight away. It is never imposed: **Insert** copies it into the observation, which you can complete.
+
+</Step>
+<Step title="Special sanctions and observation">
+
+Tick **disciplinary board**, **parents summoned** or **cleaning duty** if needed: the mention is added to the observation, and removed if you untick. **Ban from the honour roll** asks for confirmation.
+
+<DocScreenshot src="web/roles/discipline-observation" alt="Observation completed with the inserted sanction and the parents' summons" />
+
+</Step>
+<Step title="Save">
+
+Click **Submit**. The page returns to the same class and period, with a confirmation message. Only the students shown are saved.
+
+<DocScreenshot src="web/roles/discipline-enregistre" alt="Message: discipline information for Term 1 - Tle D saved" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+The information appears on the period's report cards and in class councils. **Disciplinary grid**, top right, shows the rules at any time.
+
+</ExpectedResult>
+
+<RelatedArticles items={[{to: '/discipline/rules', label: 'The disciplinary grid'}, {to: '/discipline/messaging', label: 'Write to families'}]} />

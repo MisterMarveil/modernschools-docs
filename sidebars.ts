@@ -31,7 +31,7 @@ const sidebars: SidebarsConfig = {
       link: { type: 'doc', id: 'documents/index' },
       items: ['documents/report-cards', 'documents/results-minutes', 'documents/honour-roll', 'documents/id-cards'],
     },
-    { type: 'category', label: 'Conseils et discipline', items: ['class-council/run', 'discipline/rules'] },
+    { type: 'category', label: 'Conseils et discipline', items: ['class-council/run', 'discipline/rules', 'discipline/enter-info', 'discipline/messaging'] },
     { type: 'category', label: 'Statistiques et archives', items: ['analytics/overview', 'archives/overview'] },
     {
       type: 'category', label: 'Dépannage',

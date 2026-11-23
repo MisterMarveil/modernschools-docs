@@ -9,7 +9,7 @@ product: ["web"]
 audience: ["school-admin"]
 availability: available
 estimated_time: "10 min"
-last_verified: 2026-11-18
+last_verified: 2026-11-23
 translation_key: users/create-teacher
 ---
 ## By import (recommended)
@@ -42,14 +42,10 @@ Each teacher gets an account and finds their classes and subjects in mark entry.
 
 ## By hand
 
-**Settings → Users → Users → Add**. Fill in **Lastname**, **Firstname**, the **username** (used to sign in) and the **password** twice, then choose the *Enseignants* (teachers) group in the **Additional data** tab.
+**Settings → Users → Users → Add**. Fill in **Lastname**, **Firstname**, and the **username** (used to sign in), then choose the *Enseignants* (teachers) group in the **Additional data** tab.
 
-<DocScreenshot src="web/users/create" alt="User creation form">
-  <Hotspot number={1} x={25} y={29} label="Lastname" />
-  <Hotspot number={2} x={25} y={66} label="Username" />
-  <Hotspot number={3} x={25} y={73} label="Password" />
-</DocScreenshot>
+<DocScreenshot src="web/roles/admin-creation" alt="User creation form" />
 
 :::warning Password
-Hand the username and temporary password to the teacher in person. At first sign-in, they will have to choose their own password.
+No password is typed: the teacher signs in with their username and the teachers' default password, `profpass`, then chooses their own. See [default passwords](/users/roles#default-passwords).
 :::

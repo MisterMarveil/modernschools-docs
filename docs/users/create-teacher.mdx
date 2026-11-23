@@ -9,7 +9,7 @@ product: ["web"]
 audience: ["school-admin"]
 availability: available
 estimated_time: "10 min"
-last_verified: 2026-11-18
+last_verified: 2026-11-23
 translation_key: users/create-teacher
 ---
 ## Par import (recommandé)
@@ -42,14 +42,10 @@ Chaque enseignant reçoit son compte et retrouve ses classes et ses matières da
 
 ## À la main
 
-**Paramètres → Utilisateurs → Utilisateurs → Ajouter**. Renseignez **Nom**, **Prénoms**, le **nom d'utilisateur** (celui qui sert à se connecter) et le **mot de passe** deux fois, puis choisissez le groupe *Enseignants* dans l'onglet **Informations Complémentaires**.
+**Paramètres → Utilisateurs → Utilisateurs → Ajouter**. Renseignez **Nom**, **Prénoms**, et le **nom d'utilisateur** (celui qui sert à se connecter), puis choisissez le groupe *Enseignants* dans l'onglet **Informations Complémentaires**.
 
-<DocScreenshot src="web/users/create" alt="Formulaire de création d'un utilisateur">
-  <Hotspot number={1} x={25} y={29} label="Nom" />
-  <Hotspot number={2} x={25} y={66} label="Nom d'utilisateur" />
-  <Hotspot number={3} x={25} y={73} label="Mot de passe" />
-</DocScreenshot>
+<DocScreenshot src="web/roles/admin-creation" alt="Formulaire de création d'un utilisateur" />
 
 :::warning Mot de passe
-Remettez l'identifiant et le mot de passe provisoire à l'enseignant en main propre. À sa première connexion, il devra choisir son propre mot de passe.
+Aucun mot de passe n'est saisi : l'enseignant se connecte avec son identifiant et le mot de passe par défaut des enseignants, `profpass`, puis choisit le sien. Voir [mots de passe par défaut](/users/roles#mots-de-passe-par-défaut).
 :::

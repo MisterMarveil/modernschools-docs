@@ -176,5 +176,39 @@
     "pages": [
       "/evaluations/configure-periods"
     ]
+  },
+  "responsable-etudes": {
+    "title": {
+      "fr": "Le compte du responsable des études",
+      "en": "The head of studies account (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/users/roles",
+      "/timetable/build"
+    ]
+  },
+  "charge-discipline": {
+    "title": {
+      "fr": "Le compte du chargé de discipline",
+      "en": "The discipline officer account (in French)"
+    },
+    "duration": "0:59",
+    "youtube": "",
+    "pages": [
+      "/discipline/enter-info"
+    ]
+  },
+  "comptes-perimetre": {
+    "title": {
+      "fr": "Comptes du personnel : groupes et périmètre",
+      "en": "Staff accounts: groups and scope (in French)"
+    },
+    "duration": "0:59",
+    "youtube": "",
+    "pages": [
+      "/users/roles"
+    ]
   }
 }

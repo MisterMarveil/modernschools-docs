@@ -8,8 +8,9 @@ type: concept
 product: ["web"]
 audience: ["school-admin", "direction"]
 availability: available
-estimated_time: "4 min"
-last_verified: 2026-11-18
+estimated_time: "6 min"
+last_verified: 2026-11-23
+video: comptes-perimetre
 translation_key: users/roles
 ---
 Rights are granted by **user group** (**Settings → Users → User groups**).
@@ -18,15 +19,55 @@ Rights are granted by **user group** (**Settings → Users → User groups**).
 
 | Group | For whom | What it allows |
 |---|---|---|
-| Administrateurs Opérationnels | the platform administrator within the school | configure the school: structure, users, assessments, documents |
+| Administrateurs Opérationnels | the platform administrator within the school | configure the school: structure, users, assessments, documents, reports |
 | Administrateurs VIP | school management | view all statistical reports and school data |
 | Enseignants (teachers) | teachers | enter marks for their classes and subjects, suggest a missing coefficient, manage their profile |
-| Responsable des études (head of studies) | the censor or head of studies | [build timetables](/timetable/build), [manage coefficients, weekly hours and expected competences](/timetable/constraints), approve suggested coefficients |
+| Responsable des études (head of studies) | the censor or head of studies | [build timetables](/timetable/build), [manage coefficients, weekly hours and expected competences](/timetable/constraints), edit the students of their classes, approve suggested coefficients |
+| Chargés de discipline (discipline officers) | the head of discipline, supervisors | [enter discipline information](/discipline/enter-info), [write to families](/discipline/messaging) |
+| Comptables (accounting) | the bursar | manage their profile (the accounting module is not available yet) |
+
+## One profile at a time
+
+Each page belongs to a profile: a discipline officer opens neither reports, timetables nor student editing. An account with several groups (teacher and head of studies, for example) chooses its profile after signing in; it then opens only that profile's pages, and can switch from the home page.
+
+A page reserved for another profile shows a message explaining it, and offers to switch to the right profile when the account has it.
+
+<DocScreenshot src="web/roles/refus-profil" alt="Restricted page: reserved for the administration, the user is signed in as head of studies" />
+
+## Limit an account to class groups
+
+A head of studies or a discipline officer can be limited to part of the school, for example the first cycle. In the user's record, **Additional data** tab, choose the class groups under **Authorized intervention area** (Niveau de compétence); sub-groups are included.
+
+<DocScreenshot src="web/roles/admin-groupes" alt="User record: intervention area and user group">
+  <Hotspot number={1} x={71} y={28} label="Intervention area" />
+</DocScreenshot>
+
+The account then only sees the classes of these groups: class lists, students, timetables, constraints, discipline. Any action on another class is refused with a message naming the class and the assigned groups. Without an intervention area, the account works on all classes.
+
+<DocScreenshot src="web/roles/censeur-hors-perimetre" alt="Outside your class groups: class Tle D is not part of the first cycle" />
+
+## Default passwords
+
+A new account, or one whose password is reset, gets its group's default password. At sign-in, the person must replace it with their own ([sign in](/getting-started/sign-in)): the application stays closed until they do.
+
+| Group | Default password |
+|---|---|
+| Administrateurs Opérationnels, Administrateurs VIP | `admin` |
+| Responsable des études | `censeurpass` |
+| Chargés de discipline | `surpass` |
+| Comptables | `comptapass` |
+| Enseignants | `profpass` |
+
+An account with several groups gets the password of the first group in this list.
 
 ## A user can no longer sign in
 
 1. **Settings → Users → Users**, then **Edit** on their row.
-2. Enter a new temporary password (twice), then **Update**.
-3. Hand it to the user in person: they will change it when they sign in.
+2. **Actions** menu → **Reset password**, then confirm.
+3. Give the user their **username**: they sign in with their group's default password, then choose a new one.
 
-Never send a password by e-mail or messaging app. See also [sign-in problems](/troubleshooting/sign-in).
+<DocScreenshot src="web/roles/admin-reinitialiser" alt="User record: Actions menu, Reset password">
+  <Hotspot number={1} x={91} y={22} label="Reset password" />
+</DocScreenshot>
+
+The administration never types or sends a personal password. See also [sign-in problems](/troubleshooting/sign-in).
