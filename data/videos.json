@@ -177,6 +177,17 @@
       "/evaluations/configure-periods"
     ]
   },
+  "changer-classe": {
+    "title": {
+      "fr": "Changer un élève de classe",
+      "en": "Move a student to another class (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "O6NSIOeQHqI",
+    "pages": [
+      "/students/change-class"
+    ]
+  },
   "comptes-perimetre": {
     "title": {
       "fr": "Groupes, périmètres et droits des utilisateurs",
@@ -209,17 +220,6 @@
     "pages": [
       "/timetable/build",
       "/timetable/constraints"
-    ]
-  },
-  "changer-classe": {
-    "title": {
-      "fr": "Changer un élève de classe",
-      "en": "Move a student to another class (in French)"
-    },
-    "duration": "0:58",
-    "youtube": "O6NSIOeQHqI",
-    "pages": [
-      "/students/change-class"
     ]
   }
 }

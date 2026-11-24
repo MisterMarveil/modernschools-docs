@@ -10,7 +10,7 @@ audience: ["secretary", "school-admin"]
 availability: available
 estimated_time: "3 min"
 video: ajouter-eleve
-last_verified: 2026-11-18
+last_verified: 2026-11-23
 translation_key: students/add
 ---
 <Procedure>
@@ -54,8 +54,18 @@ L'élève apparaît dans sa classe ; son **matricule** est attribué automatique
 
 </ExpectedResult>
 
+## Élève qui arrive en cours d'année
+
+Si des fiches de notes ont déjà été saisies dans la classe, l'élève y est **marqué absent** automatiquement, sur chaque fiche (matière, période, type d'évaluation). Un message le confirme après l'enregistrement.
+
+<DocScreenshot src="web/students/created-absent" alt="Message après la création : l'élève est marqué absent sur les fiches déjà saisies">
+  <Hotspot number={1} x={23} y={23} label="Absent sur les fiches déjà saisies" />
+</DocScreenshot>
+
+Il figure ainsi sur ces fiches, les bulletins et les statistiques de la classe. S'il a composé ailleurs et que l'enseignant dispose de sa note, celui-ci remplace « absent » par la note en [modifiant la fiche](/grades/edit-grades).
+
 :::warning Élève similaire
 Si un élève de même nom et même prénom existe déjà, l'enregistrement est refusé : vérifiez d'abord qu'il ne s'agit pas du même élève. Voir [élève en double](/troubleshooting/student-duplicate).
 :::
 
-<RelatedArticles items={[{to: '/students/import', label: 'Importer plusieurs élèves'}, {to: '/students/identity', label: 'Comprendre le matricule unique'}]} />
+<RelatedArticles items={[{to: '/students/import', label: 'Importer plusieurs élèves'}, {to: '/students/identity', label: 'Comprendre le matricule unique'}, {to: '/students/change-class', label: 'Changer un élève de classe'}]} />

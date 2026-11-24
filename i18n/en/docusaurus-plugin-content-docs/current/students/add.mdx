@@ -10,7 +10,7 @@ audience: ["secretary", "school-admin"]
 availability: available
 estimated_time: "3 min"
 video: ajouter-eleve
-last_verified: 2026-11-18
+last_verified: 2026-11-23
 translation_key: students/add
 ---
 <Procedure>
@@ -54,8 +54,18 @@ The student appears in their class; their **matricule** (unique number) is assig
 
 </ExpectedResult>
 
+## Student arriving during the year
+
+If mark sheets have already been entered in the class, the student is **marked absent** on each of them automatically (subject, period, evaluation type). A message confirms it after saving.
+
+<DocScreenshot src="web/students/created-absent" alt="Message after creation: the student is marked absent on the sheets already entered">
+  <Hotspot number={1} x={23} y={23} label="Absent on sheets already entered" />
+</DocScreenshot>
+
+The student thus appears on these sheets, the report cards and the class statistics. If the student sat the test elsewhere and the teacher has the mark, the teacher replaces "absent" with it by [editing the sheet](/grades/edit-grades).
+
 :::warning Similar student
 If a student with the same surname and first name already exists, saving is refused: first check it is not the same student. See [duplicate student](/troubleshooting/student-duplicate).
 :::
 
-<RelatedArticles items={[{to: '/students/import', label: 'Import several students'}, {to: '/students/identity', label: 'Understand the unique matricule'}]} />
+<RelatedArticles items={[{to: '/students/import', label: 'Import several students'}, {to: '/students/identity', label: 'Understand the unique matricule'}, {to: '/students/change-class', label: 'Move a student to another class'}]} />

@@ -1,18 +1,20 @@
 ---
 id: change-class
 title: "Changer un élève de classe"
-description: "Affecter un élève à une autre classe en cours d'année."
+description: "Affecter un élève à une autre classe : ce que deviennent ses notes, et comment confirmer."
 sidebar_position: 3
-keywords: ["changer de classe", "transfert", "classe", "move class", "change class"]
+keywords: ["changer de classe", "transfert", "classe", "notes perdues", "absent", "move class", "change class"]
 type: how-to
 product: ["web"]
 audience: ["secretary", "school-admin"]
 availability: available
-estimated_time: "1 min"
+estimated_time: "2 min"
+last_verified: 2026-11-23
 video: changer-classe
-last_verified: 2026-11-18
 translation_key: students/change-class
 ---
+Un élève qui change de classe **perd les notes de sa classe d'origine** : elles portent sur d'autres fiches et n'ont pas de sens dans la nouvelle. ModernSchools les supprime, après vous avoir demandé de le confirmer. Faites donc ces changements en **début d'année**, avant que les notes ne s'accumulent.
+
 <Procedure>
 <Step title="Ouvrir la fiche de l'élève">
 
@@ -21,21 +23,47 @@ translation_key: students/change-class
 </Step>
 <Step title="Choisir la nouvelle classe">
 
-Dans **Données de l'établissement**, choisissez la nouvelle **Classe**, puis **Mettre à jour**.
+Dans **Données de l'établissement**, choisissez la nouvelle **Classe**.
 
-<DocScreenshot src="web/students/edit" alt="Champ Classe dans la fiche de l'élève">
+Si l'élève a déjà des notes, la fiche l'indique sous la case **Je confirme le changement de classe et la suppression définitive des notes** : nombre de notes et de fiches concernées.
+
+<DocScreenshot src="web/students/edit-transfer" alt="Fiche de l'élève : nouvelle classe, case de confirmation et nombre de notes concernées">
   <Hotspot number={1} x={45} y={27} label="Nouvelle classe" />
+  <Hotspot number={2} x={53} y={45} label="Case de confirmation" />
 </DocScreenshot>
+
+</Step>
+<Step title="Confirmer et enregistrer">
+
+Cochez la case, puis **Mettre à jour**. Sans la case cochée, l'enregistrement est refusé et la classe reste inchangée :
+
+<DocScreenshot src="web/students/transfer-refused" alt="Changement refusé : la case de confirmation n'est pas cochée" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-L'élève apparaît dans les listes, la saisie des notes et les documents de sa nouvelle classe.
+Un message résume le transfert :
+
+- les **notes de l'ancienne classe sont supprimées** définitivement ;
+- l'élève est **marqué absent** sur les fiches déjà saisies dans sa nouvelle classe ; l'enseignant remplace « absent » par une note s'il en a une ;
+- les **deux classes sont réindexées** au prochain passage de l'archivage (un quart d'heure au plus) : rangs, moyennes et bulletins en tiennent compte.
+
+<DocScreenshot src="web/students/transferred" alt="Message après le transfert : notes supprimées, absences ajoutées, classes réindexées" />
 
 </ExpectedResult>
 
-:::warning En cours de période
-Les notes déjà saisies restent attachées à l'élève. Avant un changement en cours de période, prévenez les enseignants des deux classes et vérifiez les bulletins concernés.
+## Depuis l'édition en masse
+
+Dans [l'édition en masse](/students/batch-edit), changer la classe d'un élève qui a des notes ouvre une fenêtre de confirmation. **Transférer et supprimer les notes** applique le transfert ; **Annuler** remet la classe d'origine, sans rien modifier.
+
+<DocScreenshot src="web/students/batch-transfer" alt="Édition en masse : fenêtre de confirmation du changement de classe" />
+
+Un élève qui n'a encore aucune note change de classe sans question ; il est marqué absent sur les fiches déjà saisies dans sa nouvelle classe.
+
+:::warning Notes perdues
+La suppression est définitive. Avant de confirmer, relevez les notes de l'élève si elles doivent servir ailleurs (relevé, bulletin déjà imprimé).
 :::
+
+<RelatedArticles items={[{to: '/students/add', label: 'Ajouter un élève'}, {to: '/grades/edit-grades', label: 'Modifier une fiche de notes'}]} />

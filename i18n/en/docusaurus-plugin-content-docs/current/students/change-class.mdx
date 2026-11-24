@@ -1,18 +1,20 @@
 ---
 id: change-class
 title: "Move a student to another class"
-description: "Assign a student to another class during the year."
+description: "Move a student to another class: what happens to the marks, and how to confirm."
 sidebar_position: 3
-keywords: ["changer de classe", "transfert", "classe", "move class", "change class"]
+keywords: ["changer de classe", "transfert", "classe", "notes perdues", "absent", "move class", "change class", "transfer"]
 type: how-to
 product: ["web"]
 audience: ["secretary", "school-admin"]
 availability: available
-estimated_time: "1 min"
+estimated_time: "2 min"
+last_verified: 2026-11-23
 video: changer-classe
-last_verified: 2026-11-18
 translation_key: students/change-class
 ---
+A student who changes class **loses the marks of the former class**: they belong to other sheets and mean nothing in the new one. ModernSchools deletes them, after asking you to confirm. Make these changes at the **start of the year**, before marks build up.
+
 <Procedure>
 <Step title="Open the student's record">
 
@@ -21,21 +23,47 @@ translation_key: students/change-class
 </Step>
 <Step title="Choose the new class">
 
-Under **Données de l'établissement** (school data), choose the new **Class**, then **Update**.
+Under **Données de l'établissement** (school data), choose the new **Class**.
 
-<DocScreenshot src="web/students/edit" alt="Class field in the student's record">
+If the student already has marks, the record says so under the box **I confirm the class change and the permanent deletion of the marks**: number of marks and sheets concerned.
+
+<DocScreenshot src="web/students/edit-transfer" alt="Student record: new class, confirmation box and number of marks concerned">
   <Hotspot number={1} x={45} y={27} label="New class" />
+  <Hotspot number={2} x={53} y={45} label="Confirmation box" />
 </DocScreenshot>
+
+</Step>
+<Step title="Confirm and save">
+
+Tick the box, then **Update**. Without the box ticked, saving is refused and the class stays the same:
+
+<DocScreenshot src="web/students/transfer-refused" alt="Change refused: the confirmation box is not ticked" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-The student appears in the lists, mark entry and documents of the new class.
+A message sums up the transfer:
+
+- the **marks of the former class are deleted** permanently;
+- the student is **marked absent** on the sheets already entered in the new class; the teacher replaces "absent" with a mark if there is one;
+- **both classes are re-indexed** at the next archiving run (within a quarter of an hour): ranks, averages and report cards take it into account.
+
+<DocScreenshot src="web/students/transferred" alt="Message after the transfer: marks deleted, absences added, classes re-indexed" />
 
 </ExpectedResult>
 
-:::warning During a period
-Marks already entered stay with the student. Before a move during a period, tell the teachers of both classes and check the report cards concerned.
+## From batch editing
+
+In [batch editing](/students/batch-edit), changing the class of a student who has marks opens a confirmation window. **Move and delete the marks** applies the transfer; **Cancel** restores the former class and changes nothing.
+
+<DocScreenshot src="web/students/batch-transfer" alt="Batch editing: class change confirmation window" />
+
+A student with no marks yet changes class without a question, and is marked absent on the sheets already entered in the new class.
+
+:::warning Marks lost
+The deletion is permanent. Before confirming, note down the student's marks if they are needed elsewhere (transcript, report card already printed).
 :::
+
+<RelatedArticles items={[{to: '/students/add', label: 'Add a student'}, {to: '/grades/edit-grades', label: 'Edit a mark sheet'}]} />
