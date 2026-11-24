@@ -1,33 +1,33 @@
 {
   "trouver-mon-etablissement": {
     "title": {
-      "fr": "Trouver mon établissement",
-      "en": "Find my school (in French)"
+      "fr": "Trouver son établissement et se connecter",
+      "en": "Find your school and sign in (in French)"
     },
     "duration": "0:40",
-    "youtube": "",
+    "youtube": "QMzar7HQ9ZE",
     "pages": [
       "/getting-started/find-school"
     ]
   },
   "premiere-connexion": {
     "title": {
-      "fr": "Première connexion",
-      "en": "First sign-in (in French)"
+      "fr": "Première connexion : sécuriser son compte",
+      "en": "First sign-in: secure your account (in French)"
     },
     "duration": "0:46",
-    "youtube": "",
+    "youtube": "f7vlZnw0UnM",
     "pages": [
       "/getting-started/sign-in"
     ]
   },
   "ajouter-eleve": {
     "title": {
-      "fr": "Ajouter un élève",
-      "en": "Add a student (in French)"
+      "fr": "Ajouter un élève et lui affecter une classe",
+      "en": "Add a student and assign a class (in French)"
     },
-    "duration": "0:46",
-    "youtube": "",
+    "duration": "0:57",
+    "youtube": "gHFKK6YieKQ",
     "pages": [
       "/students/add"
     ]
@@ -46,11 +46,11 @@
   },
   "importer-photos": {
     "title": {
-      "fr": "Importer les photos d'élèves",
+      "fr": "Importer les photos des élèves",
       "en": "Import student photos (in French)"
     },
     "duration": "0:54",
-    "youtube": "",
+    "youtube": "AsN4n_3LUsE",
     "pages": [
       "/students/photos"
     ]
@@ -61,18 +61,18 @@
       "en": "Register a school (in French)"
     },
     "duration": "0:50",
-    "youtube": "",
+    "youtube": "5fVouXmWLHM",
     "pages": [
       "/onboarding/new-school"
     ]
   },
   "saisir-notes": {
     "title": {
-      "fr": "Saisir ses notes",
-      "en": "Enter marks (in French)"
+      "fr": "Saisir les notes des élèves",
+      "en": "Enter students' grades (in French)"
     },
     "duration": "0:59",
-    "youtube": "",
+    "youtube": "IG5CImCNc-A",
     "pages": [
       "/grades/enter-grades"
     ]
@@ -83,7 +83,7 @@
       "en": "Edit a mark sheet (in French)"
     },
     "duration": "0:54",
-    "youtube": "",
+    "youtube": "mrTdo7eVjPc",
     "pages": [
       "/grades/edit-grades"
     ]
@@ -127,8 +127,8 @@
       "fr": "Créer un compte utilisateur",
       "en": "Create a user account (in French)"
     },
-    "duration": "0:57",
-    "youtube": "",
+    "duration": "1:00",
+    "youtube": "EwTfaB9BrL8",
     "pages": [
       "/users/create-teacher"
     ]
@@ -157,22 +157,22 @@
   },
   "creer-classe": {
     "title": {
-      "fr": "Créer une classe",
-      "en": "Create a class (in French)"
+      "fr": "Créer une nouvelle classe",
+      "en": "Create a new class (in French)"
     },
     "duration": "0:46",
-    "youtube": "",
+    "youtube": "ZeXjoHR6DdY",
     "pages": [
       "/structure/create-class"
     ]
   },
   "periodes-evaluation": {
     "title": {
-      "fr": "Régler les dates d'une période",
-      "en": "Set a period's dates (in French)"
+      "fr": "Ajuster les dates des périodes d'évaluation",
+      "en": "Adjust evaluation period dates (in French)"
     },
     "duration": "0:48",
-    "youtube": "",
+    "youtube": "GHpmVQ7EdMo",
     "pages": [
       "/evaluations/configure-periods"
     ]
@@ -208,6 +208,51 @@
     "youtube": "",
     "pages": [
       "/onboarding/request-demo"
+    ]
+  },
+  "comptes-perimetre": {
+    "title": {
+      "fr": "Groupes, périmètres et droits des utilisateurs",
+      "en": "User groups, scopes and rights (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "WSqco_N5Za8",
+    "pages": [
+      "/users/roles"
+    ]
+  },
+  "charge-discipline": {
+    "title": {
+      "fr": "Suivi disciplinaire",
+      "en": "Discipline follow-up (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "toMxHQuifMQ",
+    "pages": [
+      "/discipline/rules"
+    ]
+  },
+  "responsable-etudes": {
+    "title": {
+      "fr": "Gestion des études",
+      "en": "Studies management (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "Jf2xzCBJ7y8",
+    "pages": [
+      "/timetable/build",
+      "/timetable/constraints"
+    ]
+  },
+  "changer-classe": {
+    "title": {
+      "fr": "Changer un élève de classe",
+      "en": "Move a student to another class (in French)"
+    },
+    "duration": "0:58",
+    "youtube": "O6NSIOeQHqI",
+    "pages": [
+      "/students/change-class"
     ]
   }
 }
