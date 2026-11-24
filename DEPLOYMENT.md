@@ -50,7 +50,10 @@ curl -sI https://docs.modernschools.online/en/students/photos | head -1   # 200
 curl -sI https://docs.modernschools.online/inexistant | head -1           # 404
 curl -sI https://docs.modernschools.online/context/PHOTOS | head -1       # 200 (redirection côté navigateur)
 curl -sI https://docs.modernschools.online/pagefind/pagefind-ui.js | head -1
+curl -s https://docs.modernschools.online/en/ | grep -o '<html lang="[a-z]*"'   # lang="en" (et non "fr")
 ```
+
+`npm run build` retire `build/en/.htaccess` et vérifie la présence des index de recherche ; `rsync --delete` l'enlève donc aussi du serveur. Ne jamais publier un `build/` produit par `docusaurus build` seul : il n'aurait ni index de recherche ni ce correctif.
 
 Puis, dans un navigateur : rechercher « bulletin » sur l'accueil français et « report card » sur l'accueil anglais ; ouvrir une page avec vidéo.
 
