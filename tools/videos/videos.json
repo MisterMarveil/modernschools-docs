@@ -103,11 +103,11 @@
  "creer-utilisateur": {
   "title": "Créer un compte utilisateur",
   "subtitle": "Administration : un enseignant, un comptable, un censeur…",
-  "total": 64,
+  "total": 60,
   "pages": [
    "/users/create-teacher"
   ],
-  "voice": "Créer un compte utilisateur. Dans Paramètres, Utilisateurs, ouvrez la liste des utilisateurs et cliquez sur Ajouter. Renseignez le nom, les prénoms, le genre et le nom d'utilisateur, celui qui servira à se connecter. Le formulaire ne demande aucun mot de passe. Ouvrez ensuite l'onglet Informations complémentaires et choisissez le groupe : c'est lui qui fixe le rôle du compte. Sans groupe, la création est refusée et la rubrique est signalée en rouge. Cochez par exemple Enseignants, puis cliquez sur Créer. Le compte est créé et apparaît dans la liste. La personne se connecte avec le mot de passe par défaut de son groupe, puis choisit le sien. En cas d'oubli, ouvrez sa fiche : Actions, Réinitialiser le mot de passe. Remettez l'identifiant en main propre."
+  "voice": "Créer un compte utilisateur. Dans Paramètres, Utilisateurs, ouvrez la liste des utilisateurs et cliquez sur Ajouter. Renseignez le nom, les prénoms, le genre et le nom d'utilisateur, celui qui servira à se connecter. Le formulaire ne demande aucun mot de passe. Ouvrez ensuite l'onglet Informations complémentaires et choisissez le groupe. Sans groupe, la création est refusée et la rubrique est signalée en rouge. Cochez par exemple Enseignants, puis cliquez sur Créer. Le compte apparaît dans la liste. La personne se connecte avec le mot de passe par défaut de son groupe, puis choisit le sien. En cas d'oubli, ouvrez sa fiche : Actions, Réinitialiser le mot de passe. Remettez l'identifiant en main propre."
  },
  "modifier-eleves-masse": {
   "title": "Modifier les élèves en masse",

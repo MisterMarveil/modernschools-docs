@@ -1,5 +1,5 @@
 // Mini-tutoriel « Créer un compte utilisateur » (narration : tools/videos/videos.json)
-window.TOTAL = 64;
+window.TOTAL = 60;
 window.D = {
  "title": "Créer un compte utilisateur",
  "subtitle": "Administration : un enseignant, un comptable, un censeur…",
@@ -8,7 +8,7 @@ window.D = {
    "src": "web/users/list",
    "w": 1600,
    "h": 1000,
-   "dur": 7,
+   "dur": 6,
    "text": "Paramètres → Utilisateurs → Utilisateurs, puis « Ajouter »",
    "focus": [
     84,
@@ -50,7 +50,7 @@ window.D = {
    "src": "web/users/create-no-group",
    "w": 1600,
    "h": 1000,
-   "dur": 9,
+   "dur": 8,
    "text": "Sans groupe : création refusée, champ signalé en rouge",
    "focus": [
     50,
@@ -64,7 +64,7 @@ window.D = {
    "src": "web/users/create-group-checked",
    "w": 1600,
    "h": 1000,
-   "dur": 7,
+   "dur": 6,
    "text": "Cochez le groupe, par exemple « Enseignants », puis « Créer »",
    "focus": [
     50,
@@ -78,7 +78,7 @@ window.D = {
    "src": "web/users/created",
    "w": 1600,
    "h": 1000,
-   "dur": 6,
+   "dur": 5,
    "text": "Compte créé",
    "focus": [
     14,
