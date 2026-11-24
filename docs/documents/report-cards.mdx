@@ -3,19 +3,19 @@ id: report-cards
 title: "Générer les bulletins"
 description: "Produire les bulletins d'une classe pour une période, ou celui d'un seul élève."
 sidebar_position: 2
-keywords: ["bulletin", "bulletins de notes", "trimestre", "report card", "bulletin scolaire"]
+keywords: ["bulletin", "bulletins de notes", "trimestre", "report card", "bulletin scolaire", "PDF"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
 estimated_time: "5 min"
 video: generer-bulletins
-last_verified: 2026-11-18
+last_verified: 2026-11-24
 translation_key: documents/report-cards
 ---
 <Prerequisite>
 
-Les notes de la période sont saisies. Vérifiez-le avec **État d'insertion des notes** (Rapports, colonne Performances).
+Les notes de la période sont saisies. Vérifiez-le avec l'[état d'insertion des notes](/analytics/grade-entry-status).
 
 </Prerequisite>
 
@@ -24,27 +24,44 @@ Les notes de la période sont saisies. Vérifiez-le avec **État d'insertion des
 
 **RAPPORTS → Bulletins de notes**.
 
+<DocScreenshot src="web/documents/reports-home" alt="Accueil des rapports : Bulletins de notes dans la colonne Performances" />
+
 </Step>
 <Step title="Choisir la période et la classe">
 
-Choisissez la période en titre (par exemple **Trimestre 1**), puis la classe dans **Choisir la classe**. Vous pouvez aussi générer le bulletin d'un seul élève.
+Choisissez la période en titre (par exemple **Trimestre 1**), puis la classe dans **Choisir la classe**. Pour un seul élève, choisissez-le ensuite dans **Choisir un élève**.
 
-<DocScreenshot src="web/documents/report-cards" alt="Génération des bulletins : période, choix de la classe, bouton Générer, cadre des fichiers" />
+<DocScreenshot src="web/documents/report-cards" alt="Génération des bulletins : période, classe, élève, bouton Générer, explorateur des fichiers" />
 
 </Step>
 <Step title="Générer">
 
-Cliquez sur **Générer**, puis téléchargez le fichier dans le cadre de droite.
+Cliquez sur **Générer**, puis confirmez. Un bulletin est préparé par élève ; la progression s'affiche (classe, puis élève par élève).
+
+<DocScreenshot src="web/documents/report-cards-progress" alt="Génération en cours : progression de la classe et compteur des élèves" />
+
+</Step>
+<Step title="Télécharger">
+
+À la fin, le PDF de la classe apparaît dans l'explorateur de droite, dossier **bulletins**. Cliquez sur le fichier pour le télécharger.
+
+<DocScreenshot src="web/documents/report-cards-done" alt="Explorateur : le PDF de la classe dans le dossier bulletins" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Un PDF contient les bulletins de la classe, avec l'en-tête, le logo et la signature de l'établissement.
+Un PDF contient les bulletins de la classe, un par page : en-tête et logo de l'établissement, **année scolaire de l'instance**, notes, rangs, moyennes et discipline.
+
+<DocScreenshot src="web/documents/report-card-pdf" alt="Bulletin d'un élève fictif : en-tête, notes par matière, rangs et moyennes" />
 
 </ExpectedResult>
 
-:::tip
-Une note corrigée ? Régénérez simplement le bulletin : le nouveau fichier remplace l'ancien dans le cadre après **Nettoyer**.
+:::tip Note corrigée
+Cliquez sur **Nettoyer** sous l'explorateur, puis générez de nouveau : le nouveau fichier remplace l'ancien.
+:::
+
+:::info Archives
+Dans une instance archivée (par exemple 2025-2026), les bulletins portent l'année de cette instance, et non celle en cours (depuis la version 2026.11.16).
 :::

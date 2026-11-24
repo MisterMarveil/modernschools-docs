@@ -176,5 +176,38 @@
     "pages": [
       "/evaluations/configure-periods"
     ]
+  },
+  "generer-bulletins": {
+    "title": {
+      "fr": "Générer les bulletins",
+      "en": "Generate report cards (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/documents/report-cards"
+    ]
+  },
+  "etat-insertion-notes": {
+    "title": {
+      "fr": "L'état d'insertion des notes",
+      "en": "Grade entry status (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/analytics/grade-entry-status"
+    ]
+  },
+  "demander-demo": {
+    "title": {
+      "fr": "Demander une démonstration",
+      "en": "Request a demo (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/onboarding/request-demo"
+    ]
   }
 }
