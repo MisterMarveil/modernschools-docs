@@ -177,15 +177,16 @@
       "/evaluations/configure-periods"
     ]
   },
-  "comptes-perimetre": {
+  "responsable-etudes": {
     "title": {
-      "fr": "Groupes, périmètres et droits des utilisateurs",
-      "en": "User groups, scopes and rights (in French)"
+      "fr": "Gestion des études",
+      "en": "Studies management (in French)"
     },
     "duration": "0:58",
-    "youtube": "WSqco_N5Za8",
+    "youtube": "Jf2xzCBJ7y8",
     "pages": [
-      "/users/roles"
+      "/users/roles",
+      "/timetable/build"
     ]
   },
   "charge-discipline": {
@@ -196,19 +197,18 @@
     "duration": "0:58",
     "youtube": "toMxHQuifMQ",
     "pages": [
-      "/discipline/rules"
+      "/discipline/enter-info"
     ]
   },
-  "responsable-etudes": {
+  "comptes-perimetre": {
     "title": {
-      "fr": "Gestion des études",
-      "en": "Studies management (in French)"
+      "fr": "Groupes, périmètres et droits des utilisateurs",
+      "en": "User groups, scopes and rights (in French)"
     },
     "duration": "0:58",
-    "youtube": "Jf2xzCBJ7y8",
+    "youtube": "WSqco_N5Za8",
     "pages": [
-      "/timetable/build",
-      "/timetable/constraints"
+      "/users/roles"
     ]
   },
   "changer-classe": {

@@ -1,0 +1,63 @@
+---
+id: enter-info
+title: "Saisir les informations disciplinaires"
+description: "Retards, absences, consignes et sanctions d'une classe pour une période, avec la sanction suggérée par la grille."
+sidebar_position: 2
+keywords: ["discipline", "absences", "retards", "consignes", "sanction", "surveillant", "conduct", "absences"]
+type: how-to
+product: ["web"]
+audience: ["school-life", "school-admin"]
+availability: available
+estimated_time: "4 min"
+video: charge-discipline
+last_verified: 2026-11-23
+translation_key: discipline/enter-info
+---
+<Prerequisite>
+
+- Un compte du groupe **Chargés de discipline** ; s'il est limité à des groupes de classes, seules leurs classes sont proposées (voir [rôles et accès](/users/roles#limiter-un-compte-à-des-groupes-de-classes)).
+- La [grille disciplinaire](/discipline/rules) réglée par l'administration.
+
+</Prerequisite>
+
+<Procedure>
+<Step title="Ouvrir la saisie">
+
+Sur l'accueil, **Infos discipline**. Choisissez la **période**, puis la **classe** : la liste des élèves s'affiche avec ce qui a déjà été saisi.
+
+<DocScreenshot src="web/roles/discipline-saisie" alt="Saisie des informations disciplinaires : retards, absences en heures, consignes, sanction suggérée">
+  <Hotspot number={1} x={26} y={40} label="Absences (heures)" />
+  <Hotspot number={2} x={55} y={38} label="Sanction suggérée" />
+</DocScreenshot>
+
+</Step>
+<Step title="Saisir les quantités">
+
+Pour chaque élève : **retards** et **absences en heures** (total et justifiés), **heures de consigne**, avertissement ou blâme, jours d'exclusion. Les cases vides valent 0 ; un nombre de justifiés supérieur au total est signalé en rouge.
+
+La **sanction suggérée** par la grille s'affiche aussitôt. Elle n'est jamais imposée : **Intégrer** la recopie dans l'observation, que vous pouvez compléter.
+
+</Step>
+<Step title="Sanctions spéciales et observation">
+
+Cochez au besoin **conseil de discipline**, **convocation des parents** ou **corvée** : la mention s'ajoute à l'observation, et disparaît si vous décochez. **Bannir du tableau d'honneur** demande une confirmation.
+
+<DocScreenshot src="web/roles/discipline-observation" alt="Observation complétée par la sanction intégrée et la convocation des parents" />
+
+</Step>
+<Step title="Enregistrer">
+
+Cliquez sur **Soumettre**. La page revient sur la même classe et la même période, avec un message de confirmation. Seuls les élèves affichés sont enregistrés.
+
+<DocScreenshot src="web/roles/discipline-enregistre" alt="Message : informations disciplinaires de Trimestre 1 - Tle D sauvegardées" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Les informations figurent sur les bulletins de la période et dans les conseils de classe. **Grille disciplinaire**, en haut à droite, rappelle les règles à tout moment.
+
+</ExpectedResult>
+
+<RelatedArticles items={[{to: '/discipline/rules', label: 'La grille disciplinaire'}, {to: '/discipline/messaging', label: 'Écrire aux familles'}]} />

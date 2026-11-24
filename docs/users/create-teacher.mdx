@@ -10,7 +10,7 @@ audience: ["school-admin"]
 availability: available
 estimated_time: "10 min"
 video: creer-utilisateur
-last_verified: 2026-11-18
+last_verified: 2026-11-24
 translation_key: users/create-teacher
 ---
 ## Par import (recommandé)
@@ -43,14 +43,44 @@ Chaque enseignant reçoit son compte et retrouve ses classes et ses matières da
 
 ## À la main
 
-**Paramètres → Utilisateurs → Utilisateurs → Ajouter**. Renseignez **Nom**, **Prénoms**, le **nom d'utilisateur** (celui qui sert à se connecter) et le **mot de passe** deux fois, puis choisissez le groupe *Enseignants* dans l'onglet **Informations Complémentaires**.
+Pour un enseignant, mais aussi un comptable, un responsable des études ou un chargé de discipline : le groupe choisi fixe le rôle du compte.
 
-<DocScreenshot src="web/users/create" alt="Formulaire de création d'un utilisateur">
-  <Hotspot number={1} x={25} y={29} label="Nom" />
-  <Hotspot number={2} x={25} y={66} label="Nom d'utilisateur" />
-  <Hotspot number={3} x={25} y={73} label="Mot de passe" />
-</DocScreenshot>
+<Procedure>
+<Step title="Ouvrir le formulaire">
+
+**Paramètres → Utilisateurs → Utilisateurs**, puis **Ajouter**.
+
+<DocScreenshot src="web/users/list" alt="Liste des utilisateurs, bouton Ajouter en haut à droite" />
+
+</Step>
+<Step title="Identité et nom d'utilisateur">
+
+Onglet **Données personnelles** : **Nom**, **Prénoms**, **Genre**, et le **nom d'utilisateur**, celui qui sert à se connecter. Le formulaire ne demande aucun mot de passe.
+
+<DocScreenshot src="web/users/create-identity" alt="Onglet Données personnelles : nom, prénoms, genre, nom d'utilisateur, sans champ mot de passe" />
+
+</Step>
+<Step title="Choisir le groupe">
+
+Onglet **Informations complémentaires**, rubrique **Groupes utilisateurs** : cochez le groupe, par exemple *Enseignants*, puis **Créer**. Sans groupe, la création est refusée et la rubrique est signalée en rouge.
+
+<DocScreenshot src="web/users/create-no-group" alt="Création refusée : la rubrique Groupes utilisateurs est en rouge" />
+
+<DocScreenshot src="web/users/create-group-checked" alt="Groupe Enseignants coché" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Le message « … a bien été créé » s'affiche et le compte apparaît dans la liste.
+
+<DocScreenshot src="web/users/created" alt="Compte créé" />
+
+</ExpectedResult>
 
 :::warning Mot de passe
-Remettez l'identifiant et le mot de passe provisoire à l'enseignant en main propre. À sa première connexion, il devra choisir son propre mot de passe.
+Aucun mot de passe n'est saisi : la personne se connecte avec son nom d'utilisateur et le mot de passe par défaut de son groupe (`profpass` pour les enseignants), puis choisit le sien. En cas d'oubli : **Actions → Réinitialiser le mot de passe** sur sa fiche. Voir [mots de passe par défaut](/users/roles#mots-de-passe-par-défaut).
 :::
+
+Remettez le nom d'utilisateur en main propre. Le mot de passe par défaut ne s'envoie ni par e-mail ni par messagerie.

@@ -20,11 +20,11 @@
  "ajouter-eleve": {
   "title": "Ajouter un élève",
   "subtitle": "Créer un dossier élève et l'affecter à une classe",
-  "total": 46,
+  "total": 57,
   "pages": [
    "/students/add"
   ],
-  "voice": "Ajouter un élève. Dans Paramètres, ouvrez Utilisateurs, puis Étudiants, et cliquez sur Ajouter. Saisissez le nom, les prénoms, le genre, la date et le lieu de naissance. Choisissez la classe : c'est obligatoire. L'onglet Informations complémentaires reçoit les contacts des parents et l'adresse. Cliquez sur Créer. Le matricule unique est attribué automatiquement. Si un élève de même nom et même prénom existe déjà, ModernSchools vous le signale : vérifiez avant de continuer."
+  "voice": "Ajouter un élève. Dans Paramètres, ouvrez Utilisateurs, puis Étudiants, et cliquez sur Ajouter. Saisissez le nom, les prénoms, le genre, la date et le lieu de naissance, puis la classe, obligatoire. L'onglet Informations complémentaires reçoit les contacts des parents. Cliquez sur Créer : le matricule unique est attribué. Si l'élève arrive en cours d'année, il est marqué absent sur chaque fiche de notes déjà saisie dans sa classe ; un message le confirme, et l'enseignant pourra remplacer absent par une note. Un élève de même nom et même prénom existe déjà ? ModernSchools vous le signale."
  },
  "importer-eleves": {
   "title": "Importer les élèves",
@@ -103,11 +103,11 @@
  "creer-utilisateur": {
   "title": "Créer un compte utilisateur",
   "subtitle": "Administration : un enseignant, un comptable, un censeur…",
-  "total": 57,
+  "total": 60,
   "pages": [
    "/users/create-teacher"
   ],
-  "voice": "Créer un compte utilisateur. Dans Paramètres, Utilisateurs, ouvrez la liste des utilisateurs et cliquez sur Ajouter. Renseignez le nom, les prénoms, le genre et le nom d'utilisateur, celui qui servira à se connecter. Laissez le mot de passe vide : le compte reçoit le mot de passe par défaut de son rôle, à changer dès la première connexion. Ouvrez ensuite l'onglet Informations complémentaires et choisissez le groupe. Sans groupe, la création est refusée et le champ est signalé en rouge. Cochez par exemple Enseignants, puis cliquez sur Créer. Le compte apparaît dans la liste. Remettez l'identifiant à la personne en main propre."
+  "voice": "Créer un compte utilisateur. Dans Paramètres, Utilisateurs, ouvrez la liste des utilisateurs et cliquez sur Ajouter. Renseignez le nom, les prénoms, le genre et le nom d'utilisateur, celui qui servira à se connecter. Le formulaire ne demande aucun mot de passe. Ouvrez ensuite l'onglet Informations complémentaires et choisissez le groupe. Sans groupe, la création est refusée et la rubrique est signalée en rouge. Cochez par exemple Enseignants, puis cliquez sur Créer. Le compte apparaît dans la liste. La personne se connecte avec le mot de passe par défaut de son groupe, puis choisit le sien. En cas d'oubli, ouvrez sa fiche : Actions, Réinitialiser le mot de passe. Remettez l'identifiant en main propre."
  },
  "modifier-eleves-masse": {
   "title": "Modifier les élèves en masse",
@@ -144,5 +144,43 @@
    "/evaluations/configure-periods"
   ],
   "voice": "Régler les dates d'une période. Dans Paramètres, Structures, ouvrez Périodes d'évaluation : l'année et ses trimestres, ou ses semestres, s'y affichent avec leurs dates. Cliquez sur Éditer sur la période, par exemple Trimestre un. Vérifiez la période parente, la date de début et la date de fin. La date limite de report des notes ferme la saisie pour les enseignants : prévenez-les avant de l'avancer. Cliquez sur Mettre à jour : la nouvelle date s'applique aussitôt."
+ },
+ "changer-classe": {
+  "title": "Changer un élève de classe",
+  "subtitle": "Ce que deviennent ses notes, et comment confirmer",
+  "total": 58,
+  "pages": [
+   "/students/change-class"
+  ],
+  "voice": "Changer un élève de classe. Un élève qui change de classe perd les notes de sa classe d'origine : faites ces changements en début d'année. Ouvrez sa fiche et choisissez la nouvelle classe. S'il a déjà des notes, la fiche indique combien seront supprimées. Cochez la case de confirmation, puis Mettre à jour ; sans elle, l'enregistrement est refusé. Ses anciennes notes sont alors supprimées, il est marqué absent sur les fiches déjà saisies dans sa nouvelle classe, et les deux classes sont réindexées. Dans l'édition en masse, une fenêtre demande la même confirmation ; Annuler remet la classe d'origine."
+ },
+ "responsable-etudes": {
+  "title": "Le compte du responsable des études",
+  "subtitle": "Emplois du temps, contraintes, et un périmètre par groupes de classes",
+  "total": 58,
+  "pages": [
+   "/users/roles",
+   "/timetable/build"
+  ],
+  "voice": "Le compte du responsable des études. Après la connexion, l'accueil propose les emplois du temps, les contraintes et la gestion des élèves. Pour l'emploi du temps, choisissez une classe et un enseignant, glissez les matières sur les créneaux, puis enregistrez. Dans les contraintes, fixez pour chaque matière et chaque classe le coefficient, le quota horaire et la compétence attendue. Si l'administration a limité le compte au premier cycle, seules ces classes sont proposées, et toute autre classe est refusée avec un message clair. Les pages des autres profils, comme les rapports, restent fermées."
+ },
+ "charge-discipline": {
+  "title": "Le compte du chargé de discipline",
+  "subtitle": "Saisir la discipline d'une classe, écrire aux familles",
+  "total": 58,
+  "pages": [
+   "/discipline/enter-info",
+   "/discipline/messaging"
+  ],
+  "voice": "Le compte du chargé de discipline. Ouvrez Infos discipline, puis choisissez la période et la classe. Pour chaque élève, saisissez les retards, les heures d'absence, justifiées ou non, et les heures de consigne. La grille disciplinaire suggère aussitôt une sanction : Intégrer la recopie dans l'observation, que complètent les cases conseil de discipline, convocation ou corvée. Soumettez : la page revient sur la même classe, avec un message de confirmation. La messagerie prépare un message aux familles d'une classe, envoyé par WhatsApp ou par e-mail une fois le service activé."
+ },
+ "comptes-perimetre": {
+  "title": "Comptes du personnel : groupes et périmètre",
+  "subtitle": "Créer un compte, le limiter à des groupes de classes, réinitialiser un mot de passe",
+  "total": 58,
+  "pages": [
+   "/users/roles"
+  ],
+  "voice": "Créer et limiter les comptes du personnel. Dans Paramètres, Utilisateurs, ajoutez un utilisateur : nom, prénoms et identifiant ; aucun mot de passe n'est à saisir. Dans Informations complémentaires, cochez son groupe, par exemple Responsable des études, et choisissez son niveau de compétence : le compte ne travaillera que sur ces groupes de classes. Mot de passe oublié ? Dans la fiche, menu Actions, Réinitialiser le mot de passe : la personne se connecte avec le mot de passe par défaut de son groupe, puis en choisit un nouveau."
  }
 }

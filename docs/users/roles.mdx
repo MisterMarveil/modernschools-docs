@@ -3,14 +3,14 @@ id: roles
 title: "Rôles et accès"
 description: "Les groupes d'utilisateurs, ce que chacun peut faire, et comment rétablir l'accès d'un utilisateur."
 sidebar_position: 2
-keywords: ["rôle", "groupe", "droits", "permissions", "mot de passe oublié", "roles", "permissions", "access"]
+keywords: ["rôle", "groupe", "droits", "permissions", "mot de passe oublié", "mot de passe par défaut", "réinitialiser", "groupes de classes", "niveau de compétence", "roles", "permissions", "access"]
 type: concept
 product: ["web"]
 audience: ["school-admin", "direction"]
 availability: available
-estimated_time: "4 min"
+estimated_time: "6 min"
+last_verified: 2026-11-23
 video: comptes-perimetre
-last_verified: 2026-11-18
 translation_key: users/roles
 ---
 Les droits sont attribués par **groupe d'utilisateurs** (**Paramètres → Utilisateurs → Groupes d'utilisateurs**).
@@ -19,15 +19,56 @@ Les droits sont attribués par **groupe d'utilisateurs** (**Paramètres → Util
 
 | Groupe | Pour qui | Ce qu'il permet |
 |---|---|---|
-| Administrateurs Opérationnels | l'administrateur de la plateforme dans l'établissement | configurer l'établissement : structure, utilisateurs, évaluations, documents |
+| Administrateurs Opérationnels | l'administrateur de la plateforme dans l'établissement | configurer l'établissement : structure, utilisateurs, évaluations, documents, rapports |
 | Administrateurs VIP | la direction | consulter l'ensemble des comptes rendus statistiques et des données de l'établissement |
 | Enseignants | les enseignants | saisir les notes de leurs classes et matières, suggérer un coefficient manquant, gérer leur profil |
-| Responsable des études | le censeur, le préfet des études | [construire les emplois du temps](/timetable/build), [gérer coefficients, quotas horaires et compétences attendues](/timetable/constraints), valider les coefficients suggérés |
+| Responsable des études | le censeur, le préfet des études | [construire les emplois du temps](/timetable/build), [gérer coefficients, quotas horaires et compétences attendues](/timetable/constraints), modifier les élèves de ses classes, valider les coefficients suggérés |
+| Chargés de discipline | le surveillant général, les surveillants | [saisir les informations disciplinaires](/discipline/enter-info), [écrire aux familles](/discipline/messaging) |
+| Comptables | l'économe, l'intendant | gérer leur profil (le module de comptabilité n'est pas encore disponible) |
+
+## Un profil à la fois
+
+Chaque page appartient à un profil : un chargé de discipline n'ouvre ni les rapports, ni les emplois du temps, ni l'édition des élèves. Un compte qui a plusieurs groupes (enseignant et responsable des études, par exemple) choisit son profil après la connexion ; il n'ouvre alors que les pages de ce profil, et peut en changer depuis l'accueil.
+
+Une page réservée à un autre profil affiche un message qui l'explique, et propose de passer au bon profil quand le compte le possède.
+
+<DocScreenshot src="web/roles/refus-profil" alt="Page réservée : la page est réservée à l'administration, l'utilisateur est connecté en tant que responsable des études" />
+
+## Limiter un compte à des groupes de classes
+
+Un responsable des études ou un chargé de discipline peut être limité à une partie de l'établissement, par exemple le 1er cycle. Dans la fiche de l'utilisateur, onglet **Informations complémentaires**, choisissez les groupes de classes dans **Niveau de compétence** ; les sous-groupes sont compris.
+
+<DocScreenshot src="web/roles/admin-groupes" alt="Fiche utilisateur : niveau de compétence 1er Cycle et groupe Responsable des études">
+  <Hotspot number={1} x={71} y={28} label="Niveau de compétence" />
+  <Hotspot number={2} x={50} y={52} label="Groupe d'utilisateurs" />
+</DocScreenshot>
+
+Le compte ne voit alors que les classes de ces groupes : listes de classes, élèves, emplois du temps, contraintes, discipline. Toute action sur une autre classe est refusée avec un message qui nomme la classe et les groupes confiés. Sans niveau de compétence, le compte travaille sur toutes les classes.
+
+<DocScreenshot src="web/roles/censeur-hors-perimetre" alt="Hors de vos groupes de classes : la classe Tle D ne fait pas partie du 1er Cycle" />
+
+## Mots de passe par défaut
+
+Un compte créé, ou dont le mot de passe est réinitialisé, reçoit le mot de passe par défaut de son groupe. À la connexion, la personne doit le remplacer par le sien ([me connecter](/getting-started/sign-in)) : l'application reste fermée tant qu'elle ne l'a pas fait.
+
+| Groupe | Mot de passe par défaut |
+|---|---|
+| Administrateurs Opérationnels, Administrateurs VIP | `admin` |
+| Responsable des études | `censeurpass` |
+| Chargés de discipline | `surpass` |
+| Comptables | `comptapass` |
+| Enseignants | `profpass` |
+
+Un compte qui a plusieurs groupes reçoit celui du premier groupe de cette liste.
 
 ## Un utilisateur ne peut plus se connecter
 
 1. **Paramètres → Utilisateurs → Utilisateurs**, puis **Éditer** sur sa ligne.
-2. Saisissez un nouveau mot de passe provisoire (deux fois), puis **Mettre à jour**.
-3. Remettez-le à l'utilisateur en main propre : il le changera à sa connexion.
+2. Menu **Actions** → **Réinitialiser le mot de passe**, puis confirmez.
+3. Indiquez à l'utilisateur son **identifiant** : il se connecte avec le mot de passe par défaut de son groupe, puis en choisit un nouveau.
 
-Ne communiquez jamais un mot de passe par e-mail ou par messagerie. Voir aussi [problèmes de connexion](/troubleshooting/sign-in).
+<DocScreenshot src="web/roles/admin-reinitialiser" alt="Fiche utilisateur : menu Actions, Réinitialiser le mot de passe">
+  <Hotspot number={1} x={91} y={22} label="Réinitialiser le mot de passe" />
+</DocScreenshot>
+
+L'administration ne saisit ni ne transmet aucun mot de passe personnel. Voir aussi [problèmes de connexion](/troubleshooting/sign-in).
