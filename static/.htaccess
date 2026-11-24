@@ -43,6 +43,12 @@ ErrorDocument 404 /404.html
   <FilesMatch "\.(html)$">
     Header set Cache-Control "no-cache"
   </FilesMatch>
+  # Index de recherche : noms de fichiers sans empreinte (pagefind.js, pagefind-ui.js…)
+  # et index renommés à chaque construction : toujours revalider.
+  <If "%{REQUEST_URI} =~ m#^/pagefind/#">
+    Header set Cache-Control "no-cache"
+    Header unset Expires
+  </If>
 </IfModule>
 
 <IfModule mod_expires.c>

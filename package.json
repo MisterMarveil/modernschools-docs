@@ -5,7 +5,7 @@
   "description": "Documentation publique ModernSchools — docs.modernschools.online",
   "scripts": {
     "start": "docusaurus start",
-    "build": "npm run validate && docusaurus build && pagefind --site build --output-subdir pagefind",
+    "build": "npm run validate && docusaurus build && pagefind --site build --output-subdir pagefind && node tools/postbuild.mjs",
     "serve": "docusaurus serve",
     "validate": "node tools/validate.mjs",
     "images": "python3 tools/images.py",
