@@ -1,0 +1,62 @@
+---
+id: grade-entry-status
+title: "Track grade entry"
+description: "See which teachers have entered their grade sheets, which are overdue, and send a reminder."
+sidebar_position: 2
+keywords: ["insertion des notes", "état d'insertion", "fiches en retard", "rappel", "saisie des notes", "grade entry", "taux d'insertion"]
+type: how-to
+product: ["web"]
+audience: ["school-admin", "studies-manager"]
+availability: available
+estimated_time: "5 min"
+video: etat-insertion-notes
+last_verified: 2026-11-24
+translation_key: analytics/grade-entry-status
+---
+Before generating [report cards](/documents/report-cards), check that every grade sheet has been entered.
+
+<Procedure>
+<Step title="Open the grade entry status">
+
+**REPORTS → Grade entry status** (Performance column).
+
+</Step>
+<Step title="Choose the period">
+
+The current period is preselected. Change it if needed, or choose a teacher, then **Refresh**.
+
+<DocScreenshot src="web/analytics/grade-entry-overview" alt="Grade entry status: filters, overall entry rate, overdue sheets, average completion, charts" />
+
+</Step>
+<Step title="Read the indicators">
+
+- **Overall entry rate**: sheets entered over sheets expected (one sheet = one class, one subject, one evaluation).
+- **Overdue sheets**: not entered after the period's deadline.
+- **Average completion**: share of students graded in the entered sheets.
+- **Teachers needing attention**, then the list of **overdue sheets**: class, subject, days overdue.
+
+<DocScreenshot src="web/analytics/grade-entry-attention" alt="Teachers needing attention: expected, entered and overdue sheets, View and Notify buttons" />
+
+</Step>
+<Step title="Remind a teacher">
+
+**Notify** opens an editable message, sent to the teacher through the school's messaging (WhatsApp or e-mail). The teacher's phone number or e-mail must be on their record (Users).
+
+<DocScreenshot src="web/analytics/grade-entry-notify-result" alt="Send a notification window, with the message saying sending is not enabled yet" />
+
+</Step>
+</Procedure>
+
+:::info Messaging
+Sending messages is enabled school by school by ModernSchools. Until it is, the window says so and nothing is sent (since version 2026.11.17; before, the button showed a success without sending anything).
+:::
+
+## A teacher's detail
+
+Choose the teacher in the filter: their sheets by status and each sheet's completion rate.
+
+<DocScreenshot src="web/analytics/grade-entry-teacher" alt="A teacher's detail: expected, entered and overdue sheets, breakdown by status" />
+
+## Export
+
+**Export CSV** (top right) produces a file with the indicators, the per-teacher statistics and the overdue sheets, readable in a spreadsheet.

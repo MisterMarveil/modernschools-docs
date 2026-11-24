@@ -10,7 +10,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category', label: 'Inscription et onboarding',
-      items: ['onboarding/new-school', 'onboarding/existing-school', 'onboarding/commercial-code', 'onboarding/school-identity'],
+      items: ['onboarding/request-demo', 'onboarding/new-school', 'onboarding/existing-school', 'onboarding/commercial-code', 'onboarding/school-identity'],
     },
     {
       type: 'category', label: 'Structure de l’établissement',
@@ -32,7 +32,7 @@ const sidebars: SidebarsConfig = {
       items: ['documents/report-cards', 'documents/results-minutes', 'documents/honour-roll', 'documents/id-cards'],
     },
     { type: 'category', label: 'Conseils et discipline', items: ['class-council/run', 'discipline/rules'] },
-    { type: 'category', label: 'Statistiques et archives', items: ['analytics/overview', 'archives/overview'] },
+    { type: 'category', label: 'Statistiques et archives', items: ['analytics/overview', 'analytics/grade-entry-status', 'archives/overview'] },
     {
       type: 'category', label: 'Dépannage',
       link: { type: 'doc', id: 'troubleshooting/index' },

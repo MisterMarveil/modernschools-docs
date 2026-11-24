@@ -3,48 +3,65 @@ id: report-cards
 title: "Generate report cards"
 description: "Produce a class's report cards for a period, or one student's."
 sidebar_position: 2
-keywords: ["bulletin", "bulletins de notes", "trimestre", "report card", "bulletin scolaire"]
+keywords: ["bulletin", "bulletins de notes", "trimestre", "report card", "bulletin scolaire", "PDF"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
 estimated_time: "5 min"
 video: generer-bulletins
-last_verified: 2026-11-18
+last_verified: 2026-11-24
 translation_key: documents/report-cards
 ---
 <Prerequisite>
 
-The period's marks are entered. Check with **État d'insertion des notes** (mark-entry status, Reports, Performances column).
+The period's marks are entered. Check with the [grade entry status](/analytics/grade-entry-status).
 
 </Prerequisite>
 
 <Procedure>
-<Step title="Open generation">
+<Step title="Open the generation">
 
-**REPORTS → Bulletins de notes** (report cards).
+**REPORTS → Report cards**.
+
+<DocScreenshot src="web/documents/reports-home" alt="Reports home: Report cards in the Performance column" />
 
 </Step>
-<Step title="Choose period and class">
+<Step title="Choose the period and the class">
 
-Choose the period in the title (for example **Trimestre 1**), then the class under **Choisir la classe**. You can also generate a single student's report card.
+Choose the period in the title (for instance **1st Term**), then the class in **Choose the class**. For a single student, then pick them in **Choose a student**.
 
-<DocScreenshot src="web/documents/report-cards" alt="Report card generation: period, class choice, Generate button, file box" />
+<DocScreenshot src="web/documents/report-cards" alt="Report card generation: period, class, student, Generate button, file explorer" />
 
 </Step>
 <Step title="Generate">
 
-Click **Générer** (generate), then download the file from the box on the right.
+Click **Generate**, then confirm. One report card is prepared per student; progress is shown (class, then student by student).
+
+<DocScreenshot src="web/documents/report-cards-progress" alt="Generation in progress: class progress and student counter" />
+
+</Step>
+<Step title="Download">
+
+When it finishes, the class PDF appears in the explorer on the right, **bulletins** folder. Click the file to download it.
+
+<DocScreenshot src="web/documents/report-cards-done" alt="Explorer: the class PDF in the bulletins folder" />
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-A PDF holds the class's report cards, with the school's letterhead, logo and signature.
+A PDF holds the class's report cards, one per page: the school's letterhead and logo, **the instance's school year**, marks, ranks, averages and discipline.
+
+<DocScreenshot src="web/documents/report-card-pdf" alt="Report card of a fictional student: letterhead, marks by subject, ranks and averages" />
 
 </ExpectedResult>
 
-:::tip
-A mark was corrected? Simply regenerate the report card: after **Nettoyer** (clean), the new file replaces the old one in the box.
+:::tip Corrected mark
+Click **Clean up** under the explorer, then generate again: the new file replaces the old one.
+:::
+
+:::info Archives
+In an archived instance (for instance 2025-2026), report cards carry that instance's year, not the current one (since version 2026.11.16).
 :::

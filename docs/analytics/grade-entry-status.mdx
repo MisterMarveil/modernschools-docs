@@ -1,0 +1,62 @@
+---
+id: grade-entry-status
+title: "Suivre l'insertion des notes"
+description: "Voir quels enseignants ont saisi leurs fiches de notes, lesquelles sont en retard, et envoyer un rappel."
+sidebar_position: 2
+keywords: ["insertion des notes", "état d'insertion", "fiches en retard", "rappel", "saisie des notes", "grade entry", "taux d'insertion"]
+type: how-to
+product: ["web"]
+audience: ["school-admin", "studies-manager"]
+availability: available
+estimated_time: "5 min"
+video: etat-insertion-notes
+last_verified: 2026-11-24
+translation_key: analytics/grade-entry-status
+---
+Avant de générer les [bulletins](/documents/report-cards), vérifiez que toutes les fiches de notes sont saisies.
+
+<Procedure>
+<Step title="Ouvrir l'état d'insertion">
+
+**RAPPORTS → État d'insertion des notes** (colonne Performances).
+
+</Step>
+<Step title="Choisir la période">
+
+La période en cours est proposée. Changez-la au besoin, ou choisissez un enseignant, puis **Actualiser**.
+
+<DocScreenshot src="web/analytics/grade-entry-overview" alt="État d'insertion : filtres, taux d'insertion global, fiches en retard, complétion moyenne, graphiques" />
+
+</Step>
+<Step title="Lire les indicateurs">
+
+- **Taux d'insertion global** : fiches saisies sur fiches attendues (une fiche = une classe, une matière, une évaluation).
+- **Fiches en retard** : non saisies après la date limite de la période.
+- **Complétion moyenne** : part des élèves notés dans les fiches saisies.
+- **Enseignants nécessitant attention**, puis la liste des **fiches en retard** : classe, matière, jours de retard.
+
+<DocScreenshot src="web/analytics/grade-entry-attention" alt="Enseignants nécessitant attention : fiches attendues, insérées, en retard, boutons Voir et Notifier" />
+
+</Step>
+<Step title="Relancer un enseignant">
+
+**Notifier** ouvre un message modifiable, envoyé à l'enseignant par la messagerie de l'école (WhatsApp ou e-mail). Le téléphone ou l'e-mail de l'enseignant doit figurer sur sa fiche (Utilisateurs).
+
+<DocScreenshot src="web/analytics/grade-entry-notify-result" alt="Fenêtre Envoyer une notification, avec le message indiquant que l'envoi n'est pas encore activé" />
+
+</Step>
+</Procedure>
+
+:::info Messagerie
+L'envoi des messages est activé établissement par établissement par ModernSchools. Tant qu'il ne l'est pas, la fenêtre l'indique et rien n'est envoyé (depuis la version 2026.11.17 ; avant, le bouton affichait un succès sans rien envoyer).
+:::
+
+## Détail d'un enseignant
+
+Choisissez l'enseignant dans le filtre : ses fiches par statut et le taux de complétion de chaque fiche.
+
+<DocScreenshot src="web/analytics/grade-entry-teacher" alt="Détail d'un enseignant : fiches attendues, insérées, en retard, répartition par statut" />
+
+## Export
+
+**Exporter CSV** (en haut à droite) produit un fichier avec les indicateurs, les statistiques par enseignant et les fiches en retard, lisible dans un tableur.

@@ -144,5 +144,39 @@
    "/evaluations/configure-periods"
   ],
   "voice": "Régler les dates d'une période. Dans Paramètres, Structures, ouvrez Périodes d'évaluation : l'année et ses trimestres, ou ses semestres, s'y affichent avec leurs dates. Cliquez sur Éditer sur la période, par exemple Trimestre un. Vérifiez la période parente, la date de début et la date de fin. La date limite de report des notes ferme la saisie pour les enseignants : prévenez-les avant de l'avancer. Cliquez sur Mettre à jour : la nouvelle date s'applique aussitôt."
+ },
+ "generer-bulletins": {
+  "title": "Générer les bulletins",
+  "subtitle": "Administration, secrétariat : une classe ou un élève",
+  "total": 60,
+  "pages": [
+   "/documents/report-cards"
+  ],
+  "voice": "Générer les bulletins. Dans Rapports, ouvrez Bulletins de notes. Choisissez la période en titre, par exemple le premier trimestre, puis la classe. Vous pouvez aussi choisir un seul élève. Cliquez sur Générer et confirmez. ModernSchools prépare un bulletin par élève, et la progression s'affiche. Quand c'est terminé, le fichier PDF de la classe apparaît dans l'explorateur, à droite : cliquez dessus pour le télécharger. Chaque bulletin porte l'en-tête et le logo de l'établissement, avec l'année scolaire de l'instance, puis les notes, les rangs, les moyennes et la discipline. Une note a été corrigée ? Nettoyez l'explorateur, puis générez de nouveau. Avant de lancer, vérifiez avec l'état d'insertion que toutes les notes sont saisies."
+ },
+ "etat-insertion-notes": {
+  "title": "L'état d'insertion des notes",
+  "subtitle": "Administration, secrétariat : qui a saisi, qui est en retard",
+  "total": 60,
+  "pages": [
+   "/analytics/grade-entry-status"
+  ],
+  "voice": "L'état d'insertion des notes. Dans Rapports, ouvrez État d'insertion des notes. Choisissez la période et, si besoin, un enseignant. En haut : le taux d'insertion global, les fiches en retard après la date limite, et la complétion moyenne des fiches. Les graphiques comparent les enseignants. La liste Enseignants nécessitant attention montre qui doit encore saisir ; la liste des fiches en retard précise la classe, la matière et le nombre de jours de retard. Le bouton Notifier envoie un rappel à l'enseignant par la messagerie de l'école, WhatsApp ou e-mail, une fois branchée ; sinon, la fenêtre le signale. Choisissez un enseignant pour voir le détail de ses fiches. L'export CSV reprend le tout."
+ },
+ "demander-demo": {
+  "title": "Demander une démonstration",
+  "subtitle": "Établissements : du site au rendez-vous",
+  "total": 60,
+  "pages": [
+   "/onboarding/request-demo"
+  ],
+  "voice": "Demander une démonstration. Sur le site ModernSchools, cliquez sur Demander une démonstration. Renseignez vos coordonnées : nom, fonction, téléphone ou WhatsApp, puis l'établissement et la ville. Le nombre d'élèves et le type d'établissement aident à préparer une démonstration adaptée. Décrivez votre besoin, choisissez la langue, acceptez d'être contacté, puis envoyez. Notez l'identifiant de votre demande : il commence par DEMO. Côté ModernSchools, la demande arrive aussitôt dans le Desk, avec toutes vos informations. L'équipe vous recontacte par téléphone ou WhatsApp, note le rendez-vous fixé et suit la demande jusqu'à ce qu'elle soit traitée. Cette demande ne crée pas d'école : pour vous inscrire, vous déposerez ensuite votre dossier."
+ },
+ "signature-cachet": {
+  "title": "Signature, cachet et nominatif",
+  "subtitle": "Desk, Studio d'identité (équipe BRIDGE)",
+  "total": 60,
+  "pages": [],
+  "voice": "Signature, cachet et nominatif. Dans le Desk, ouvrez Écoles, puis le Studio de l'école, et un brouillon de révision. Seule une personne habilitée à la signature voit et dépose ces pièces ; pour les autres, elles restent masquées. Faites apposer le cachet, la signature et le nom avec la fonction sur une feuille blanche, puis scannez à trois cents points par pouce, ou photographiez bien à plat, sans ombre. Déposez chaque image telle quelle : le Desk retire le papier, garde l'encre et recadre ; vérifiez sur le damier. Renseignez le signataire, son mandat et les documents qu'il signe, contrôlez l'aperçu, puis soumettez. Un autre responsable habilité confirme et valide. La révision est prête à être publiée sur l'instance de l'année."
  }
 }
