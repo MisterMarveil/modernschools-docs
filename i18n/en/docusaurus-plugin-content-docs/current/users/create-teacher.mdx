@@ -9,7 +9,7 @@ product: ["web"]
 audience: ["school-admin"]
 availability: available
 estimated_time: "10 min"
-last_verified: 2026-11-23
+last_verified: 2026-11-24
 translation_key: users/create-teacher
 ---
 ## By import (recommended)
@@ -42,10 +42,44 @@ Each teacher gets an account and finds their classes and subjects in mark entry.
 
 ## By hand
 
-**Settings → Users → Users → Add**. Fill in **Lastname**, **Firstname**, and the **username** (used to sign in), then choose the *Enseignants* (teachers) group in the **Additional data** tab.
+For a teacher, but also an accountant, a studies dean or a discipline supervisor: the chosen group sets the account's role.
 
-<DocScreenshot src="web/roles/admin-creation" alt="User creation form" />
+<Procedure>
+<Step title="Open the form">
+
+**Settings → Users → Users**, then **Add new**.
+
+<DocScreenshot src="web/users/list" alt="User list, Add new button at the top right" />
+
+</Step>
+<Step title="Identity and username">
+
+**Personal data** tab: **Lastname**, **Firstname**, **Gender**, and the **username**, the one used to sign in. The form asks for no password.
+
+<DocScreenshot src="web/users/create-identity" alt="Personal data tab: lastname, firstname, gender, username, no password field" />
+
+</Step>
+<Step title="Choose the group">
+
+**Additional data** tab, **Users' Groups**: tick the group, for instance *Teachers*, then **Create**. Without a group, creation is refused and the section is marked in red.
+
+<DocScreenshot src="web/users/create-no-group" alt="Creation refused: Users' Groups marked in red" />
+
+<DocScreenshot src="web/users/create-group-checked" alt="Teachers group ticked" />
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+The "… has been created" message shows and the account appears in the list.
+
+<DocScreenshot src="web/users/created" alt="Account created" />
+
+</ExpectedResult>
 
 :::warning Password
-No password is typed: the teacher signs in with their username and the teachers' default password, `profpass`, then chooses their own. See [default passwords](/users/roles#default-passwords).
+No password is typed: the person signs in with their username and their group's default password (`profpass` for teachers), then chooses their own. If forgotten: **Actions → Reset password** on their record. See [default passwords](/users/roles#default-passwords).
 :::
+
+Hand the username over in person. The default password is never sent by e-mail or messaging.
