@@ -37,7 +37,7 @@
       "fr": "Importer les élèves",
       "en": "Import students (in French)"
     },
-    "duration": "0:48",
+    "duration": "1:00",
     "youtube": "",
     "pages": [
       "/students/import",
@@ -220,6 +220,50 @@
     "youtube": "O6NSIOeQHqI",
     "pages": [
       "/students/change-class"
+    ]
+  },
+  "importer-enseignants": {
+    "title": {
+      "fr": "Importer les enseignants",
+      "en": "Import teachers (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/users/import-teachers"
+    ]
+  },
+  "proces-verbaux": {
+    "title": {
+      "fr": "Les procès-verbaux des résultats",
+      "en": "Results minutes (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/documents/results-minutes"
+    ]
+  },
+  "conseil-classe": {
+    "title": {
+      "fr": "Le conseil de classe",
+      "en": "The class council (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/class-council/run"
+    ]
+  },
+  "tableau-honneur": {
+    "title": {
+      "fr": "Le tableau d'honneur",
+      "en": "The honour roll (in French)"
+    },
+    "duration": "1:00",
+    "youtube": "",
+    "pages": [
+      "/documents/honour-roll"
     ]
   }
 }

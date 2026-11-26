@@ -10,45 +10,60 @@ audience: ["secretary", "school-admin"]
 availability: available
 estimated_time: "15 min"
 video: importer-eleves
-last_verified: 2026-11-18
+last_verified: 2026-11-26
 translation_key: students/import
 ---
 <Prerequisite>
 
-Classes already exist (see [initial setup](/structure/initial-setup)). Open **Settings → Configuration initiale → Ouvrir**, section **2. Listes d'élèves** (student lists).
+The classes already exist (see [initial setup](/structure/initial-setup)). Open **Settings → Initial setup → Open**, section **2. Student lists**.
 
 </Prerequisite>
 
-<DocScreenshot src="web/setup/students-import" alt="Student lists section: template to download, check and import" />
+<DocScreenshot src="web/setup/students-import" alt="Student lists section: template to download, Check without importing, Import" />
 
 <Procedure>
 <Step title="Download the template">
 
-Click **modele-eleves.xlsx**. The workbook contains your class list (*Classes* sheet): the *Classe* column is filled from a drop-down.
+Click **modele-eleves.xlsx**. The workbook holds your list of classes (*Classes* sheet): the *Classe* column is filled from a drop-down list. The *Consignes* sheet recalls the rules. The template's column titles are in French.
 
 </Step>
 <Step title="Fill in one row per student">
 
-Required: **Classe**, **Nom** (surname), **Prénom** (first name), **Sexe (M/F)**. Optional: date and place of birth (DD/MM/YYYY), matricule (empty = assigned automatically), repeating, boarder, nationality, parents and phones.
+Required (in yellow): **Classe** (class), **Nom** (last name), **Prénom** (first name), **Sexe (M/F)**. Optional: birth date and place (DD/MM/YYYY), student ID (empty = assigned automatically), repeating, boarder, nationality, parents and phone numbers.
+
+<DocScreenshot src="web/setup/students-template-filled" alt="Filled template: class, last name, first name, gender, birth date and place (fictional students)" />
 
 </Step>
-<Step title="Check, then import">
+<Step title="Check without importing">
 
-Choose the file (.xlsx or .csv, 5 MB at most) and click **Contrôler sans importer** (check without importing). If the check passes, click **Importer**.
+Choose the file (.xlsx or .csv, 5 MB at most), then **Check without importing**. Nothing is saved: each wrong row is shown with its number.
+
+<DocScreenshot src="web/setup/students-check-errors" alt="Check: 2 errors, row 4 empty gender, row 6 unknown class; no student imported" />
+
+Fix the file and check again until you get **File correct**, with the number of students per class.
+
+<DocScreenshot src="web/setup/students-check-ok" alt="File correct: 6 students to import into 6eme B, nothing saved yet" />
+
+</Step>
+<Step title="Import">
+
+Send the same file again with **Import**.
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-A message gives the number of students imported and already present. Students appear in their classes with their matricule.
+The message gives the students imported and those already present; the **Your school** box counts the new students. They appear in their classes with a student ID.
+
+<DocScreenshot src="web/setup/students-imported" alt="6 students imported, 0 already present" />
 
 </ExpectedResult>
 
 :::info All or nothing
-The file is checked **as a whole** before anything is written: at the slightest error (unknown class, empty required field, invalid date), **nothing is imported** and each faulty row is listed. A student already present (same surname, same first name) is not created again: you can resend a completed file.
+The file is checked **in full** before anything is written: at the slightest error (unknown class, empty required field, invalid date, duplicate in the file), **nothing is imported**. A student already present (same last and first name) is not created again: you can send a completed file again.
 :::
 
 :::warning Personal data
-This file contains data about minors: do not send it by messaging apps and delete copies after the import.
+This file holds data about minors: do not send it by messaging and delete copies after the import.
 :::

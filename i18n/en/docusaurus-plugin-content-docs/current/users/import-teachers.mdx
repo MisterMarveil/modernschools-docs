@@ -1,0 +1,67 @@
+---
+id: import-teachers
+title: "Import teachers and their assignments"
+description: "Create teacher accounts, their subjects and classes in one go from the Excel template."
+sidebar_position: 2
+keywords: ["importer", "enseignants", "affectations", "professeur principal", "excel", "import teachers", "xlsx"]
+type: how-to
+product: ["web"]
+audience: ["school-admin"]
+availability: available
+estimated_time: "15 min"
+video: importer-enseignants
+last_verified: 2026-11-26
+translation_key: users/import-teachers
+---
+<Prerequisite>
+
+The classes and subjects exist (see [initial setup](/structure/initial-setup)). Open **Settings → Initial setup → Open**, section **3. Teachers and assignments**.
+
+</Prerequisite>
+
+<DocScreenshot src="web/setup/teachers-import" alt="Teachers and assignments section: template to download, Check without importing, Import" />
+
+<Procedure>
+<Step title="Download the template">
+
+Click **modele-enseignants.xlsx**. It holds your subjects (*Matieres* sheet, drop-down list) and your classes (*Classes* sheet). The column titles are in French.
+
+</Step>
+<Step title="One row per teacher and per subject">
+
+**Nom** (last name), **Prénom** (first name), **Sexe**, **Matière** (subject) and the **Classes** where they teach it, separated by commas. A teacher with two subjects takes two rows, with the same name written the same way.
+
+Optional: the **coefficient**, only if the subject is not yet on the class's syllabus; the class they are **head teacher** of; their **phone** and **e-mail** (useful for grade-entry reminders).
+
+<DocScreenshot src="web/setup/teachers-template-filled" alt="Filled template: two fictional teachers, one row per subject, classes, coefficient, head teacher" />
+
+</Step>
+<Step title="Check without importing">
+
+**Check without importing** verifies the whole file: unknown class, subject off the syllabus without a coefficient, invalid e-mail, duplicate… Each error is given with its row number.
+
+<DocScreenshot src="web/setup/teachers-check-errors" alt="Check: unknown class row 4, subject off the syllabus without a coefficient row 5" />
+
+Once the file is correct, the check announces the teachers and assignments to create.
+
+<DocScreenshot src="web/setup/teachers-check-ok" alt="File correct: 2 teachers and 5 assignments to create" />
+
+</Step>
+<Step title="Import">
+
+Send the same file again with **Import**.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+The teachers are created in the *Enseignants* (teachers) group. Each signs in with the username **LASTNAME Firstname** and the teachers' default password, to be changed at first sign-in (see [roles and accounts](/users/roles)). They find their classes and subjects in grade entry.
+
+<DocScreenshot src="web/setup/teachers-imported" alt="2 teachers created, 5 assignments created, reminder of the username and default password" />
+
+</ExpectedResult>
+
+:::info Provisional timetable
+The import puts one session per class and subject in the timetable: then adjust the times (see [build the timetable](/timetable/build)). A teacher or assignment already present is not created again.
+:::

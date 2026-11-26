@@ -1,7 +1,7 @@
 ---
 id: run
-title: "Hold a class council"
-description: "Enter the disciplinary and overall decisions for a class's students for a period."
+title: "Run a class council"
+description: "Enter the disciplinary and overall decisions for a class's students for a period; they are printed on report cards."
 sidebar_position: 1
 keywords: ["conseil de classe", "décision", "observation", "orientation", "class council", "staff meeting"]
 type: how-to
@@ -9,37 +9,52 @@ product: ["web"]
 audience: ["school-admin", "direction", "studies-manager"]
 availability: available
 estimated_time: "15 min"
-last_verified: 2026-11-18
+video: conseil-classe
+last_verified: 2026-11-26
 translation_key: class-council/run
 ---
-The class council shapes the disciplinary and head-of-school remarks shown on the period's report cards. For the annual period, it helps direct students to their next classes.
+The class council sets, student by student, what is printed in the report cards' **Disciplinary observations** and **Principal's observation** for the period. For the annual period, it helps place students in their next classes.
 
 <Procedure>
 <Step title="Open the screen">
 
-**REPORTS → Conseils de classe** (class councils).
-
-<DocScreenshot src="web/class-council/screen" alt="Class council screen: period and class choice" />
+**REPORTS → Class councils**.
 
 </Step>
-<Step title="Choose period and class">
+<Step title="Choose the period and the class">
 
-Choose the period in the title, then the class: the student list appears in the centre.
+Choose the period in the title, then the class: the list of students is shown.
+
+<DocScreenshot src="web/class-council/list" alt="Class council: students of the class, disciplinary decision and overall decision" />
 
 </Step>
-<Step title="Enter decisions">
+<Step title="Enter the decisions">
 
-For each student, enter the disciplinary and overall decisions taken by the council, then save.
+For each student concerned:
+
+- **Disciplinary decision**: a type (for instance *Félicitations conduite*, *Avertissement conduite*) and the mention to print;
+- **Overall decision / Principal**: a type (*Tableau d'honneur*, *Encouragement*, *Avertissement travail*, *Admis en classe supérieure*…) and the mention to print.
+
+The decision types are listed in French. Leave students with no particular decision empty.
+
+<DocScreenshot src="web/class-council/filled" alt="Decisions entered for three fictional students: honour roll, work warning, conduct praise" />
+
+</Step>
+<Step title="Save">
+
+**Record the decisions**. A message confirms the save.
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Decisions appear on the report cards generated afterwards for the period.
+On the report cards generated afterwards, the overall mention replaces the automatic appraisal in **Principal's observation**, and the disciplinary mention is printed in **Disciplinary observations**.
+
+<DocScreenshot src="web/class-council/report-card-effect" alt="Report card of a fictional student: “Honour roll, congratulations” in the Principal's observation" />
 
 </ExpectedResult>
 
 :::tip
-Generate report cards **after** the class council so they carry its decisions.
+Generate the [report cards](/documents/report-cards) **after** the class council. Overall decisions are printed on term report cards since version 2026.11.18.
 :::

@@ -1,7 +1,7 @@
 ---
 id: run
 title: "Tenir un conseil de classe"
-description: "Saisir les décisions disciplinaires et globales des élèves d'une classe pour une période."
+description: "Saisir les décisions disciplinaires et globales des élèves d'une classe pour une période ; elles s'impriment sur les bulletins."
 sidebar_position: 1
 keywords: ["conseil de classe", "décision", "observation", "orientation", "class council", "staff meeting"]
 type: how-to
@@ -9,37 +9,52 @@ product: ["web"]
 audience: ["school-admin", "direction", "studies-manager"]
 availability: available
 estimated_time: "15 min"
-last_verified: 2026-11-18
+video: conseil-classe
+last_verified: 2026-11-26
 translation_key: class-council/run
 ---
-Le conseil de classe influence ce qui s'affiche dans les observations disciplinaires et du chef d'établissement sur les bulletins de la période. En période annuelle, il facilite l'orientation des élèves vers les classes suivantes.
+Le conseil de classe fixe, élève par élève, ce qui s'imprime dans l'**Observation disciplinaire** et l'**Observation du Principal** des bulletins de la période. En période annuelle, il facilite l'orientation des élèves vers les classes suivantes.
 
 <Procedure>
 <Step title="Ouvrir l'écran">
 
 **RAPPORTS → Conseils de classe**.
 
-<DocScreenshot src="web/class-council/screen" alt="Gestion des conseils de classe : période et choix de la classe" />
-
 </Step>
 <Step title="Choisir la période et la classe">
 
-Choisissez la période en titre, puis la classe : la liste des élèves s'affiche au centre.
+Choisissez la période en titre, puis la classe : la liste des élèves s'affiche.
+
+<DocScreenshot src="web/class-council/list" alt="Conseil de classe : élèves de la classe, décision disciplinaire et décision globale" />
 
 </Step>
 <Step title="Saisir les décisions">
 
-Pour chaque élève, saisissez les décisions disciplinaires et globales retenues par le conseil, puis enregistrez.
+Pour chaque élève concerné :
+
+- **Décision disciplinaire** : un type (par exemple *Félicitations conduite*, *Avertissement conduite*) et la mention à imprimer ;
+- **Décision globale / Chef d'établissement** : un type (*Tableau d'honneur*, *Encouragement*, *Avertissement travail*, *Admis en classe supérieure*…) et la mention à imprimer.
+
+Laissez vides les élèves sans décision particulière.
+
+<DocScreenshot src="web/class-council/filled" alt="Décisions saisies pour trois élèves fictifs : tableau d'honneur, avertissement travail, félicitations conduite" />
+
+</Step>
+<Step title="Enregistrer">
+
+**Enregistrer les décisions**. Un message confirme l'enregistrement.
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Les décisions apparaissent sur les bulletins générés ensuite pour la période.
+Sur les bulletins générés ensuite, la mention globale remplace l'appréciation automatique dans **Observation du Principal**, et la mention disciplinaire s'imprime dans **Observation disciplinaire**.
+
+<DocScreenshot src="web/class-council/report-card-effect" alt="Bulletin d'un élève fictif : « Tableau d'honneur, félicitations » dans Observation du Principal" />
 
 </ExpectedResult>
 
 :::tip
-Générez les bulletins **après** le conseil de classe pour qu'ils portent ses décisions.
+Générez les [bulletins](/documents/report-cards) **après** le conseil de classe. Les décisions globales s'impriment sur les bulletins trimestriels depuis la version 2026.11.18.
 :::

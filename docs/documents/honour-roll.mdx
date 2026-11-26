@@ -1,15 +1,16 @@
 ---
 id: honour-roll
 title: "Générer le tableau d'honneur"
-description: "ModernSchools détecte les élèves méritants d'une classe pour la période."
+description: "ModernSchools détecte les élèves méritants d'une classe pour la période et produit un tableau d'honneur par élève."
 sidebar_position: 4
 keywords: ["tableau d'honneur", "mérite", "félicitations", "honour roll", "honor roll"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
-estimated_time: "2 min"
-last_verified: 2026-11-18
+estimated_time: "3 min"
+video: tableau-honneur
+last_verified: 2026-11-26
 translation_key: documents/honour-roll
 ---
 <Procedure>
@@ -17,17 +18,34 @@ translation_key: documents/honour-roll
 
 **RAPPORTS → Tableaux d'honneur**.
 
-<DocScreenshot src="web/documents/honour-roll" alt="Gestion des tableaux d'honneur : période, choix de la classe, Générer Tableau d'Honneur" />
-
 </Step>
 <Step title="Choisir la période et la classe">
 
-Choisissez la période en titre, puis la classe : ModernSchools détecte les élèves méritants.
+Choisissez la période en titre, puis la classe. ModernSchools liste les élèves méritants, de la meilleure moyenne à la moins bonne : ceux dont la moyenne de la période atteint **12/20**.
+
+<DocScreenshot src="web/documents/honour-roll" alt="Tableaux d'honneur : classe choisie, liste des élèves méritants" />
 
 </Step>
 <Step title="Générer">
 
-**Générer Tableau d'Honneur**, puis téléchargez le fichier dans le cadre de droite.
+**Générer Tableau d'Honneur**, puis **OK**. Pour un seul élève, choisissez-le d'abord dans **Choisir un élève**. La progression s'affiche élève par élève.
+
+<DocScreenshot src="web/documents/honour-roll-confirm" alt="Confirmation de la génération des tableaux d'honneur de la classe" />
+
+</Step>
+<Step title="Télécharger">
+
+À la fin, le PDF apparaît dans l'explorateur de droite, dossier **Honour-Roll**.
+
+<DocScreenshot src="web/documents/honour-roll-done" alt="Explorateur : le PDF des tableaux d'honneur dans le dossier Honour-Roll" />
 
 </Step>
 </Procedure>
+
+<ExpectedResult>
+
+Un PDF au format A4 paysage, une page par élève : en-tête de l'établissement, nom de l'élève, classe, période, moyenne et mention.
+
+<DocScreenshot src="web/documents/honour-roll-pdf" alt="Tableau d'honneur d'un élève fictif" />
+
+</ExpectedResult>
