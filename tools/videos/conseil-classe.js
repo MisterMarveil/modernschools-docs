@@ -40,9 +40,9 @@ window.D = {
    "text": "Décision globale : type et mention à imprimer",
    "focus": [
     8,
-    46,
+    48.5,
     84,
-    9
+    6
    ],
    "maxZoom": 1.5
   },
@@ -54,9 +54,9 @@ window.D = {
    "text": "Décision disciplinaire : félicitations, avertissement…",
    "focus": [
     8,
-    66,
+    69,
     84,
-    9
+    6
    ],
    "maxZoom": 1.5
   },
