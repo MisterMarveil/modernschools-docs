@@ -10,7 +10,7 @@ audience: ["secretary", "school-admin"]
 availability: available
 estimated_time: "15 min"
 video: importer-eleves
-last_verified: 2026-11-18
+last_verified: 2026-11-26
 translation_key: students/import
 ---
 <Prerequisite>
@@ -19,34 +19,49 @@ Les classes existent déjà (voir [configuration initiale](/structure/initial-se
 
 </Prerequisite>
 
-<DocScreenshot src="web/setup/students-import" alt="Section Listes d'élèves : modèle à télécharger, contrôle et import" />
+<DocScreenshot src="web/setup/students-import" alt="Section Listes d'élèves : modèle à télécharger, Contrôler sans importer, Importer" />
 
 <Procedure>
 <Step title="Télécharger le modèle">
 
-Cliquez sur **modele-eleves.xlsx**. Le classeur contient la liste de vos classes (feuille *Classes*) : la colonne *Classe* se remplit par liste déroulante.
+Cliquez sur **modele-eleves.xlsx**. Le classeur contient la liste de vos classes (feuille *Classes*) : la colonne *Classe* se remplit par liste déroulante. La feuille *Consignes* rappelle les règles.
 
 </Step>
 <Step title="Remplir une ligne par élève">
 
-Obligatoires : **Classe**, **Nom**, **Prénom**, **Sexe (M/F)**. Facultatives : date et lieu de naissance (JJ/MM/AAAA), matricule (vide = attribué automatiquement), redoublant, interne, nationalité, parents et téléphones.
+Obligatoires (en jaune) : **Classe**, **Nom**, **Prénom**, **Sexe (M/F)**. Facultatives : date et lieu de naissance (JJ/MM/AAAA), matricule (vide = attribué automatiquement), redoublant, interne, nationalité, parents et téléphones.
+
+<DocScreenshot src="web/setup/students-template-filled" alt="Modèle rempli : classe, nom, prénom, sexe, date et lieu de naissance (élèves fictifs)" />
 
 </Step>
-<Step title="Contrôler, puis importer">
+<Step title="Contrôler sans importer">
 
-Choisissez le fichier (.xlsx ou .csv, 5 Mo au plus) et cliquez sur **Contrôler sans importer**. Si le contrôle est correct, cliquez sur **Importer**.
+Choisissez le fichier (.xlsx ou .csv, 5 Mo au plus), puis **Contrôler sans importer**. Rien n'est enregistré : chaque ligne fautive est indiquée avec son numéro.
+
+<DocScreenshot src="web/setup/students-check-errors" alt="Contrôle : 2 erreurs, ligne 4 sexe vide, ligne 6 classe inconnue ; aucun élève importé" />
+
+Corrigez le fichier et contrôlez de nouveau jusqu'à obtenir **Fichier correct**, avec le nombre d'élèves par classe.
+
+<DocScreenshot src="web/setup/students-check-ok" alt="Fichier correct : 6 élèves à importer en 6eme B, rien n'est encore enregistré" />
+
+</Step>
+<Step title="Importer">
+
+Renvoyez le même fichier avec **Importer**.
 
 </Step>
 </Procedure>
 
 <ExpectedResult>
 
-Un message indique le nombre d'élèves importés et déjà présents. Les élèves apparaissent dans leurs classes avec leur matricule.
+Le message indique les élèves importés et ceux déjà présents ; le cadre **Votre établissement** compte les nouveaux élèves. Ils apparaissent dans leurs classes avec un matricule.
+
+<DocScreenshot src="web/setup/students-imported" alt="6 élèves importés, 0 déjà présent" />
 
 </ExpectedResult>
 
 :::info Tout ou rien
-Le fichier est contrôlé **en entier** avant toute écriture : à la moindre erreur (classe inconnue, champ obligatoire vide, date invalide), **rien n'est importé** et chaque ligne fautive est indiquée. Un élève déjà présent (même nom, même prénom) n'est pas recréé : vous pouvez renvoyer un fichier complété.
+Le fichier est contrôlé **en entier** avant toute écriture : à la moindre erreur (classe inconnue, champ obligatoire vide, date invalide, doublon dans le fichier), **rien n'est importé**. Un élève déjà présent (même nom, même prénom) n'est pas recréé : vous pouvez renvoyer un fichier complété.
 :::
 
 :::warning Données personnelles

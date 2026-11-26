@@ -1,33 +1,59 @@
 ---
 id: results-minutes
 title: "Procès-verbaux des résultats"
-description: "Visualiser ou générer en PDF le procès-verbal des résultats d’une classe."
+description: "Visualiser ou générer en PDF le procès-verbal des résultats d’une classe pour une période."
 sidebar_position: 3
-keywords: ["procès-verbal", "pv", "résultats", "minutes", "results"]
+keywords: ["procès-verbal", "pv", "résultats", "bordereau", "minutes", "results"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
 estimated_time: "3 min"
-last_verified: 2026-11-18
+video: proces-verbaux
+last_verified: 2026-11-26
 translation_key: documents/results-minutes
 ---
+Le procès-verbal récapitule, pour une classe et une période, les notes de chaque élève par matière et par évaluation, sa moyenne, son rang et l'observation.
+
 <Procedure>
 <Step title="Ouvrir l'écran">
 
-Depuis **RAPPORTS**, colonne **Performances**, ouvrez la génération des procès-verbaux des résultats.
+**RAPPORTS**, colonne **Performances** : **Bordereau de résultats**.
 
-<DocScreenshot src="web/documents/results-minutes" alt="Génération des procès-verbaux des résultats" />
+<DocScreenshot src="web/documents/reports-home" alt="Accueil des rapports : colonne Performances" />
 
 </Step>
 <Step title="Choisir la période et la classe">
 
-Choisissez la période en titre, puis la classe.
+Choisissez la période en titre (par exemple **Trimestre 1**), puis la classe.
+
+<DocScreenshot src="web/documents/results-minutes" alt="Génération des procès-verbaux : période, classe, Visualiser, Générer PDF" />
 
 </Step>
-<Step title="Visualiser ou générer">
+<Step title="Visualiser">
 
-**Visualiser** affiche le procès-verbal à l'écran ; **Générer PDF** produit le document à imprimer.
+**Visualiser**, puis confirmer : le procès-verbal s'ouvre dans un nouvel onglet.
+
+<DocScreenshot src="web/documents/results-minutes-view" alt="Procès-verbal à l'écran : élèves, notes par matière et par évaluation, moyenne, rang" />
+
+</Step>
+<Step title="Générer le PDF">
+
+**Générer PDF**, puis confirmer. Le fichier apparaît dans l'explorateur de droite, dossier **bordereaux** : cliquez dessus pour le télécharger. Sans classe choisie, le PDF couvre tout l'établissement.
+
+<DocScreenshot src="web/documents/results-minutes-done" alt="Explorateur : le procès-verbal de la classe dans le dossier bordereaux" />
 
 </Step>
 </Procedure>
+
+<ExpectedResult>
+
+Un PDF au format A3 paysage, avec l'en-tête de l'établissement, la liste des élèves classés et le récapitulatif de la classe.
+
+<DocScreenshot src="web/documents/results-minutes-pdf" alt="Procès-verbal PDF d'une classe fictive" />
+
+</ExpectedResult>
+
+:::tip
+Une note corrigée : **Nettoyer** l'explorateur, puis régénérer. Vérifiez d'abord que toutes les notes sont saisies avec l'[état d'insertion des notes](/analytics/overview).
+:::

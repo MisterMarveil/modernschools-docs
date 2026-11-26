@@ -1,33 +1,59 @@
 ---
 id: results-minutes
 title: "Results minutes"
-description: "View or generate as PDF a class's results minutes."
+description: "View or generate as PDF a class's results minutes for a period."
 sidebar_position: 3
-keywords: ["procès-verbal", "pv", "résultats", "minutes", "results"]
+keywords: ["procès-verbal", "pv", "résultats", "bordereau", "minutes", "results"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
 estimated_time: "3 min"
-last_verified: 2026-11-18
+video: proces-verbaux
+last_verified: 2026-11-26
 translation_key: documents/results-minutes
 ---
+The minutes sum up, for a class and a period, each student's marks by subject and evaluation, their average, rank and observation.
+
 <Procedure>
 <Step title="Open the screen">
 
-From **REPORTS**, **Performances** column, open the results-minutes generation.
+**REPORTS**, **Performance** column: **Results sheets**.
 
-<DocScreenshot src="web/documents/results-minutes" alt="Results minutes generation" />
-
-</Step>
-<Step title="Choose period and class">
-
-Choose the period in the title, then the class.
+<DocScreenshot src="web/documents/reports-home" alt="Reports home: Performance column" />
 
 </Step>
-<Step title="View or generate">
+<Step title="Choose the period and the class">
 
-**Visualiser** shows the minutes on screen; **Générer PDF** produces the document to print.
+Choose the period in the title (for instance **1st Term**), then the class.
+
+<DocScreenshot src="web/documents/results-minutes" alt="Results minutes generation: period, class, View, Generate PDF" />
+
+</Step>
+<Step title="View">
+
+**View**, then confirm: the minutes open in a new tab.
+
+<DocScreenshot src="web/documents/results-minutes-view" alt="Minutes on screen: students, marks by subject and evaluation, average, rank" />
+
+</Step>
+<Step title="Generate the PDF">
+
+**Generate PDF**, then confirm. The file appears in the explorer on the right, **bordereaux** folder: click it to download. With no class chosen, the PDF covers the whole school.
+
+<DocScreenshot src="web/documents/results-minutes-done" alt="Explorer: the class minutes in the bordereaux folder" />
 
 </Step>
 </Procedure>
+
+<ExpectedResult>
+
+A landscape A3 PDF, with the school's letterhead, the ranked list of students and the class summary.
+
+<DocScreenshot src="web/documents/results-minutes-pdf" alt="PDF minutes of a fictional class" />
+
+</ExpectedResult>
+
+:::tip
+A corrected mark: **Clean up** the explorer, then generate again. First check that every mark is entered with the [grade entry status](/analytics/overview).
+:::

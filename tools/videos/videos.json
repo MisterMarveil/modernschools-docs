@@ -28,13 +28,13 @@
  },
  "importer-eleves": {
   "title": "Importer les élèves",
-  "subtitle": "Toutes les listes de classes en une fois",
-  "total": 48,
+  "subtitle": "Secrétariat, administration : toute une liste d'un coup",
+  "total": 60,
   "pages": [
    "/students/import",
    "/structure/initial-setup"
   ],
-  "voice": "Importer les élèves. Ouvrez Paramètres, puis Configuration initiale. Commencez par créer vos classes à partir d'un modèle d'établissement : cochez les classes, vérifiez l'année scolaire et validez. Ensuite, dans Listes d'élèves, téléchargez le fichier modèle. Remplissez une ligne par élève : classe, nom, prénom et sexe sont obligatoires. Cliquez d'abord sur Contrôler sans importer. Le fichier est vérifié en entier : à la moindre erreur, rien n'est importé. Quand tout est correct, cliquez sur Importer. Faites de même pour les enseignants."
+  "voice": "Importer les élèves. Dans Paramètres, Configuration initiale, section Listes d'élèves, téléchargez le fichier modèle : il contient déjà vos classes. Remplissez une ligne par élève. La classe, le nom, le prénom et le sexe sont obligatoires ; la date et le lieu de naissance, le matricule et les parents sont facultatifs. Choisissez le fichier, puis cliquez sur Contrôler sans importer. Le fichier est vérifié en entier : chaque erreur est signalée avec son numéro de ligne, et rien n'est importé. Corrigez, contrôlez de nouveau jusqu'à obtenir Fichier correct, puis cliquez sur Importer. Les élèves sont créés dans leurs classes. Un élève déjà présent, même nom et même prénom, n'est pas recréé : vous pouvez renvoyer un fichier complété."
  },
  "importer-photos": {
   "title": "Importer les photos d'élèves",
@@ -144,5 +144,41 @@
    "/evaluations/configure-periods"
   ],
   "voice": "Régler les dates d'une période. Dans Paramètres, Structures, ouvrez Périodes d'évaluation : l'année et ses trimestres, ou ses semestres, s'y affichent avec leurs dates. Cliquez sur Éditer sur la période, par exemple Trimestre un. Vérifiez la période parente, la date de début et la date de fin. La date limite de report des notes ferme la saisie pour les enseignants : prévenez-les avant de l'avancer. Cliquez sur Mettre à jour : la nouvelle date s'applique aussitôt."
+ },
+ "importer-enseignants": {
+  "title": "Importer les enseignants",
+  "subtitle": "Administration : comptes, matières et classes d'un coup",
+  "total": 60,
+  "pages": [
+   "/users/import-teachers"
+  ],
+  "voice": "Importer les enseignants. Dans Configuration initiale, section Enseignants et affectations, téléchargez le fichier modèle : il contient vos matières et vos classes. Remplissez une ligne par enseignant et par matière, avec les classes où il l'enseigne, séparées par des virgules. Le coefficient n'est demandé que si la matière n'est pas encore au programme de la classe. Indiquez aussi le professeur principal, le téléphone et l'e-mail. Contrôlez sans importer : chaque erreur est signalée avec sa ligne. Quand le fichier est correct, importez. Chaque enseignant se connecte avec son nom et son prénom, et le mot de passe par défaut des enseignants, à changer dès la première connexion. Il retrouve ses classes dans la saisie des notes."
+ },
+ "proces-verbaux": {
+  "title": "Les procès-verbaux des résultats",
+  "subtitle": "Administration, responsable des études",
+  "total": 60,
+  "pages": [
+   "/documents/results-minutes"
+  ],
+  "voice": "Les procès-verbaux des résultats. Dans Rapports, colonne Performances, ouvrez Bordereau de résultats. Choisissez la période en titre, puis la classe. Visualiser ouvre le procès-verbal dans un nouvel onglet : pour chaque élève, les notes de chaque matière et de chaque évaluation, la moyenne de la matière, puis la moyenne générale, le rang et l'observation. Pour l'imprimer, cliquez sur Générer PDF et confirmez. Le fichier apparaît dans l'explorateur, dans le dossier bordereaux : cliquez dessus pour le télécharger. C'est un document A3 paysage, avec l'en-tête de l'établissement. Sans classe choisie, le procès-verbal couvre tout l'établissement. Vérifiez d'abord que toutes les notes sont saisies."
+ },
+ "conseil-classe": {
+  "title": "Le conseil de classe",
+  "subtitle": "Direction, responsable des études",
+  "total": 60,
+  "pages": [
+   "/class-council/run"
+  ],
+  "voice": "Le conseil de classe. Dans Rapports, ouvrez Conseils de classe. Choisissez la période, puis la classe : la liste des élèves s'affiche. Pour chaque élève concerné, choisissez un type de décision et écrivez la mention à imprimer. La décision globale, du chef d'établissement, peut être un tableau d'honneur, un encouragement, un avertissement ou, en fin d'année, un passage en classe supérieure. La décision disciplinaire peut être des félicitations ou un avertissement de conduite. Laissez vides les autres élèves, puis enregistrez les décisions. Sur les bulletins générés ensuite, la mention globale s'imprime dans l'observation du principal, et la mention disciplinaire dans l'observation disciplinaire. Tenez donc le conseil avant de générer les bulletins."
+ },
+ "tableau-honneur": {
+  "title": "Le tableau d'honneur",
+  "subtitle": "Administration, responsable des études",
+  "total": 60,
+  "pages": [
+   "/documents/honour-roll"
+  ],
+  "voice": "Le tableau d'honneur. Dans Rapports, ouvrez Tableau d'honneur. Choisissez la période, puis la classe : ModernSchools détecte les élèves méritants, ceux dont la moyenne de la période atteint douze sur vingt, du meilleur au moins bon. Cliquez sur Générer tableau d'honneur, puis confirmez. Pour un seul élève, choisissez-le d'abord dans la liste. Un tableau est préparé pour chaque élève, et la progression s'affiche. À la fin, le fichier PDF apparaît dans l'explorateur, dans le dossier Honour-Roll : cliquez dessus pour le télécharger. Chaque page porte l'en-tête de l'établissement, le nom de l'élève, sa classe, la période, sa moyenne et sa mention, prête à être signée par le chef d'établissement."
  }
 }

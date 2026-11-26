@@ -1,0 +1,67 @@
+---
+id: import-teachers
+title: "Importer les enseignants et leurs affectations"
+description: "Créer d'un coup les comptes enseignants, leurs matières et leurs classes depuis le fichier modèle Excel."
+sidebar_position: 2
+keywords: ["importer", "enseignants", "affectations", "professeur principal", "excel", "import teachers", "xlsx"]
+type: how-to
+product: ["web"]
+audience: ["school-admin"]
+availability: available
+estimated_time: "15 min"
+video: importer-enseignants
+last_verified: 2026-11-26
+translation_key: users/import-teachers
+---
+<Prerequisite>
+
+Les classes et les matières existent (voir [configuration initiale](/structure/initial-setup)). Ouvrez **Paramètres → Configuration initiale → Ouvrir**, section **3. Enseignants et affectations**.
+
+</Prerequisite>
+
+<DocScreenshot src="web/setup/teachers-import" alt="Section Enseignants et affectations : modèle à télécharger, Contrôler sans importer, Importer" />
+
+<Procedure>
+<Step title="Télécharger le modèle">
+
+Cliquez sur **modele-enseignants.xlsx**. Il contient vos matières (feuille *Matieres*, liste déroulante) et vos classes (feuille *Classes*).
+
+</Step>
+<Step title="Une ligne par enseignant et par matière">
+
+**Nom**, **Prénom**, **Sexe**, **Matière** et **Classes** où il l'enseigne, séparées par des virgules. Un enseignant qui a deux matières occupe deux lignes, avec le même nom écrit de la même façon.
+
+Facultatif : le **coefficient**, seulement si la matière n'est pas encore au programme de la classe ; la classe dont il est **professeur principal** ; son **téléphone** et son **e-mail** (utiles pour les rappels de saisie des notes).
+
+<DocScreenshot src="web/setup/teachers-template-filled" alt="Modèle rempli : deux enseignants fictifs, une ligne par matière, classes, coefficient, professeur principal" />
+
+</Step>
+<Step title="Contrôler sans importer">
+
+**Contrôler sans importer** vérifie tout le fichier : classe inconnue, matière absente du programme sans coefficient, e-mail invalide, doublon… Chaque erreur est indiquée avec son numéro de ligne.
+
+<DocScreenshot src="web/setup/teachers-check-errors" alt="Contrôle : classe inconnue ligne 4, matière hors programme sans coefficient ligne 5" />
+
+Une fois le fichier correct, le contrôle annonce les enseignants et les affectations à créer.
+
+<DocScreenshot src="web/setup/teachers-check-ok" alt="Fichier correct : 2 enseignants et 5 affectations à créer" />
+
+</Step>
+<Step title="Importer">
+
+Renvoyez le même fichier avec **Importer**.
+
+</Step>
+</Procedure>
+
+<ExpectedResult>
+
+Les enseignants sont créés dans le groupe *Enseignants*. Chacun se connecte avec l'identifiant **NOM Prénom** et le mot de passe par défaut des enseignants, à changer à la première connexion (voir [rôles et comptes](/users/roles)). Ils retrouvent leurs classes et leurs matières dans la saisie des notes.
+
+<DocScreenshot src="web/setup/teachers-imported" alt="2 enseignants créés, 5 affectations créées, rappel de l'identifiant et du mot de passe par défaut" />
+
+</ExpectedResult>
+
+:::info Emploi du temps provisoire
+L'import place une séance par classe et par matière dans l'emploi du temps : ajustez ensuite les horaires (voir [construire l'emploi du temps](/timetable/build)). Un enseignant ou une affectation déjà présents ne sont pas recréés.
+:::

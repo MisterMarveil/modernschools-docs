@@ -1,33 +1,51 @@
 ---
 id: honour-roll
 title: "Generate the honour roll"
-description: "ModernSchools detects a class's deserving students for the period."
+description: "ModernSchools detects a class's deserving students for the period and produces one honour roll certificate per student."
 sidebar_position: 4
 keywords: ["tableau d'honneur", "mérite", "félicitations", "honour roll", "honor roll"]
 type: how-to
 product: ["web"]
 audience: ["school-admin", "studies-manager"]
 availability: available
-estimated_time: "2 min"
-last_verified: 2026-11-18
+estimated_time: "3 min"
+video: tableau-honneur
+last_verified: 2026-11-26
 translation_key: documents/honour-roll
 ---
 <Procedure>
 <Step title="Open the screen">
 
-**REPORTS → Tableaux d'honneur** (honour rolls).
-
-<DocScreenshot src="web/documents/honour-roll" alt="Honour roll screen: period, class choice, generate button" />
+**REPORTS → Honour rolls**.
 
 </Step>
-<Step title="Choose period and class">
+<Step title="Choose the period and the class">
 
-Choose the period in the title, then the class: ModernSchools detects the deserving students.
+Choose the period in the title, then the class. ModernSchools lists the deserving students, from the best average down: those whose period average reaches **12/20**.
+
+<DocScreenshot src="web/documents/honour-roll" alt="Honour rolls: class chosen, list of deserving students" />
 
 </Step>
 <Step title="Generate">
 
-**Générer Tableau d'Honneur**, then download the file from the box on the right.
+**Generate honour roll**, then **OK**. For a single student, first pick them in **Choose a student**. Progress is shown student by student.
+
+<DocScreenshot src="web/documents/honour-roll-confirm" alt="Confirmation of the class honour roll generation" />
+
+</Step>
+<Step title="Download">
+
+When it finishes, the PDF appears in the explorer on the right, **Honour-Roll** folder.
+
+<DocScreenshot src="web/documents/honour-roll-done" alt="Explorer: the honour roll PDF in the Honour-Roll folder" />
 
 </Step>
 </Procedure>
+
+<ExpectedResult>
+
+A landscape A4 PDF, one page per student: school letterhead, student name, class, period, average and mention.
+
+<DocScreenshot src="web/documents/honour-roll-pdf" alt="Honour roll certificate of a fictional student" />
+
+</ExpectedResult>

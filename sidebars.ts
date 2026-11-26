@@ -20,7 +20,7 @@ const sidebars: SidebarsConfig = {
       type: 'category', label: 'Élèves',
       items: ['students/add', 'students/edit', 'students/batch-edit', 'students/change-class', 'students/import', 'students/photos', 'students/identity'],
     },
-    { type: 'category', label: 'Utilisateurs et rôles', items: ['users/create-teacher', 'users/roles'] },
+    { type: 'category', label: 'Utilisateurs et rôles', items: ['users/create-teacher', 'users/import-teachers', 'users/roles'] },
     {
       type: 'category', label: 'Évaluations et notes',
       items: ['evaluations/periods', 'evaluations/configure-periods', 'grades/enter-grades', 'grades/edit-grades'],
